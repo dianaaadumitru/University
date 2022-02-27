@@ -1,0 +1,990 @@
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) v1;(int cnt;(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))))))) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))))) | Ref(int) v1 | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))))) | Ref(int) v1 | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))))) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))))) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))))) | int cnt | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))))) | int cnt | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))))) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))))) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))) | new(v1, 1) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))) | new(v1, 1) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(CreateSemaphore(cnt, rH(v1));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))))) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))) | CreateSemaphore(cnt, rH(v1)) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))) | CreateSemaphore(cnt, rH(v1)) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);Release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);Release(cnt))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);Release(cnt))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);Release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);Release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));Release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));Release(cnt)) | wH(v1,rH(v1)*10) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));Release(cnt)) | wH(v1,rH(v1)*10) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));Release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));Release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {Release(cnt) | print(rH(v1)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {Release(cnt) | print(rH(v1)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {Release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {Release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {} 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);Release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {Release(cnt) | print(rH(v1)-1) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {Release(cnt) | print(rH(v1)-1) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {Release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {Release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {} 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))) | wH(v1,rH(v1)*10) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))) | wH(v1,rH(v1)*10) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 100  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*2);(print(rH(v1));Release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 100  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(print(rH(v1));Release(cnt)) | wH(v1,rH(v1)*2) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 100  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(print(rH(v1));Release(cnt)) | wH(v1,rH(v1)*2) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 100  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(print(rH(v1));Release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 200  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(print(rH(v1));Release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 200  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {Release(cnt) | print(rH(v1)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 200  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {Release(cnt) | print(rH(v1)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 200  
+Output Console: 10 9  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {Release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 200  
+Output Console: 10 9 200  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {Release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 200  
+Output Console: 10 9 200  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {} 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 200  
+Output Console: 10 9 200  
+File Table:  
+Semaphore Table: Gui.model.ADT.MySemaphore@1b47c510
+ 
+
+

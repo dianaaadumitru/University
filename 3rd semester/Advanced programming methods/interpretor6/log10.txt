@@ -1,0 +1,60 @@
+Program state
+ID: 1 
+Exe Stack: {(nop;print(10)) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(10) | nop | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(10) | nop | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(10) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(10) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {} 
+Sym Table:  
+Heap:  
+Output Console: 10  
+File Table:  
+ 
+
+

@@ -1,0 +1,1420 @@
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) v1;(new(v1, 20);(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))))))) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 20);(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))))) | Ref(int) v1 | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 20);(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))))) | Ref(int) v1 | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 20);(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))))) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 20);(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))))) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))))) | new(v1, 20) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))))) | new(v1, 20) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))))) | } 
+Sym Table: v1->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) v2;(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))))) | } 
+Sym Table: v1->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))) | Ref(int) v2 | } 
+Sym Table: v1->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))) | Ref(int) v2 | } 
+Sym Table: v1->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))) | } 
+Sym Table: v1->(1, int), v2->(0, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v2, 30);(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))))) | } 
+Sym Table: v1->(1, int), v2->(0, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))) | new(v2, 30) | } 
+Sym Table: v1->(1, int), v2->(0, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))) | new(v2, 30) | } 
+Sym Table: v1->(1, int), v2->(0, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))) | } 
+Sym Table: v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int x;(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))))) | } 
+Sym Table: v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))) | int x | } 
+Sym Table: v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))) | int x | } 
+Sym Table: v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))) | } 
+Sym Table: x->0, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(x);(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))))) | } 
+Sym Table: x->0, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))) | newLock(x) | } 
+Sym Table: x->0, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))) | newLock(x) | } 
+Sym Table: x->0, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))));(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))) | fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x))))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))) | fork((fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x))))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int q;(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(fork((lock(x);(wH(v1,rH(v1)-1);unlock(x))));(lock(x);(wH(v1,rH(v1)+1);unlock(x)))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))) | int q | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(lock(x);(wH(v1,rH(v1)+1);unlock(x))) | fork((lock(x);(wH(v1,rH(v1)-1);unlock(x)))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))) | int q | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(lock(x);(wH(v1,rH(v1)+1);unlock(x))) | fork((lock(x);(wH(v1,rH(v1)-1);unlock(x)))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))) | } 
+Sym Table: q->0, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(lock(x);(wH(v1,rH(v1)+1);unlock(x))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(lock(x);(wH(v1,rH(v1)-1);unlock(x))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newLock(q);(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))))) | } 
+Sym Table: q->0, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(lock(x);(wH(v1,rH(v1)+1);unlock(x))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(lock(x);(wH(v1,rH(v1)-1);unlock(x))) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))) | newLock(q) | } 
+Sym Table: q->0, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)-1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))) | newLock(q) | } 
+Sym Table: q->0, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)-1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))) | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)-1);unlock(x)) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int m;(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))))) | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)-1);unlock(x)) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))) | int m | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {unlock(x) | wH(v1,rH(v1)-1) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))) | int m | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {unlock(x) | wH(v1,rH(v1)-1) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))) | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {unlock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int z;(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))))) | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | lock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {unlock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))) | int z | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {} 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))) | int z | } 
+Sym Table: q->2, x->1, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)+1);unlock(x)) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {unlock(x) | wH(v1,rH(v1)+1) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))));(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {unlock(x) | wH(v1,rH(v1)+1) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 19 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))) | fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q)))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {unlock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))) | fork((fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q)))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {unlock(x) | } 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {} 
+Sym Table: x->1, v1->(1, int), v2->(2, int),  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=200;(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(fork((lock(q);(wH(v2,rH(v2)+5);unlock(q))));(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q))))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))) | z=200 | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q)))) | fork((lock(q);(wH(v2,rH(v2)+5);unlock(q)))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))) | z=200 | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q)))) | fork((lock(q);(wH(v2,rH(v2)+5);unlock(q)))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))) | } 
+Sym Table: q->2, x->1, z->200, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q)))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {(lock(q);(wH(v2,rH(v2)+5);unlock(q))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=300;(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))))) | } 
+Sym Table: q->2, x->1, z->200, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(m=100;(lock(q);(wH(v2,rH(v2)+1);unlock(q)))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {(lock(q);(wH(v2,rH(v2)+5);unlock(q))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))) | z=300 | } 
+Sym Table: q->2, x->1, z->200, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(lock(q);(wH(v2,rH(v2)+1);unlock(q))) | m=100 | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {(wH(v2,rH(v2)+5);unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))) | z=300 | } 
+Sym Table: q->2, x->1, z->200, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(lock(q);(wH(v2,rH(v2)+1);unlock(q))) | m=100 | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {(wH(v2,rH(v2)+5);unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))) | } 
+Sym Table: q->2, x->1, z->300, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(lock(q);(wH(v2,rH(v2)+1);unlock(q))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {(wH(v2,rH(v2)+5);unlock(q)) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(z=400;(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q)))))) | } 
+Sym Table: q->2, x->1, z->300, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(lock(q);(wH(v2,rH(v2)+1);unlock(q))) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {(wH(v2,rH(v2)+5);unlock(q)) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))) | z=400 | } 
+Sym Table: q->2, x->1, z->300, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(wH(v2,rH(v2)+1);unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {unlock(q) | wH(v2,rH(v2)+5) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))) | z=400 | } 
+Sym Table: q->2, x->1, z->300, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(wH(v2,rH(v2)+1);unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {unlock(q) | wH(v2,rH(v2)+5) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 30  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(wH(v2,rH(v2)+1);unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {unlock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1));(unlock(x);(lock(q);(print(rH(v2));unlock(q))))) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(wH(v2,rH(v2)+1);unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {unlock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(unlock(x);(lock(q);(print(rH(v2));unlock(q)))) | print(rH(v1)) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(wH(v2,rH(v2)+1);unlock(q)) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10000 
+Exe Stack: {} 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(unlock(x);(lock(q);(print(rH(v2));unlock(q)))) | print(rH(v1)) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(wH(v2,rH(v2)+1);unlock(q)) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 35  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(unlock(x);(lock(q);(print(rH(v2));unlock(q)))) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {unlock(q) | wH(v2,rH(v2)+1) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 35  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(unlock(x);(lock(q);(print(rH(v2));unlock(q)))) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 35  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {unlock(q) | wH(v2,rH(v2)+1) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 35  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(lock(q);(print(rH(v2));unlock(q))) | unlock(x) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {unlock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(lock(q);(print(rH(v2));unlock(q))) | unlock(x) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {unlock(q) | } 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(lock(q);(print(rH(v2));unlock(q))) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {} 
+Sym Table: q->2, x->1, z->0, v1->(1, int), v2->(2, int), m->100,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(lock(q);(print(rH(v2));unlock(q))) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v2));unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v2));unlock(q)) | lock(q) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v2));unlock(q)) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v2));unlock(q)) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {unlock(q) | print(rH(v2)) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {unlock(q) | print(rH(v2)) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {unlock(q) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20 36  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {unlock(q) | } 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20 36  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {} 
+Sym Table: q->2, x->1, z->400, v1->(1, int), v2->(2, int), m->0,  
+Heap: 1 -> 20 2 -> 36  
+Output Console: 20 36  
+File Table:  
+ 
+
+

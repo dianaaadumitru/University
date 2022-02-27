@@ -1,0 +1,690 @@
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) a;(new(a, 20);(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a)))))) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(a, 20);(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))))) | Ref(int) a | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(a, 20);(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))))) | Ref(int) a | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(a, 20);(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))))) | } 
+Sym Table: a->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(a, 20);(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))))) | } 
+Sym Table: a->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a)))) | new(a, 20) | } 
+Sym Table: a->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a)))) | new(a, 20) | } 
+Sym Table: a->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a)))) | } 
+Sym Table: a->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int v;(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a)))) | } 
+Sym Table: a->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))) | int v | } 
+Sym Table: a->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))) | int v | } 
+Sym Table: a->(1, int),  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))};print(rH(a))) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))} | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | for(v=0; v<3; v=v+1) {fork((print(v);v=v*rH(a)))} | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | (v=0;while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)}) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | (v=0;while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)}) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=0 | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=0 | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | (fork((print(v);v=v*rH(a)));v=v+1) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | (fork((print(v);v=v*rH(a)));v=v+1) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | fork((print(v);v=v*rH(a))) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | fork((print(v);v=v*rH(a))) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(v);v=v*rH(a)) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(v);v=v*rH(a)) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {v=v*rH(a) | print(v) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {v=v*rH(a) | print(v) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | (fork((print(v);v=v*rH(a)));v=v+1) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {v=v*rH(a) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | (fork((print(v);v=v*rH(a)));v=v+1) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {v=v*rH(a) | } 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | fork((print(v);v=v*rH(a))) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {} 
+Sym Table: a->(1, int), v->0,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | fork((print(v);v=v*rH(a))) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(print(v);v=v*rH(a)) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(print(v);v=v*rH(a)) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {v=v*rH(a) | print(v) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {v=v*rH(a) | print(v) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | (fork((print(v);v=v*rH(a)));v=v+1) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {v=v*rH(a) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | (fork((print(v);v=v*rH(a)));v=v+1) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {v=v*rH(a) | } 
+Sym Table: a->(1, int), v->1,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | fork((print(v);v=v*rH(a))) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {} 
+Sym Table: a->(1, int), v->20,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | fork((print(v);v=v*rH(a))) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(print(v);v=v*rH(a)) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | v=v+1 | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {(print(v);v=v*rH(a)) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->3,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {v=v*rH(a) | print(v) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | while (v<3) {(fork((print(v);v=v*rH(a)));v=v+1)} | } 
+Sym Table: a->(1, int), v->3,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {v=v*rH(a) | print(v) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | } 
+Sym Table: a->(1, int), v->3,  
+Heap: 1 -> 20  
+Output Console: 0 1 2  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {v=v*rH(a) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1 2  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {print(rH(a)) | } 
+Sym Table: a->(1, int), v->3,  
+Heap: 1 -> 20  
+Output Console: 0 1 2  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {v=v*rH(a) | } 
+Sym Table: a->(1, int), v->2,  
+Heap: 1 -> 20  
+Output Console: 0 1 2  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {} 
+Sym Table: a->(1, int), v->3,  
+Heap: 1 -> 20  
+Output Console: 0 1 2 20  
+File Table:  
+ 
+
+
+Program state
+ID: 1000 
+Exe Stack: {} 
+Sym Table: a->(1, int), v->40,  
+Heap: 1 -> 20  
+Output Console: 0 1 2 20  
+File Table:  
+ 
+
+

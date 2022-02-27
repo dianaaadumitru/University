@@ -1,0 +1,108 @@
+Program state
+Exe Stack: {(string varf;(varf=test.in;(Open(varf);(int varc;(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf))))))))) | } 
+Sym Table:  
+Output Console:  
+File Table:  
+
+Program state
+Exe Stack: {(varf=test.in;(Open(varf);(int varc;(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf)))))))) | string varf | } 
+Sym Table:  
+Output Console:  
+File Table:  
+
+Program state
+Exe Stack: {(varf=test.in;(Open(varf);(int varc;(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf)))))))) | } 
+Sym Table: varf->  
+Output Console:  
+File Table:  
+
+Program state
+Exe Stack: {(Open(varf);(int varc;(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf))))))) | varf=test.in | } 
+Sym Table: varf->  
+Output Console:  
+File Table:  
+
+Program state
+Exe Stack: {(Open(varf);(int varc;(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf))))))) | } 
+Sym Table: varf->test.in  
+Output Console:  
+File Table:  
+
+Program state
+Exe Stack: {(int varc;(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf)))))) | Open(varf) | } 
+Sym Table: varf->test.in  
+Output Console:  
+File Table:  
+
+Program state
+Exe Stack: {(int varc;(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf)))))) | } 
+Sym Table: varf->test.in  
+Output Console:  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf))))) | int varc | } 
+Sym Table: varf->test.in  
+Output Console:  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(Read From varf into varc;(print(varc);(Read From varf into varc;(print(varc);close(varf))))) | } 
+Sym Table: varf->test.in varc->0  
+Output Console:  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(print(varc);(Read From varf into varc;(print(varc);close(varf)))) | Read From varf into varc | } 
+Sym Table: varf->test.in varc->0  
+Output Console:  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(print(varc);(Read From varf into varc;(print(varc);close(varf)))) | } 
+Sym Table: varf->test.in varc->15  
+Output Console:  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(Read From varf into varc;(print(varc);close(varf))) | print(varc) | } 
+Sym Table: varf->test.in varc->15  
+Output Console:  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(Read From varf into varc;(print(varc);close(varf))) | } 
+Sym Table: varf->test.in varc->15  
+Output Console: 15  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(print(varc);close(varf)) | Read From varf into varc | } 
+Sym Table: varf->test.in varc->15  
+Output Console: 15  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {(print(varc);close(varf)) | } 
+Sym Table: varf->test.in varc->50  
+Output Console: 15  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {close(varf) | print(varc) | } 
+Sym Table: varf->test.in varc->50  
+Output Console: 15  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {close(varf) | } 
+Sym Table: varf->test.in varc->50  
+Output Console: 15 50  
+File Table: test.in->java.io.BufferedReader@2e5d6d97  
+
+Program state
+Exe Stack: {} 
+Sym Table: varf->test.in varc->50  
+Output Console: 15 50  
+File Table:  
+

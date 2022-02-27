@@ -1,0 +1,1280 @@
+Program state
+ID: 1 
+Exe Stack: {(Ref(int) v1;(int cnt;(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))))))) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))))) | Ref(int) v1 | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))))) | Ref(int) v1 | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))))) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(int cnt;(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))))) | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))))) | int cnt | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))))) | int cnt | } 
+Sym Table: v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))))) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(new(v1, 1);(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))))) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))) | new(v1, 1) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))) | new(v1, 1) | } 
+Sym Table: cnt->0, v1->(0, int),  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(newSemaphore(cnt,rH(v1),10);(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))))) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))) | newSemaphore(cnt,rH(v1),10) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))) | newSemaphore(cnt,rH(v1),10) | } 
+Sym Table: cnt->0, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))));(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))));(Acquire(cnt);(print(rH(v1)-1);release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt)))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);release(cnt))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);release(cnt))) | fork((Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(Acquire(cnt);(print(rH(v1)-1);release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(wH(v1,rH(v1)*10);(print(rH(v1));release(cnt))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(Acquire(cnt);(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt))))) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));release(cnt)) | wH(v1,rH(v1)*10) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));release(cnt)) | wH(v1,rH(v1)*10) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 1  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {(print(rH(v1));release(cnt)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {release(cnt) | print(rH(v1)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {release(cnt) | print(rH(v1)) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {release(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 10 
+Exe Stack: {} 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(print(rH(v1)-1);release(cnt)) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+
+Program state
+ID: 100 
+Exe Stack: {(wH(v1,rH(v1)*10);(wH(v1,rH(v1)*2);(print(rH(v1));release(cnt)))) | Acquire(cnt) | } 
+Sym Table: cnt->2, v1->(1, int),  
+Heap: 1 -> 10  
+Output Console: 10  
+File Table:  
+ 
+
+

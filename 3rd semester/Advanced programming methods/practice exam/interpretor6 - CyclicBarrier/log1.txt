@@ -1,0 +1,20 @@
+Program state
+ID: 1 
+Exe Stack: {(int v;(v=2;print(v))) | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
+Program state
+ID: 1 
+Exe Stack: {(v=2;print(v)) | int v | } 
+Sym Table:  
+Heap:  
+Output Console:  
+File Table:  
+ 
+
+
