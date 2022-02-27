@@ -1,0 +1,9 @@
+(defun repl(l k e lvl)
+  (cond
+   ((and (atom l) (eq lvl k)) e)
+   ((atom l) l)
+   ((listp l) (mapcar #'(lambda(a) (repl a k e (+ 1 lvl)))l))
+   )
+)
+
+(print (repl '(a (b (g)) (c (d (e)) (f))) 2 'h -1))

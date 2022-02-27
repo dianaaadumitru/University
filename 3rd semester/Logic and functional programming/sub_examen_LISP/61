@@ -1,0 +1,12 @@
+;Given a nonlinear list, write a Lisp function to return the list with all non-numerical atoms on even levels removed. The superficial level is assumed 1. A MAP function shall be used.
+;Example for the list (a (1 (2 b)) (c (d))) the result is (a (1 (2 b)) ((d))
+
+(defun del(l lvl)
+  (cond
+   ((and (atom l) (and (not (numberp l))(equal (mod lvl 2) 0))) nil)
+   ((atom l) (list l))
+   ((list (mapcan #'(lambda(x) (del x (+ lvl 1)))l)))
+   )
+)
+
+(print (del '(a (1 (2 b)) (c (d))) 0))

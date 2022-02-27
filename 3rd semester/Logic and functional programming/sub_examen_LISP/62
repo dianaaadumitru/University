@@ -1,0 +1,14 @@
+; An n-ary tree is represented in Lisp as ( node subtree1 subtree2 ...). Write a Lisp function to return the list of nodes on the given level k. The root level is assumed zero. A MAP function shall be used. Example for the tree (a (b (g)) (c (d (e)) (f)))
+;a) k=2 => (g d) b) k=5 => ()
+
+(defun level(l k lvl)
+  (cond
+   ((and (atom l) (eq lvl k)) (list l))
+   ((atom l) nil)
+   (t(mapcan #'(lambda(a) (level a k (+ lvl 1))) l))
+   )
+)
+
+
+(print (level '(a (b (g)) (c (d (e)) (f))) 5 0 ))
+

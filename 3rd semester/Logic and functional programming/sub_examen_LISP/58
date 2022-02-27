@@ -1,0 +1,12 @@
+;Given a nonlinear list, write a Lisp function to replace the numerical values on off levels and greater than a given value k to their natural predecessor. The superficial level is assumed 1. A MAP function shall be used. Example for the list (1 s 4 (3 f (7))) and
+;a) k=0 the result is (0 s 3 (3 f (6))) b) k=8 the result is (1 s 4 (3 f (7))
+
+(defun change(l k)
+  (cond
+   ((and (atom l) (numberp l) (>= l k)) (- l 1))
+   ((atom l) l)
+   (t (listp l) (mapcar #'(lambda(a) (change a k))l))
+   )
+)
+
+(print (change '(1 s 4 (3 f (7))) 0 ))

@@ -1,0 +1,5 @@
+subs([],[]).
+subs([H|T],[H|R]):-
+subs(T,R).
+subs([_|T],R):-
+subs(T,R).

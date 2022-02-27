@@ -1,0 +1,13 @@
+;Given a nonlinear list, write a Lisp function to replace all the odd values from even levels with their natural successor. The superficial level is assumed 1. A MAP function shall be used.
+;Example for the list (1 s 4 (3 f (7))) the result is (1 s 4 (4 f (7)))
+
+(defun replace1(l lvl)
+  (cond
+  ((and (atom l)(and (numberp l) (and (eq (mod l 2) 1)(eq (mod lvl 2) 0)))) (+ 1 l))
+  ((atom l) l)
+  ((listp l)(mapcar #'(lambda(a) (replace1 a (+ 1 lvl))) l))
+  )
+)
+
+
+(print (replace1 '(1 s 4 (3 f (7 (5 (9 (11)) )))) 0))

@@ -1,0 +1,15 @@
+;Write twice the n-th element of a linear list. Example: for (10 20 30 40 50) and n=3 will produce (10 20 30 30 40 50).
+
+(defun twice(l n)
+  (cond
+   ((null l) nil)
+   ((eq 1  n) (cons (car l) l))
+   (t (cons (car l) (twice (cdr l) (- n 1))))
+   )
+)
+
+;(print (twice '(10 20 30 40 50) 7))
+
+
+;Write a function to return an association list with the two lists given as parameters.
+;Example: (A B C) (X Y Z) --> ((A.X) (B.Y) (C.Z)).

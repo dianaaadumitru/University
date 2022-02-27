@@ -1,0 +1,172 @@
+;11
+;a) Determine the least common multiple of the numerical values of a nonlinear list
+
+
+;_gcd(a, b) = 
+;         nil, if a is not a number and b is not a number
+;         b, if a is not a number
+;         a, if b is not a number
+;         a, if b = 0
+;         _gcd(b, a%b), otherwise
+
+
+(defun _gcd (a b)
+    (cond
+        ((and (not (numberp a)) (not (numberp b))) nil)
+        ((not (numberp a)) b)
+        ((not (numberp b)) a)
+        ((equal b 0) a)
+        (T (_gcd b (mod a b)))
+    )
+)
+
+
+;_lcm(a, b) = 
+;         nil, if a is not a number and b is not a number
+;         b, if a is not a number
+;         a, if b is not a number
+;         a, if b = 0
+;         a * b / _gcd(a, b), otherwise
+
+
+(defun _lcm (a b)
+  (cond
+   ((and (not (numberp a)) (not (numberp b))) nil)
+   ((not (numberp a)) b)
+   ((not (numberp b)) a)
+   ((equal b 0) a)
+   (T (/ (* a b) (_gcd a b)))
+  )
+)
+
+
+
+;list_lcm(l1l2...ln)=
+;        l1, if n = 1
+;        _lcm(list_lcm(l1, list_lcm(l2...ln))), if l1 is a list
+;        _lcm(l1, list_lcm(l2...ln), otherwise
+
+(defun list_lcm (l)
+  (cond
+   ((and (atom (car l)) (null (cdr l))) (car l))
+   ((listp (car l)) (_lcm (list_lcm (car l)) (list_lcm (cdr l))))
+   (T (_lcm (car l) (list_lcm (cdr l))))
+  )
+)
+
+
+;(print (list_lcm '((24 48) 36 ( 16 (12 A B)) 72)))
+;(print (list_lcm '(36)))
+;(print (list_lcm '()))
+;(print (list_lcm '(36 (A B C))))
+
+
+
+; b) Write a function to test if a linear list of numbers has a "mountain" aspect (a list has a "mountain" aspect if the items increase to a certain point and then decreases.
+;Eg. (10 18 29 17 11 10). The list must have at least 3 atoms to fullfil this criteria.
+
+
+;_mountain((l1l2...ln, decreasing) = 
+;         T, if n = 1 and decreasing = nil
+;         nil, if l1 < l2 and decreasing = nil
+;         _mountain(l2...ln, nil), l1 > l2 and decrasing = T
+;         _mountain(l2...ln, decreasing), otherwise
+
+(defun _mountain (l decreasing)
+	(cond
+		((= (list-length l) 1) (if decreasing nil T))
+		((and (< (car l) (cadr l)) (not decreasing)) nil)
+		((and (> (car l) (cadr l)) decreasing) (_mountain (cdr l) nil))
+		(T (_mountain (cdr l) decreasing))
+	)
+)
+
+(defun mountain (l)
+	(if (< (list-length l) 3)
+		nil
+		(_mountain l T)
+	)
+)
+
+;(print (mountain '(10 18 29 17 11 10)))
+;(print (mountain '(10 18 29 17 11 18 10)))
+
+
+
+
+; c) Remove all occurrences of a maximum numerical element from a nonlinear list.
+
+
+(defun max_nb (a b)
+    (if (> a b) a b)
+)
+
+
+; max_num(l1l2...ln) = 
+;       -1, n = 0
+;       l1, if l1 is a number and n = 1
+;       max_nb(l1, max_num(l2...ln), if l1 is a number
+;       max_nb(max_num(l1), max_num(l2...ln), if l1 is a list
+;       max_num(l2...ln), otherwise
+
+
+(defun max_num (l)
+    (cond
+        ((null l) -1)
+        ((and (null (cdr l)) (numberp (car l))) (car l))
+        ((numberp (car l)) (max_nb (car l) (max_num (cdr l))))
+        ((listp (car l)) (max_nb (max_num (car l)) (max_num (cdr l))))
+        (T (max_num (cdr l)))
+     )
+)
+
+
+;remove_all_occ(l1l2...ln, e) = 
+;        nil, n = 0
+;        remove_all_occ(l1) + remove_all_occ(l2...ln), if l1 is a list
+;        remove_all_occ(l2...ln), if l1 = e
+;        l1 + remove_all_occ(l2...ln), otherwise
+
+
+(defun remove_all_occ (l e)
+  (cond
+   ((null l) nil)
+   ((listp (car l)) (cons (remove_all_occ (car l) e) (remove_all_occ (cdr l) e)) )
+   ((equal (car l) e) (remove_all_occ(cdr l) e))
+   (t (cons (car l) (remove_all_occ(cdr l) e)))
+ )
+)
+
+(defun remove_maxi (l)
+  (remove_all_occ l (max_num l))
+)
+
+;(print (remove_maxi '(1 2 5 (3 5 (a) (1 5 3)) 4 5)))
+;(print (remove_maxi '(1)))
+;(print (remove_maxi '(d)))
+;(print (remove_maxi '()))
+;(print (remove_maxi '(8 8 8 8)))
+
+
+; d) Write a function which returns the product of numerical even atoms from a list, to any level.
+
+
+;prod_list(l1l2...ln) = 
+;        1, n = 0
+;        l1 * prod_list(l2...ln), l1 % 2 == 0
+;        prod_list(l1) * prod_list(l2...ln), if l1 is a list
+;        prod_list(l2...ln), otherwise
+
+(DEFUN prod_list (L)
+  (COND
+   ((NULL L) 1)
+   ((and (NUMBERP (CAR L)) (= (mod (CAR L) 2) 0))(* (CAR L) (prod_list (CDR L))))
+   ((ATOM (CAR L)) (prod_list (CDR L)))
+   (T (* (prod_list (CAR L)) (prod_list (CDR L))))
+  )
+)
+;(print(prod_list '(1 (2 (C 3)) E 4 5 (2 4) 8)))
+;(print(prod_list '()))
+;(print(prod_list '(1 3 1 (5 9 1))))
+;(print(prod_list '(a e f t g)))
+

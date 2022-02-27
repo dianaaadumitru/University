@@ -1,0 +1,4 @@
+%Write a predicate to compute the union of two sets.
+
+search([H|_],EL):-!.
+search([_|T], EL):- search(T,EL).

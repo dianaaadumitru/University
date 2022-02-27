@@ -1,0 +1,54 @@
+;Write a function to return the n-th element of a list, or NIL if such an element does not exist.
+
+(defun elem(l n p)
+  (cond
+       ((null l) nil)
+       ((eq n p) (car l))
+       (t (elem (cdr l) n (+ p 1)))
+   )
+)
+
+(defun solve(x n)
+  (elem x n 1)
+)
+
+;Write a function to check whether an atom E is a member of a list which is not necessarily linear.
+
+(defun member1(l e)
+  (cond
+   ((null l) nil)
+   ((eq (car l) e) t)
+   ((listp (car l)) (member1 (car l) e))
+   (t (member1 (cdr l) e))
+   )
+)
+
+;(print (member1 '(2 (7 8 5 c 3) a (6 9 v) 0) 'i))
+
+;Write a function to determine the list of all sublists of a given list, on any level.
+;A sublist is either the list itself, or any element that is a list, at any level. Example:
+;(1 2 (3 (4 5) (6 7)) 8 (9 10)) => 5 sublists :
+;( (1 2 (3 (4 5) (6 7)) 8 (9 10)) (3 (4 5) (6 7)) (4 5) (6 7) (9 10) )
+
+(defun subs(l r)
+  (cond
+   ((null l) r)
+   ((listp (car l)) (subs (car l) (append r (list (car l)))))
+   (t (subs (cdr l) r))
+   )
+)
+
+;(print (subs '(1 2 (3 (4 5) (6 7)) 8 (9 10)) () ))
+
+
+;Write a function to transform a linear list into a set
+
+(defun set1(l r)
+  (cond
+   ((null l) r)
+   ((not (member1 r (car l))) (set1 (cdr l) (append r (list (car l)))))
+   (t (set1 (cdr l) r))
+   )
+)
+
+;(print (set1 '(1 2 34 5 1 2 3 3 7 8 7 5) ()))

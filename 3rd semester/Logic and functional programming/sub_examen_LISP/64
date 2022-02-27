@@ -1,0 +1,14 @@
+;Given a nonlinear list, write a Lisp function to return the list with all even numerical atoms from an odd level removed. The superficial level is assumed 1. A MAP function shall be used.
+;Example a) if the list is (1 (2 A (4 A)) (6)) => (1 (2 A (A)) (6))
+;b) if the list is (1 (2 (C))) => (1 (2 (C))
+
+
+(defun del(l lvl)
+  (cond
+   ((and (atom l) (numberp l) (evenp l) (oddp lvl)) nil)
+   ((atom l) (list l))
+   (t (list (mapcan #'(lambda(a) (del a (+ 1 lvl))) l)))
+   )
+)
+
+(print (del '(1 (2 (C))) 0))
