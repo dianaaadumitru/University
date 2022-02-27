@@ -1,0 +1,92 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain/domain.cpp
+domain.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain/domain.h
+windows.h
+-
+shellapi.h
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain/domain.h
+iostream
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/dynamic_vector/array.cpp
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/dynamic_vector/array.h
+iostream
+-
+../domain/domain.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain/domain.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/iterator/iterator.cpp
+iterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/iterator/iterator.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/iterator/iterator.h
+../dynamic_vector/array.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/dynamic_vector/array.h
+../domain/domain.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain/domain.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/main.cpp
+iostream
+-
+string
+-
+ui/UI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/ui/UI.h
+stdlib.h
+-
+tests/tests.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests/tests.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo/repo.cpp
+repo.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo/repo.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo/repo.h
+../dynamic_vector/array.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/dynamic_vector/array.h
+../domain/domain.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain/domain.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service/service.cpp
+service.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service/service.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service/service.h
+../repo/repo.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo/repo.h
+../iterator/iterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/iterator/iterator.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests/tests.cpp
+tests.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests/tests.h
+cassert
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests/tests.h
+../ui/UI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/ui/UI.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/ui/UI.cpp
+UI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/ui/UI.h
+iostream
+-
+string
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/ui/UI.h
+../service/service.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service/service.h
+

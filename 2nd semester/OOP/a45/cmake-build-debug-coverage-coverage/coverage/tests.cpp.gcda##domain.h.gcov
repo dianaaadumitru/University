@@ -1,0 +1,76 @@
+        -:    0:Source:c:/users/diana/desktop/uni work/2nd sem/oop/a45-913-dumitru-diana/domain/domain.h
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#pragma once
+        -:    2:#include <iostream>
+        -:    3:
+        -:    4:class Duration
+        -:    5:{
+        -:    6:private:
+        -:    7:    double minutes, seconds;
+        -:    8:
+        -:    9:public:
+        -:   10:    Duration() : minutes(0), seconds(0) {};
+        -:   11:
+        -:   12:    //constructor
+    #####:   13:    Duration(double min, double sec): minutes(min), seconds(sec) {};
+    $$$$$:   13-block  0
+        -:   14:
+        -:   15:    //getters and setters
+        -:   16:
+        2:   17:    double getMinutes() const { return minutes; }
+        1:   17-block  0
+        1:   17-block  1
+        6:   18:    double getSeconds() const { return seconds; }
+        3:   18-block  0
+        3:   18-block  1
+        -:   19:    void setMinutes(double min) { minutes = min; }
+        -:   20:    void setSeconds(double sec) { seconds = sec; }
+        -:   21:
+        -:   22:};
+        -:   23:
+    #####:   24:class Tutorial
+    $$$$$:   24-block  0
+    $$$$$:   24-block  1
+    $$$$$:   24-block  2
+    $$$$$:   24-block  3
+    $$$$$:   24-block  4
+    $$$$$:   24-block  5
+    %%%%%:   24-block  6
+    %%%%%:   24-block  7
+    $$$$$:   24-block  8
+    $$$$$:   24-block  9
+        -:   25:{
+        -:   26:private:
+        -:   27:    /*
+        -:   28:     * UNIQUELY IDENTIFIED BY THEIR PRESENTER AND TITLE
+        -:   29:     */
+        -:   30:    std::string title;
+        -:   31:    std::string presenter;
+        -:   32:    Duration duration;
+        -:   33:    int likes;
+        -:   34:    std::string link;
+        -:   35:public:
+        -:   36:    // default constructor for a playlist
+        -:   37:    Tutorial();
+        -:   38://    ~Tutorial();
+        -:   39:
+        -:   40:    // constructor with parameters
+        -:   41:    Tutorial(const std::string& title, const std::string& presenter, const Duration& duration, const int& likes, const std::string& link);
+        -:   42:
+        -:   43:    //getters and setters
+        -:   44:    std::string get_title() const;
+        -:   45:    std::string get_presenter() const;
+        -:   46:    int get_no_of_likes() const;
+        -:   47:    std::string get_link() const;
+        -:   48:    Duration get_duration() const;
+        -:   49:    void set_title(std::string& value){title = value;}
+        -:   50:
+        -:   51:    void open_link() const;
+        -:   52:    void like();
+        -:   53:
+        -:   54:    void destroy(Tutorial t);
+        -:   55:
+        -:   56:};

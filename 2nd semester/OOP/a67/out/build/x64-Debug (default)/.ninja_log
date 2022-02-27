@@ -1,0 +1,15 @@
+# ninja log v5
+6	193	642602760	CMakeFiles/a67_913_Dumitru_Diana.dir/dynamic_vector/array.cpp.obj	8cec305bde91c856
+35	314	642602760	CMakeFiles/a67_913_Dumitru_Diana.dir/tests/tests.cpp.obj	46c2d2c7cd89caa2
+13	1681	642602761	CMakeFiles/a67_913_Dumitru_Diana.dir/repo/repo.cpp.obj	ce276dbaf9955d0d
+22	1686	642602761	CMakeFiles/a67_913_Dumitru_Diana.dir/repo/FileRepo.cpp.obj	3b2d5b0f72032a5a
+314	1707	642602761	CMakeFiles/a67_913_Dumitru_Diana.dir/utils/utils.cpp.obj	c9df391e96edcd5d
+17	1754	642602761	CMakeFiles/a67_913_Dumitru_Diana.dir/iterator/iterator.cpp.obj	662d773124843a58
+42	1755	642602761	CMakeFiles/a67_913_Dumitru_Diana.dir/ui/UI.cpp.obj	6e330accf876d277
+38	1879	642602761	CMakeFiles/a67_913_Dumitru_Diana.dir/service/service.cpp.obj	de37a29348ce1fc6
+194	1915	642602761	CMakeFiles/a67_913_Dumitru_Diana.dir/main.cpp.obj	c62d457ed96c3bcd
+1682	2200	642602762	CMakeFiles/a67_913_Dumitru_Diana.dir/validator/validator.cpp.obj	c80e3bac54164985
+2	2464	642602762	CMakeFiles/a67_913_Dumitru_Diana.dir/domain/domain.cpp.obj	83b22e5537ea04d2
+26	2572	642602762	CMakeFiles/a67_913_Dumitru_Diana.dir/repo/CSVRepo.cpp.obj	ec4b0a50ef4e87df
+10	2596	642602762	CMakeFiles/a67_913_Dumitru_Diana.dir/repo/HTMLRepo.cpp.obj	a46d9eb882b0d505
+2596	3164	642602763	a67_913_Dumitru_Diana.exe	d518688abf816da2

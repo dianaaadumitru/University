@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/linked list lab 2/IndexedList.cpp
+exception
+-
+IndexedList.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/linked list lab 2/IndexedList.h
+ListIterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/linked list lab 2/ListIterator.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/linked list lab 2/IndexedList.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/linked list lab 2/ListIterator.h
+IndexedList.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/linked list lab 2/IndexedList.h
+

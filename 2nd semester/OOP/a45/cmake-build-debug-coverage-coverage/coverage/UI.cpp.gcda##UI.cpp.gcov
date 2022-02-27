@@ -1,0 +1,854 @@
+        -:    0:Source:C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/ui/UI.cpp
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\ui\UI.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\ui\UI.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "UI.h"
+        -:    2:#include <iostream>
+        -:    3:#include <string>
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+        -:    7:
+        1:    8:void UI::print_menu()
+        1:    8-block  0
+        -:    9:{
+        1:   10:    cout<<"\nPossible commands:\n";
+        1:   10-block  0
+        1:   11:    cout<<"1. Administrator mode\n";
+        1:   12:    cout<<"2. User mode\n";
+        1:   13:    cout<<"0. Exit\n";
+        1:   14:}
+        -:   15:
+    #####:   16:void UI::print_menu_administrator()
+    $$$$$:   16-block  0
+        -:   17:{
+    #####:   18:    cout<<"\nPossible commands:\n";
+    $$$$$:   18-block  0
+    #####:   19:    cout<<"1. Display tutorials\n";
+    #####:   20:    cout<<"2. Add tutorial\n";
+    #####:   21:    cout<<"3. Remove tutorial\n";
+    #####:   22:    cout<<"4. Update tutorial\n";
+    #####:   23:    cout<<"0. Back\n";
+    #####:   24:}
+        -:   25:
+    #####:   26:void UI::print_menu_user() {
+    $$$$$:   26-block  0
+    #####:   27:    cout<<" \nPossible commands:\n";
+    $$$$$:   27-block  0
+    #####:   28:    cout<<" 10. See tutorials\n";
+    #####:   29:    cout<<"1. View watchlist\n";
+    #####:   30:    cout<<"2. Add tutorial to watchlist\n";
+    #####:   31:    cout<<"3. Delete tutorial from watchlist\n";
+    #####:   32:    cout<<"4. Next\n";
+    #####:   33:    cout<<"0. Back\n";
+    #####:   34:}
+        -:   35:
+        -:   36:
+    #####:   37:void UI::display_tutorials_ui()
+    $$$$$:   37-block  0
+        -:   38:{
+    #####:   39:    DynamicVector<Tutorial> array = this->service.get_repo().get_tutorials();
+    $$$$$:   39-block  0
+    $$$$$:   39-block  1
+    $$$$$:   39-block  2
+    $$$$$:   39-block  3
+    $$$$$:   39-block  4
+    $$$$$:   39-block  5
+    $$$$$:   39-block  6
+    %%%%%:   39-block  7
+    %%%%%:   39-block  8
+    #####:   40:    Tutorial* tutorials = array.get_all_elems();
+    #####:   41:    if (array.getSize() == 0)
+        -:   42:    {
+    #####:   43:        cout<<"There are no tutorials available!\n";
+    $$$$$:   43-block  0
+    #####:   44:        return;
+    $$$$$:   44-block  0
+        -:   45:    }
+    #####:   46:    for (int i = 0; i < array.getSize(); ++i) {
+    $$$$$:   46-block  0
+    $$$$$:   46-block  1
+    $$$$$:   46-block  2
+    $$$$$:   46-block  3
+    #####:   47:        cout<<i + 1<<". ";
+    $$$$$:   47-block  0
+    $$$$$:   47-block  1
+    #####:   48:        Tutorial t = tutorials[i];
+    $$$$$:   48-block  0
+    $$$$$:   48-block  1
+    %%%%%:   48-block  2
+    %%%%%:   48-block  3
+    #####:   49:        this->print_tutorial_ui(t);
+    $$$$$:   49-block  0
+        -:   50:    }
+        -:   51:}
+        -:   52://void UI::display_tutorials_ui() {
+        -:   53://    DynamicVector array = this->service.get_repo().get_tutorials();
+        -:   54://    Tutorial* tutorials = array.get_all_elems();
+        -:   55://    if (array.getSize() == 0)
+        -:   56://    {
+        -:   57://        cout<<"There are no tutorials available!\n";
+        -:   58://        return;
+        -:   59://    }
+        -:   60:
+        -:   61://    for (int i = 0; i < array.getSize(); ++i) {
+        -:   62://        cout<<i + 1<<". ";
+        -:   63://        Tutorial t = tutorials[i];
+        -:   64://        this->print_tutorial_ui(t);
+        -:   65://    }
+        -:   66://}
+        -:   67:
+    #####:   68:void UI::print_tutorial_ui(const Tutorial& t)
+    $$$$$:   68-block  0
+        -:   69:{
+    #####:   70:    Duration d = t.get_duration();
+    $$$$$:   70-block  0
+    #####:   71:    cout << "Title: " << t.get_title() << endl;
+    $$$$$:   71-block  0
+    $$$$$:   71-block  1
+    $$$$$:   71-block  2
+    $$$$$:   71-block  3
+    $$$$$:   71-block  4
+    %%%%%:   71-block  5
+    #####:   72:    cout << "   Presenter: " << t.get_presenter() << endl;
+    $$$$$:   72-block  0
+    $$$$$:   72-block  1
+    $$$$$:   72-block  2
+    $$$$$:   72-block  3
+    %%%%%:   72-block  4
+    #####:   73:    cout<<  "   Number of likes: "<<t.get_no_of_likes() << endl;
+    $$$$$:   73-block  0
+    $$$$$:   73-block  1
+    $$$$$:   73-block  2
+    #####:   74:    cout << "   Duration: " << d.getMinutes() << ":" << d.getSeconds() << endl;
+    $$$$$:   74-block  0
+    $$$$$:   74-block  1
+    $$$$$:   74-block  2
+    $$$$$:   74-block  3
+    $$$$$:   74-block  4
+    #####:   75:    cout << "   Link: "<<t.get_link()<<endl<<endl;
+    $$$$$:   75-block  0
+    $$$$$:   75-block  1
+    $$$$$:   75-block  2
+    $$$$$:   75-block  3
+    $$$$$:   75-block  4
+    $$$$$:   75-block  5
+    %%%%%:   75-block  6
+    #####:   76:}
+        -:   77:
+    #####:   78:void UI::add_tutorial_ui()
+    $$$$$:   78-block  0
+        -:   79:{
+    #####:   80:    cin.ignore();
+    $$$$$:   80-block  0
+    #####:   81:    cout << "Enter the title: ";
+    $$$$$:   81-block  0
+    #####:   82:    std::string title;
+    $$$$$:   82-block  0
+    $$$$$:   82-block  1
+    $$$$$:   82-block  2
+    $$$$$:   82-block  3
+    $$$$$:   82-block  4
+    %%%%%:   82-block  5
+    #####:   83:    getline(cin, title);
+    #####:   84:    if (title == "")
+    $$$$$:   84-block  0
+    $$$$$:   84-block  1
+        -:   85:    {
+    #####:   86:        cout<<"\nInvalid input!\n";
+    $$$$$:   86-block  0
+    #####:   87:        return;
+    $$$$$:   87-block  0
+        -:   88:    }
+    #####:   89:    cout << "Enter the presenter: ";
+    $$$$$:   89-block  0
+    #####:   90:    std::string presenter;
+    $$$$$:   90-block  0
+    $$$$$:   90-block  1
+    $$$$$:   90-block  2
+    $$$$$:   90-block  3
+    $$$$$:   90-block  4
+    %%%%%:   90-block  5
+    #####:   91:    getline(cin, presenter);
+    #####:   92:    if (presenter == "")
+    $$$$$:   92-block  0
+    $$$$$:   92-block  1
+        -:   93:    {
+    #####:   94:        cout<<"\nInvalid input!\n";
+    $$$$$:   94-block  0
+    #####:   95:        return;
+    $$$$$:   95-block  0
+        -:   96:    }
+        -:   97:    double minutes, seconds;
+    #####:   98:    cout << "Enter the duration: " << endl;
+    $$$$$:   98-block  0
+    $$$$$:   98-block  1
+    #####:   99:    cout << "\tMinutes: ";
+    $$$$$:   99-block  0
+    #####:  100:    cin >> minutes;
+    $$$$$:  100-block  0
+    #####:  101:    if (minutes < 0)
+    $$$$$:  101-block  0
+        -:  102:    {
+    #####:  103:        cout<<"\nInvalid input!\n";
+    $$$$$:  103-block  0
+    #####:  104:        return;
+    $$$$$:  104-block  0
+        -:  105:    }
+    #####:  106:    cin.ignore();
+    $$$$$:  106-block  0
+    #####:  107:    cout << "\tSeconds: ";
+    $$$$$:  107-block  0
+    #####:  108:    cin >> seconds;
+    $$$$$:  108-block  0
+    #####:  109:    if (seconds < 0 || seconds >59)
+    $$$$$:  109-block  0
+    $$$$$:  109-block  1
+        -:  110:    {
+    #####:  111:        cout<<"\nInvalid input!\n";
+    $$$$$:  111-block  0
+    #####:  112:        return;
+    $$$$$:  112-block  0
+        -:  113:    }
+    #####:  114:    cin.ignore();
+    $$$$$:  114-block  0
+        -:  115:    int likes;
+    #####:  116:    cout << "Number of likes: ";
+    $$$$$:  116-block  0
+    #####:  117:    cin >> likes;
+    $$$$$:  117-block  0
+    #####:  118:    if (likes < 0)
+    $$$$$:  118-block  0
+        -:  119:    {
+    #####:  120:        cout<<"\nInvalid input!\n";
+    $$$$$:  120-block  0
+    #####:  121:        return;
+    $$$$$:  121-block  0
+        -:  122:    }
+    #####:  123:    cin.ignore();
+    $$$$$:  123-block  0
+    #####:  124:    cout << "Link to the tutorial: ";
+    $$$$$:  124-block  0
+    #####:  125:    std::string link;
+    $$$$$:  125-block  0
+    $$$$$:  125-block  1
+    $$$$$:  125-block  2
+    $$$$$:  125-block  3
+    $$$$$:  125-block  4
+    %%%%%:  125-block  5
+    #####:  126:    getline(cin, link);
+    #####:  127:    if (link == "")
+    $$$$$:  127-block  0
+    $$$$$:  127-block  1
+        -:  128:    {
+    #####:  129:        cout<<"\nInvalid input!\n";
+    $$$$$:  129-block  0
+    #####:  130:        return;
+    $$$$$:  130-block  0
+        -:  131:    }
+    #####:  132:    int ok = this->service.add_tutorial_service(title, presenter, minutes, seconds, likes, link);
+    $$$$$:  132-block  0
+    #####:  133:    if(ok)
+    $$$$$:  133-block  0
+    #####:  134:        cout << "\nTutorial added successfully!\n";
+    $$$$$:  134-block  0
+    $$$$$:  134-block  1
+        -:  135:    else
+    #####:  136:        cout << "\nYou cannot have 2 offers with the same title and presenter!\n";
+    $$$$$:  136-block  0
+    $$$$$:  136-block  1
+    $$$$$:  136-block  2
+        -:  137:}
+        -:  138:
+    #####:  139:void UI::remove_tutorial_ui()
+    $$$$$:  139-block  0
+        -:  140:{
+    #####:  141:    cin.ignore();
+    $$$$$:  141-block  0
+    #####:  142:    cout << "Enter the title: ";
+    $$$$$:  142-block  0
+    #####:  143:    std::string title;
+    $$$$$:  143-block  0
+    $$$$$:  143-block  1
+    $$$$$:  143-block  2
+    $$$$$:  143-block  3
+    $$$$$:  143-block  4
+    %%%%%:  143-block  5
+    #####:  144:    getline(cin, title);
+    #####:  145:    if (title == "")
+    $$$$$:  145-block  0
+    $$$$$:  145-block  1
+        -:  146:    {
+    #####:  147:        cout<<"\nInvalid input!\n";
+    $$$$$:  147-block  0
+    #####:  148:        return;
+    $$$$$:  148-block  0
+        -:  149:    }
+    #####:  150:    cout << "Enter the presenter: ";
+    $$$$$:  150-block  0
+    #####:  151:    std::string presenter;
+    $$$$$:  151-block  0
+    $$$$$:  151-block  1
+    $$$$$:  151-block  2
+    $$$$$:  151-block  3
+    $$$$$:  151-block  4
+    %%%%%:  151-block  5
+    #####:  152:    getline(cin, presenter);
+    #####:  153:    if (presenter == "")
+    $$$$$:  153-block  0
+    $$$$$:  153-block  1
+        -:  154:    {
+    #####:  155:        cout<<"\nInvalid input!\n";
+    $$$$$:  155-block  0
+    #####:  156:        return;
+    $$$$$:  156-block  0
+        -:  157:    }
+        -:  158:
+    #####:  159:    bool ok = this->service.remove_tutorial_service(presenter, title);
+    $$$$$:  159-block  0
+    #####:  160:    if(ok)
+    $$$$$:  160-block  0
+    #####:  161:        cout<<"\nTutorial removed successfully!\n";
+    $$$$$:  161-block  0
+    $$$$$:  161-block  1
+        -:  162:    else
+    #####:  163:        cout<<"\nTutorial does not exist!\n";
+    $$$$$:  163-block  0
+    $$$$$:  163-block  1
+    $$$$$:  163-block  2
+        -:  164:}
+        -:  165:
+    #####:  166:void UI::update_tutorial_ui()
+    $$$$$:  166-block  0
+        -:  167:{
+    #####:  168:    cin.ignore();
+    $$$$$:  168-block  0
+    #####:  169:    cout << "Enter the title: ";
+    $$$$$:  169-block  0
+    #####:  170:    std::string title;
+    $$$$$:  170-block  0
+    $$$$$:  170-block  1
+    $$$$$:  170-block  2
+    $$$$$:  170-block  3
+    $$$$$:  170-block  4
+    %%%%%:  170-block  5
+    %%%%%:  170-block  6
+    #####:  171:    getline(cin, title);
+    #####:  172:    if (title == "")
+    $$$$$:  172-block  0
+    $$$$$:  172-block  1
+        -:  173:    {
+    #####:  174:        cout<<"\nInvalid input!\n";
+    $$$$$:  174-block  0
+    #####:  175:        return;
+    $$$$$:  175-block  0
+        -:  176:    }
+    #####:  177:    cout << "Enter the presenter: ";
+    $$$$$:  177-block  0
+    #####:  178:    std::string presenter;
+    $$$$$:  178-block  0
+    $$$$$:  178-block  1
+    $$$$$:  178-block  2
+    $$$$$:  178-block  3
+    $$$$$:  178-block  4
+    %%%%%:  178-block  5
+    #####:  179:    getline(cin, presenter);
+    #####:  180:    if (presenter == "")
+    $$$$$:  180-block  0
+    $$$$$:  180-block  1
+        -:  181:    {
+    #####:  182:        cout<<"\nInvalid input!\n";
+    $$$$$:  182-block  0
+    #####:  183:        return;
+    $$$$$:  183-block  0
+        -:  184:    }
+    #####:  185:    Tutorial t = this->service.get_repo().find_by_presenter_and_title(presenter, title);
+    $$$$$:  185-block  0
+    $$$$$:  185-block  1
+    $$$$$:  185-block  2
+    $$$$$:  185-block  3
+    $$$$$:  185-block  4
+    $$$$$:  185-block  5
+    $$$$$:  185-block  6
+    %%%%%:  185-block  7
+    #####:  186:    if (t.get_presenter() == "" && t.get_title() == "")
+    $$$$$:  186-block  0
+    $$$$$:  186-block  1
+    $$$$$:  186-block  2
+    $$$$$:  186-block  3
+    $$$$$:  186-block  4
+    $$$$$:  186-block  5
+    $$$$$:  186-block  6
+    $$$$$:  186-block  7
+    $$$$$:  186-block  8
+    $$$$$:  186-block  9
+    $$$$$:  186-block 10
+    $$$$$:  186-block 11
+    %%%%%:  186-block 12
+    %%%%%:  186-block 13
+    %%%%%:  186-block 14
+    %%%%%:  186-block 15
+    %%%%%:  186-block 16
+    %%%%%:  186-block 17
+        -:  187:    {
+    #####:  188:        cout<<"\nThis tutorial does not exist!\n";
+    $$$$$:  188-block  0
+    #####:  189:        return;
+    $$$$$:  189-block  0
+        -:  190:    }
+    #####:  191:    cout<<"What do you want to update?\n 1. Title\n 2. Presenter\n 3. Duration\n 4. Likes\n 5. Link\n";
+    $$$$$:  191-block  0
+        -:  192:    int op;
+        -:  193:    bool ok;
+    #####:  194:    cout<<">>";
+    $$$$$:  194-block  0
+    #####:  195:    cin>>op;
+    $$$$$:  195-block  0
+    #####:  196:    cin.ignore();
+    $$$$$:  196-block  0
+    #####:  197:    if (op == 1 || op == 2 || op == 5)
+    $$$$$:  197-block  0
+    $$$$$:  197-block  1
+    $$$$$:  197-block  2
+        -:  198:    {
+    #####:  199:        std::string new_title;
+    $$$$$:  199-block  0
+    $$$$$:  199-block  1
+    %%%%%:  199-block  2
+    %%%%%:  199-block  3
+    %%%%%:  199-block  4
+    %%%%%:  199-block  5
+    #####:  200:        cout<<"New element: ";
+    #####:  201:        getline(cin, new_title);
+    $$$$$:  201-block  0
+    #####:  202:        if (new_title == "")
+    $$$$$:  202-block  0
+    $$$$$:  202-block  1
+        -:  203:        {
+    #####:  204:            cout<<"\nInvalid input\n";
+    $$$$$:  204-block  0
+    #####:  205:            return;
+    $$$$$:  205-block  0
+        -:  206:        }
+    #####:  207:        ok = this->service.update_tutorial_service(presenter, title, op, new_title);
+    $$$$$:  207-block  0
+    $$$$$:  207-block  1
+    $$$$$:  207-block  2
+    $$$$$:  207-block  3
+    $$$$$:  207-block  4
+        -:  208:    }
+    #####:  209:    else if (op == 3)
+    $$$$$:  209-block  0
+        -:  210:    {
+        -:  211:        double minutes, seconds;
+    #####:  212:        cout << "Enter the duration: " << endl;
+    $$$$$:  212-block  0
+    $$$$$:  212-block  1
+    #####:  213:        cout << "\tMinutes: ";
+    $$$$$:  213-block  0
+    #####:  214:        cin >> minutes;
+    $$$$$:  214-block  0
+    #####:  215:        if (minutes < 0)
+    $$$$$:  215-block  0
+        -:  216:        {
+    #####:  217:            cout<<"\nInvalid input!\n";
+    $$$$$:  217-block  0
+    #####:  218:            return;
+    $$$$$:  218-block  0
+    $$$$$:  218-block  1
+        -:  219:        }
+    #####:  220:        cin.ignore();
+    $$$$$:  220-block  0
+    #####:  221:        cout << "\tSeconds: ";
+    $$$$$:  221-block  0
+    #####:  222:        cin >> seconds;
+    $$$$$:  222-block  0
+    #####:  223:        if (seconds < 0 || seconds >59)
+    $$$$$:  223-block  0
+    $$$$$:  223-block  1
+        -:  224:        {
+    #####:  225:            cout<<"\nInvalid input!\n";
+    $$$$$:  225-block  0
+    #####:  226:            return;
+    $$$$$:  226-block  0
+        -:  227:        }
+    #####:  228:        ok = this->service.update_tutorial_duration_service(presenter, title, minutes, seconds);
+    $$$$$:  228-block  0
+    $$$$$:  228-block  1
+        -:  229:    }
+    #####:  230:    else if (op == 4)
+    $$$$$:  230-block  0
+        -:  231:    {
+        -:  232:        int likes;
+    #####:  233:        cout << "Number of likes: ";
+    $$$$$:  233-block  0
+    #####:  234:        cin >> likes;
+    $$$$$:  234-block  0
+    #####:  235:        if (likes < 0)
+    $$$$$:  235-block  0
+        -:  236:        {
+    #####:  237:            cout<<"\nInvalid input!\n";
+    $$$$$:  237-block  0
+    #####:  238:            return;
+    $$$$$:  238-block  0
+        -:  239:        }
+    #####:  240:        ok = this->service.update_tutorial_likes_service(presenter, title, likes);
+    $$$$$:  240-block  0
+    $$$$$:  240-block  1
+        -:  241:    }
+        -:  242:    else
+        -:  243:    {
+    #####:  244:        cout<<"\nInvalid input!\n";
+    $$$$$:  244-block  0
+    #####:  245:        return;
+    $$$$$:  245-block  0
+        -:  246:    }
+        -:  247:
+    #####:  248:    if (ok)
+    $$$$$:  248-block  0
+    #####:  249:        cout<<"\nUpdated successful!\n";
+    $$$$$:  249-block  0
+    $$$$$:  249-block  1
+        -:  250:    else
+    #####:  251:        cout << "\nYou cannot have 2 offers with the same title and presenter!\n";
+    $$$$$:  251-block  0
+    $$$$$:  251-block  1
+    $$$$$:  251-block  2
+        -:  252:}
+        -:  253:
+    #####:  254:void UI::view_watchlist_ui() {
+    $$$$$:  254-block  0
+    #####:  255:    DynamicVector<Tutorial> array = this->service.get_wathlist().get_tutorials();
+    $$$$$:  255-block  0
+    $$$$$:  255-block  1
+    $$$$$:  255-block  2
+    $$$$$:  255-block  3
+    $$$$$:  255-block  4
+    $$$$$:  255-block  5
+    $$$$$:  255-block  6
+    %%%%%:  255-block  7
+    %%%%%:  255-block  8
+    #####:  256:    Tutorial* tutorials = array.get_all_elems();
+    #####:  257:    if (array.getSize() == 0)
+        -:  258:    {
+    #####:  259:        cout<<"There are no tutorials in watchlist!\n";
+    $$$$$:  259-block  0
+    #####:  260:        return;
+    $$$$$:  260-block  0
+        -:  261:    }
+    #####:  262:    for (int i = 0; i < array.getSize(); ++i) {
+    $$$$$:  262-block  0
+    $$$$$:  262-block  1
+    $$$$$:  262-block  2
+    $$$$$:  262-block  3
+    #####:  263:        cout<<i + 1<<". ";
+    $$$$$:  263-block  0
+    $$$$$:  263-block  1
+    #####:  264:        Tutorial t = tutorials[i];
+    $$$$$:  264-block  0
+    $$$$$:  264-block  1
+    %%%%%:  264-block  2
+    %%%%%:  264-block  3
+    #####:  265:        this->print_tutorial_ui(t);
+    $$$$$:  265-block  0
+        -:  266:    }
+        -:  267:}
+        -:  268:
+    #####:  269:void UI::add_tutorial_watchlist_ui()
+    $$$$$:  269-block  0
+        -:  270:{
+        -:  271:
+    #####:  272:    int ok = this->service.add_tutorial_watchlist(this->service.get_current_tutorial());
+    $$$$$:  272-block  0
+    $$$$$:  272-block  1
+    %%%%%:  272-block  2
+    #####:  273:    if(ok)
+    #####:  274:        cout << "\nTutorial added successfully!\n";
+    $$$$$:  274-block  0
+        -:  275:    else
+    #####:  276:        cout << "\nThis tutorial already is in the watchlist!\n";
+    $$$$$:  276-block  0
+    #####:  277:}
+    $$$$$:  277-block  0
+        -:  278:
+    #####:  279:void UI::delete_tutorial_ui() {
+    $$$$$:  279-block  0
+    #####:  280:    cin.ignore();
+    $$$$$:  280-block  0
+    #####:  281:    cout << "Enter the title: ";
+    $$$$$:  281-block  0
+    #####:  282:    std::string title;
+    $$$$$:  282-block  0
+    $$$$$:  282-block  1
+    $$$$$:  282-block  2
+    $$$$$:  282-block  3
+    $$$$$:  282-block  4
+    %%%%%:  282-block  5
+    #####:  283:    getline(cin, title);
+    #####:  284:    if (title == "")
+    $$$$$:  284-block  0
+    $$$$$:  284-block  1
+        -:  285:    {
+    #####:  286:        cout<<"\nInvalid input!\n";
+    $$$$$:  286-block  0
+    #####:  287:        return;
+    $$$$$:  287-block  0
+        -:  288:    }
+    #####:  289:    cout << "Enter the presenter: ";
+    $$$$$:  289-block  0
+    #####:  290:    std::string presenter;
+    $$$$$:  290-block  0
+    $$$$$:  290-block  1
+    $$$$$:  290-block  2
+    $$$$$:  290-block  3
+    $$$$$:  290-block  4
+    %%%%%:  290-block  5
+    #####:  291:    getline(cin, presenter);
+    #####:  292:    if (presenter == "")
+    $$$$$:  292-block  0
+    $$$$$:  292-block  1
+        -:  293:    {
+    #####:  294:        cout<<"\nInvalid input!\n";
+    $$$$$:  294-block  0
+    #####:  295:        return;
+    $$$$$:  295-block  0
+        -:  296:    }
+        -:  297:
+    #####:  298:    Tutorial t = this->service.find_by_presenter_and_title_watchlist(presenter, title);
+    $$$$$:  298-block  0
+    $$$$$:  298-block  1
+    $$$$$:  298-block  2
+    %%%%%:  298-block  3
+    #####:  299:    if (t.get_presenter() != "" || t.get_title() != "")
+    $$$$$:  299-block  0
+    $$$$$:  299-block  1
+    $$$$$:  299-block  2
+    $$$$$:  299-block  3
+    $$$$$:  299-block  4
+    $$$$$:  299-block  5
+    $$$$$:  299-block  6
+    $$$$$:  299-block  7
+    $$$$$:  299-block  8
+    $$$$$:  299-block  9
+    $$$$$:  299-block 10
+    $$$$$:  299-block 11
+    $$$$$:  299-block 12
+    %%%%%:  299-block 13
+    %%%%%:  299-block 14
+    %%%%%:  299-block 15
+    %%%%%:  299-block 16
+    %%%%%:  299-block 17
+    %%%%%:  299-block 18
+    %%%%%:  299-block 19
+        -:  300:    {
+    #####:  301:        cout << "\nWould you like to like this video?\n 1. Yes\n 2. No\n >>";
+    $$$$$:  301-block  0
+        -:  302:        int op;
+    #####:  303:        cin>>op;
+    $$$$$:  303-block  0
+    #####:  304:        if (op == 1) {
+    $$$$$:  304-block  0
+    #####:  305:            int l = this->service.like_tutorial(presenter, title);
+    $$$$$:  305-block  0
+    #####:  306:            Tutorial t = this->service.get_repo().find_by_presenter_and_title(presenter, title);
+    $$$$$:  306-block  0
+    $$$$$:  306-block  1
+    $$$$$:  306-block  2
+    $$$$$:  306-block  3
+    %%%%%:  306-block  4
+    %%%%%:  306-block  5
+    %%%%%:  306-block  6
+    #####:  307:            this->service.update_tutorial_likes_service(presenter, title, l);
+        -:  308:
+    #####:  309:            cout << "\nYou liked the video!\n";
+    $$$$$:  309-block  0
+        -:  310:        }
+    #####:  311:        else if (op != 1 && op != 2)
+    $$$$$:  311-block  0
+    $$$$$:  311-block  1
+    #####:  312:            cout<<"\nInvalid input\n";
+    $$$$$:  312-block  0
+    $$$$$:  312-block  1
+    $$$$$:  312-block  2
+        -:  313:    }
+        -:  314:
+    #####:  315:    bool ok = this->service.delete_tutorial_watchlist(presenter, title);
+    $$$$$:  315-block  0
+    #####:  316:    if(ok)
+    $$$$$:  316-block  0
+    #####:  317:        cout<<"\nTutorial removed successfully!\n";
+    $$$$$:  317-block  0
+    $$$$$:  317-block  1
+        -:  318:    else
+    #####:  319:        cout<<"\nTutorial does not exist in the watchlist!\n";
+    $$$$$:  319-block  0
+        -:  320:}
+        -:  321:
+    #####:  322:void UI::next_ui() {
+    $$$$$:  322-block  0
+    #####:  323:    this->service.next();
+    $$$$$:  323-block  0
+    #####:  324:    this->print_tutorial_ui(this->service.get_current_tutorial());
+    $$$$$:  324-block  0
+    %%%%%:  324-block  1
+    #####:  325:}
+        -:  326:
+        1:  327:void UI::run() {
+        1:  327-block  0
+        1:  328:    int done = 1, c;
+        1:  328-block  0
+        2:  329:    while (done) {
+        2:  329-block  0
+        1:  329-block  1
+        1:  330:        this->print_menu();
+        1:  330-block  0
+        1:  331:        cout << "\n>>";
+        1:  331-block  0
+        1:  332:        cin >> c;
+        1:  332-block  0
+        1:  333:        if (c == 0) {
+        1:  333-block  0
+        1:  334:            done = 0;
+        1:  334-block  0
+    #####:  335:        } else if (c == 1) {
+    $$$$$:  335-block  0
+    #####:  336:            int choice, d1 = 1;
+    $$$$$:  336-block  0
+    #####:  337:            while (d1) {
+    $$$$$:  337-block  0
+    $$$$$:  337-block  1
+    $$$$$:  337-block  2
+    #####:  338:                this->print_menu_administrator();
+    $$$$$:  338-block  0
+    #####:  339:                cout << "\n>>";
+    $$$$$:  339-block  0
+    #####:  340:                cin >> choice;
+    $$$$$:  340-block  0
+    #####:  341:                if (choice == 0) {
+    $$$$$:  341-block  0
+    #####:  342:                    d1 = 0;
+    $$$$$:  342-block  0
+        -:  343:
+        -:  344:                    //delete []this->service.get_repo().get_tutorials();
+    #####:  345:                } else if (choice == 1)
+    $$$$$:  345-block  0
+    #####:  346:                    display_tutorials_ui();
+    $$$$$:  346-block  0
+    $$$$$:  346-block  1
+    #####:  347:                else if (choice == 2)
+    $$$$$:  347-block  0
+    #####:  348:                    add_tutorial_ui();
+    $$$$$:  348-block  0
+    $$$$$:  348-block  1
+    #####:  349:                else if (choice == 3)
+    $$$$$:  349-block  0
+    #####:  350:                    remove_tutorial_ui();
+    $$$$$:  350-block  0
+    $$$$$:  350-block  1
+    #####:  351:                else if (choice == 4)
+    $$$$$:  351-block  0
+    #####:  352:                    update_tutorial_ui();
+    $$$$$:  352-block  0
+    $$$$$:  352-block  1
+        -:  353:                else
+    #####:  354:                    cout << "\nInvalid input!";
+    $$$$$:  354-block  0
+        -:  355:            }
+        -:  356:        }
+        -:  357:
+    #####:  358:        else if (c == 2)
+    $$$$$:  358-block  0
+        -:  359:        {
+    #####:  360:            int d2 = 1;
+    $$$$$:  360-block  0
+    #####:  361:            while (d2) {
+    $$$$$:  361-block  0
+    $$$$$:  361-block  1
+    $$$$$:  361-block  2
+        -:  362:                int choice;
+    #####:  363:                this->print_menu_user();
+    $$$$$:  363-block  0
+    #####:  364:                cout << "\n>>";
+    $$$$$:  364-block  0
+    #####:  365:                cin >> choice;
+    $$$$$:  365-block  0
+    #####:  366:                if (choice == 0) {
+    $$$$$:  366-block  0
+    #####:  367:                    d2 = 0;
+    $$$$$:  367-block  0
+    #####:  368:                }else if (choice == 10){
+    $$$$$:  368-block  0
+    #####:  369:                    std::string presenter;
+    $$$$$:  369-block  0
+    $$$$$:  369-block  1
+    %%%%%:  369-block  2
+    %%%%%:  369-block  3
+    %%%%%:  369-block  4
+    #####:  370:                    cout << "\nPresenter: ";
+    #####:  371:                    cin.ignore();
+    $$$$$:  371-block  0
+    #####:  372:                    getline(cin, presenter);
+    $$$$$:  372-block  0
+    #####:  373:                    this->service.create_iterator(presenter);
+    $$$$$:  373-block  0
+    #####:  374:                    if (this->service.get_current_tutorial().get_presenter() != "") {
+    $$$$$:  374-block  0
+    $$$$$:  374-block  1
+    $$$$$:  374-block  2
+    $$$$$:  374-block  3
+    %%%%%:  374-block  4
+    %%%%%:  374-block  5
+    #####:  375:                        this->print_tutorial_ui(this->service.get_current_tutorial());
+    $$$$$:  375-block  0
+    $$$$$:  375-block  1
+    $$$$$:  375-block  2
+    %%%%%:  375-block  3
+    #####:  376:                        this->service.start_iteration();
+    $$$$$:  376-block  0
+        -:  377:                    } else {
+    #####:  378:                        cout << "\nThere is no tutorial by that presenter\n";
+    $$$$$:  378-block  0
+    #####:  379:                        d2 = 0;
+    $$$$$:  379-block  0
+        -:  380:                    }
+        -:  381:                }
+        -:  382:
+    #####:  383:                else if (choice == 1)
+    $$$$$:  383-block  0
+    #####:  384:                    this->view_watchlist_ui();
+    $$$$$:  384-block  0
+    $$$$$:  384-block  1
+    #####:  385:                else if (choice == 2)
+    $$$$$:  385-block  0
+    #####:  386:                    this->add_tutorial_watchlist_ui();
+    $$$$$:  386-block  0
+    $$$$$:  386-block  1
+    #####:  387:                else if (choice == 3)
+    $$$$$:  387-block  0
+    #####:  388:                    this->delete_tutorial_ui();
+    $$$$$:  388-block  0
+    $$$$$:  388-block  1
+    #####:  389:                else if (choice == 4)
+    $$$$$:  389-block  0
+    #####:  390:                    this->next_ui();
+    $$$$$:  390-block  0
+    $$$$$:  390-block  1
+        -:  391:                else
+    #####:  392:                    cout << "\nInvalid input!\n";
+    $$$$$:  392-block  0
+        -:  393:            }
+        -:  394:        }
+        -:  395:
+        -:  396:        else
+    #####:  397:            cout << "\nInvalid command\n";
+    $$$$$:  397-block  0
+        -:  398:    }
+        5:  399:}
+        1:  399-block  0
+        1:  399-block  1
+        1:  399-block  2
+        1:  399-block  3
+        1:  399-block  4
+        1:  399-block  5
+    %%%%%:  399-block  6

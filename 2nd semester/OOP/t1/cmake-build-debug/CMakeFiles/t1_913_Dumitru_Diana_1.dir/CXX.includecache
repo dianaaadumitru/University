@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/gene.h
+iostream
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/repo.h
+gene.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/gene.h
+vector
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/service.h
+repo.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/repo.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/ui.cpp
+ui.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/ui.h
+iostream
+-
+string
+-
+iomanip
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/ui.h
+service.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/service.h
+

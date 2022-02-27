@@ -1,0 +1,4 @@
+C:/Users/diana/Desktop/uni work/2nd sem/drill/cmake-build-debug/CMakeFiles/drill.dir
+C:/Users/diana/Desktop/uni work/2nd sem/drill/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diana/Desktop/uni work/2nd sem/drill/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/diana/Desktop/uni work/2nd sem/drill/cmake-build-debug/CMakeFiles/drill_autogen.dir

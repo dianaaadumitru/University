@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/UI.h
+service.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/array.h
+iostream
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain.h
+iostream
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/main.cpp
+iostream
+-
+string
+-
+UI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/UI.h
+stdlib.h
+-
+tests.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo.h
+array.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/array.h
+domain.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service.h
+repo.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests.h
+UI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/UI.h
+

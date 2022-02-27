@@ -1,0 +1,5 @@
+Mercedes-Benz,SUV,2013,blue
+Audi,A6,2017,black
+Renault,Megane,2017,yellow
+Volkswagen,Golf,2010,red
+Audi,A7,2019,green

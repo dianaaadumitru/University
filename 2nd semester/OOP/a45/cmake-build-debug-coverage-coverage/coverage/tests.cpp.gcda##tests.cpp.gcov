@@ -1,0 +1,795 @@
+        -:    0:Source:C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests/tests.cpp
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "tests.h"
+        -:    2:#include <cassert>
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        1:    6:void Tests::test_all()
+        1:    6-block  0
+        -:    7:{
+        1:    8:    this->test_domain();
+        1:    8-block  0
+        1:    9:    this->test_array();
+        1:   10:    this->test_repo();
+        1:   11:    this->test_service();
+        1:   12:    this->test_iterator();
+        1:   13:}
+        -:   14:
+        1:   15:void Tests::test_domain()
+        1:   15-block  0
+        -:   16:{
+        -:   17:    //test constructer with parameters + getters
+        2:   18:    Tutorial t1 {"Pointers", "The Cherno", Duration{16, 58}, 200, "https://www.youtube.com/watch?v=DTxHyVn0ODg"};
+        1:   18-block  0
+        1:   18-block  1
+        1:   18-block  2
+        1:   18-block  3
+        1:   18-block  4
+    %%%%%:   18-block  5
+    %%%%%:   18-block  6
+    %%%%%:   18-block  7
+    %%%%%:   18-block  8
+    %%%%%:   18-block  9
+    %%%%%:   18-block 10
+    %%%%%:   18-block 11
+    %%%%%:   18-block 12
+        1:   19:    assert(t1.get_title() == "Pointers");
+        1:   19-block  0
+        1:   19-block  1
+    $$$$$:   19-block  2
+        1:   19-block  3
+    %%%%%:   19-block  4
+        1:   20:    assert(t1.get_presenter() == "The Cherno");
+        1:   20-block  0
+        1:   20-block  1
+    $$$$$:   20-block  2
+        1:   20-block  3
+    %%%%%:   20-block  4
+        1:   21:    assert(t1.get_duration().getMinutes() == 16);
+        1:   21-block  0
+    $$$$$:   21-block  1
+        1:   22:    assert(t1.get_duration().getSeconds() == 58);
+        1:   22-block  0
+        1:   22-block  1
+    $$$$$:   22-block  2
+        1:   23:    assert(t1.get_no_of_likes() == 200);
+        1:   23-block  0
+        1:   23-block  1
+    $$$$$:   23-block  2
+        1:   24:    assert(t1.get_link() == "https://www.youtube.com/watch?v=DTxHyVn0ODg");
+        1:   24-block  0
+        1:   24-block  1
+        1:   24-block  2
+    $$$$$:   24-block  3
+        1:   24-block  4
+    %%%%%:   24-block  5
+        -:   25:
+        -:   26:    //test constructor without parameters + getters
+        2:   27:    Tutorial t2{};
+        1:   27-block  0
+    %%%%%:   27-block  1
+        1:   28:    assert(t2.get_title() =="");
+        1:   28-block  0
+        1:   28-block  1
+        1:   28-block  2
+    $$$$$:   28-block  3
+        1:   28-block  4
+    %%%%%:   28-block  5
+        1:   29:    assert(t2.get_presenter() == "");
+        1:   29-block  0
+        1:   29-block  1
+    $$$$$:   29-block  2
+        1:   29-block  3
+    %%%%%:   29-block  4
+        1:   30:    assert(t2.get_duration().getSeconds() == 0);
+        1:   30-block  0
+    $$$$$:   30-block  1
+        1:   31:    assert(t2.get_duration().getSeconds() == 0);
+        1:   31-block  0
+        1:   31-block  1
+    $$$$$:   31-block  2
+        1:   32:    assert(t2.get_link() == "");
+        1:   32-block  0
+        1:   32-block  1
+        1:   32-block  2
+    $$$$$:   32-block  3
+        1:   32-block  4
+    %%%%%:   32-block  5
+        -:   33:
+        -:   34://    //test open link
+        1:   35:    t1.open_link();
+        -:   36:
+        -:   37:    //test likes
+        1:   38:    t1.like();
+        1:   38-block  0
+        1:   39:    assert(t1.get_no_of_likes() == 201);
+        1:   39-block  0
+        1:   39-block  1
+    $$$$$:   39-block  2
+        1:   40:}
+    %%%%%:   40-block  0
+        -:   41:
+        1:   42:void Tests::test_array()
+        1:   42-block  0
+        -:   43:{
+        2:   44:    DynamicVector<int> d {2};
+        1:   44-block  0
+    %%%%%:   44-block  1
+        -:   45:
+        -:   46:    //test add + getSize
+        1:   47:    d = d + 2;
+        1:   47-block  0
+    %%%%%:   47-block  1
+        1:   48:    d = d + 1;
+        1:   48-block  0
+    %%%%%:   48-block  1
+        1:   49:    d.add(10);
+        1:   49-block  0
+        1:   50:    d.add(11);
+        1:   50-block  0
+        1:   51:    d.add(12);
+        1:   51-block  0
+        1:   52:    assert(d.getSize() == 5);
+        1:   52-block  0
+    $$$$$:   52-block  1
+        -:   53:
+        -:   54:    //test delete + overloading operator []
+        -:   55:
+        1:   56:    d.delete_elem(1);
+        1:   56-block  0
+        1:   57:    d.delete_elem(-1);
+        1:   57-block  0
+        1:   58:    assert(d.getSize() == 4);
+        1:   58-block  0
+    $$$$$:   58-block  1
+        1:   59:    assert(d[1] == 10);
+        1:   59-block  0
+    $$$$$:   59-block  1
+        1:   60:    d.get_all_elems();
+        1:   60-block  0
+        1:   61:    assert(d[0] == 2);
+    $$$$$:   61-block  0
+        -:   62:
+        2:   63:    DynamicVector<int> d2 {d};
+        1:   63-block  0
+        1:   63-block  1
+        1:   64:    assert(d2[0] == d[0]);
+        1:   64-block  0
+    $$$$$:   64-block  1
+        -:   65:
+        1:   66:}
+        -:   67:
+        1:   68:void Tests::test_iterator()
+        1:   68-block  0
+        -:   69:{
+        2:   70:    Iterator iter;
+        1:   70-block  0
+    %%%%%:   70-block  1
+        -:   71:
+        1:   72:    assert(iter.get_tutorials_iter().getSize() == 0);
+        1:   72-block  0
+        1:   72-block  1
+    $$$$$:   72-block  2
+        1:   72-block  3
+        1:   73:    Iterator();
+        1:   73-block  0
+        1:   74:    assert(iter.get_current() == 0);
+    $$$$$:   74-block  0
+        -:   75:
+        -:   76:    //test add
+        2:   77:    Tutorial t1 {"Pointers", "The Cherno", Duration{16, 58}, 200, "https://www.youtube.com/watch?v=DTxHyVn0ODg"};
+        1:   77-block  0
+        1:   77-block  1
+        1:   77-block  2
+        1:   77-block  3
+        1:   77-block  4
+    %%%%%:   77-block  5
+    %%%%%:   77-block  6
+    %%%%%:   77-block  7
+    %%%%%:   77-block  8
+    %%%%%:   77-block  9
+    %%%%%:   77-block 10
+    %%%%%:   77-block 11
+    %%%%%:   77-block 12
+    %%%%%:   77-block 13
+        2:   78:    Tutorial t2 {"Classes", "Isay Nahor", Duration{8, 41}, 167, "https://www.youtube.com/watch?v=2BP8NhxjrO0"};
+        1:   78-block  0
+        1:   78-block  1
+        1:   78-block  2
+        1:   78-block  3
+    %%%%%:   78-block  4
+    %%%%%:   78-block  5
+    %%%%%:   78-block  6
+    %%%%%:   78-block  7
+    %%%%%:   78-block  8
+    %%%%%:   78-block  9
+    %%%%%:   78-block 10
+    %%%%%:   78-block 11
+        1:   79:    iter.open();
+        1:   80:    iter.next();
+        1:   80-block  0
+        1:   81:    iter.add(t1);
+        1:   81-block  0
+        1:   81-block  1
+        1:   81-block  2
+    %%%%%:   81-block  3
+        1:   82:    iter.add(t2);
+        1:   82-block  0
+        1:   82-block  1
+    %%%%%:   82-block  2
+        2:   83:    Tutorial t_test = iter.get_current_tutorial();
+    %%%%%:   83-block  0
+        1:   84:    assert(t_test.get_title() == t1.get_title());
+        1:   84-block  0
+        1:   84-block  1
+        1:   84-block  2
+    $$$$$:   84-block  3
+        1:   84-block  4
+    %%%%%:   84-block  5
+        1:   85:    iter.next();
+        1:   86:    iter.next();
+        1:   86-block  0
+        2:   87:    Tutorial t_test1 = iter.get_current_tutorial();
+        1:   87-block  0
+    %%%%%:   87-block  1
+        1:   88:    assert(t_test1.get_title() == t1.get_title());
+        1:   88-block  0
+        1:   88-block  1
+        1:   88-block  2
+    $$$$$:   88-block  3
+        1:   88-block  4
+    %%%%%:   88-block  5
+        -:   89:
+        -:   90:
+        -:   91:    //test open
+        1:   92:    iter.open();
+        -:   93:
+        -:   94:    //test update_likes
+        1:   95:    iter.update_likes(0);
+        1:   95-block  0
+        2:   96:    DynamicVector<Tutorial> array = iter.get_tutorials_iter();
+        1:   96-block  0
+    %%%%%:   96-block  1
+        1:   97:    assert(array[0].get_no_of_likes() == 201);
+        1:   97-block  0
+        1:   97-block  1
+    $$$$$:   97-block  2
+        -:   98:
+        -:   99:    //test empty_iterator
+        1:  100:    iter.iterator_empty();
+        1:  100-block  0
+        1:  101:    assert(iter.get_tutorials_iter().getSize() == 0);
+        1:  101-block  0
+        1:  101-block  1
+    $$$$$:  101-block  2
+        1:  101-block  3
+        1:  102:}
+    %%%%%:  102-block  0
+        -:  103:
+        1:  104:void Tests::test_repo()
+        1:  104-block  0
+        -:  105:{
+        2:  106:    Repo repo{};
+        1:  106-block  0
+    %%%%%:  106-block  1
+        2:  107:    Tutorial t1 {"Pointers", "The Cherno", Duration{16, 58}, 200, "https://www.youtube.com/watch?v=DTxHyVn0ODg"};
+        1:  107-block  0
+        1:  107-block  1
+        1:  107-block  2
+        1:  107-block  3
+        1:  107-block  4
+    %%%%%:  107-block  5
+    %%%%%:  107-block  6
+    %%%%%:  107-block  7
+    %%%%%:  107-block  8
+    %%%%%:  107-block  9
+    %%%%%:  107-block 10
+    %%%%%:  107-block 11
+    %%%%%:  107-block 12
+    %%%%%:  107-block 13
+        2:  108:    Tutorial t2 {"Classes", "Isay Nahor", Duration{8, 41}, 167, "https://www.youtube.com/watch?v=2BP8NhxjrO0"};
+        1:  108-block  0
+        1:  108-block  1
+        1:  108-block  2
+        1:  108-block  3
+    %%%%%:  108-block  4
+    %%%%%:  108-block  5
+    %%%%%:  108-block  6
+    %%%%%:  108-block  7
+    %%%%%:  108-block  8
+    %%%%%:  108-block  9
+    %%%%%:  108-block 10
+    %%%%%:  108-block 11
+    %%%%%:  108-block 12
+        -:  109:
+        -:  110:    //test add
+        1:  111:    bool ok = repo.add_tutorial(t1);
+        1:  112:    assert(ok == true);
+        1:  112-block  0
+    $$$$$:  112-block  1
+        1:  113:    repo.add_tutorial(t2);
+        1:  113-block  0
+        1:  114:    ok = repo.add_tutorial(t1);
+        1:  114-block  0
+        1:  115:    assert(ok == false);
+        1:  115-block  0
+    $$$$$:  115-block  1
+        1:  116:    assert(repo.get_tutorials().getSize() == 2);
+        1:  116-block  0
+        1:  116-block  1
+    $$$$$:  116-block  2
+        1:  116-block  3
+        -:  117:
+        -:  118:    //test find by presenter and title
+        2:  119:    Tutorial t3 = repo.find_by_presenter_and_title("The Cherno", "Pointers");
+        1:  119-block  0
+        1:  119-block  1
+        1:  119-block  2
+    %%%%%:  119-block  3
+    %%%%%:  119-block  4
+    %%%%%:  119-block  5
+    %%%%%:  119-block  6
+        1:  120:    assert(t3.get_presenter() == t1.get_presenter());
+        1:  120-block  0
+        1:  120-block  1
+    $$$$$:  120-block  2
+        1:  120-block  3
+    %%%%%:  120-block  4
+    %%%%%:  120-block  5
+        2:  121:    Tutorial t4 = repo.find_by_presenter_and_title("Pointers", "a");
+        1:  121-block  0
+        1:  121-block  1
+        1:  121-block  2
+    %%%%%:  121-block  3
+    %%%%%:  121-block  4
+    %%%%%:  121-block  5
+    %%%%%:  121-block  6
+        1:  122:    assert(t4.get_presenter() == "");
+        1:  122-block  0
+        1:  122-block  1
+    $$$$$:  122-block  2
+        1:  122-block  3
+    %%%%%:  122-block  4
+        -:  123:
+        -:  124:    //test find pos tutorial
+        1:  125:    assert(repo.find_pos_tutorial(t3) == 0);
+        1:  125-block  0
+    $$$$$:  125-block  1
+        1:  126:    assert(repo.find_pos_tutorial(t4) == -1);
+        1:  126-block  0
+        1:  126-block  1
+    $$$$$:  126-block  2
+        -:  127:
+        -:  128:    //test remove
+        1:  129:    ok = repo.remove_tutorial("The Cherno", "Pointers");
+        1:  129-block  0
+        1:  129-block  1
+        1:  129-block  2
+        1:  129-block  3
+    %%%%%:  129-block  4
+    %%%%%:  129-block  5
+    %%%%%:  129-block  6
+    %%%%%:  129-block  7
+        1:  130:    assert(ok == true);
+    $$$$$:  130-block  0
+        1:  131:    assert(repo.get_tutorials().getSize() == 1);
+        1:  131-block  0
+        1:  131-block  1
+    $$$$$:  131-block  2
+        1:  131-block  3
+        1:  132:    ok = repo.remove_tutorial("abc", "def");
+        1:  132-block  0
+        1:  132-block  1
+        1:  132-block  2
+    %%%%%:  132-block  3
+    %%%%%:  132-block  4
+    %%%%%:  132-block  5
+    %%%%%:  132-block  6
+        1:  133:    assert(ok == false);
+    $$$$$:  133-block  0
+        -:  134:
+        -:  135:    //test update
+        1:  136:    repo.add_tutorial(t1);
+        1:  136-block  0
+        1:  137:    ok = repo.update_tutorial("The Cherno", "Pointers", 1, "Classes");
+        1:  137-block  0
+        1:  137-block  1
+        1:  137-block  2
+        1:  137-block  3
+        1:  137-block  4
+    %%%%%:  137-block  5
+    %%%%%:  137-block  6
+    %%%%%:  137-block  7
+    %%%%%:  137-block  8
+    %%%%%:  137-block  9
+    %%%%%:  137-block 10
+    %%%%%:  137-block 11
+        1:  138:    assert(ok == true);
+    $$$$$:  138-block  0
+        2:  139:    Tutorial t5 = repo.find_by_presenter_and_title("The Cherno", "Classes");
+        1:  139-block  0
+        1:  139-block  1
+        1:  139-block  2
+        1:  139-block  3
+    %%%%%:  139-block  4
+    %%%%%:  139-block  5
+    %%%%%:  139-block  6
+    %%%%%:  139-block  7
+        1:  140:    assert(t5.get_title() == "Classes");
+        1:  140-block  0
+        1:  140-block  1
+    $$$$$:  140-block  2
+        1:  140-block  3
+    %%%%%:  140-block  4
+    %%%%%:  140-block  5
+        2:  141:    Tutorial t6 {"Pointers", "Isay Nahor", Duration{16, 58}, 200, "https://www.youtube.com/watch?v=DTxHyVn0ODg"};
+        1:  141-block  0
+        1:  141-block  1
+        1:  141-block  2
+        1:  141-block  3
+        1:  141-block  4
+    %%%%%:  141-block  5
+    %%%%%:  141-block  6
+    %%%%%:  141-block  7
+    %%%%%:  141-block  8
+    %%%%%:  141-block  9
+    %%%%%:  141-block 10
+    %%%%%:  141-block 11
+    %%%%%:  141-block 12
+        1:  142:    repo.add_tutorial(t6);
+        1:  143:    repo.update_tutorial("", "Pointers", 1, "Classes");
+        1:  143-block  0
+        1:  143-block  1
+        1:  143-block  2
+        1:  143-block  3
+        1:  143-block  4
+    %%%%%:  143-block  5
+    %%%%%:  143-block  6
+    %%%%%:  143-block  7
+    %%%%%:  143-block  8
+    %%%%%:  143-block  9
+    %%%%%:  143-block 10
+        1:  144:    ok = repo.update_tutorial("Isay Nahor", "Pointers", 1, "Classes");
+        1:  144-block  0
+        1:  144-block  1
+        1:  144-block  2
+        1:  144-block  3
+    %%%%%:  144-block  4
+    %%%%%:  144-block  5
+    %%%%%:  144-block  6
+    %%%%%:  144-block  7
+    %%%%%:  144-block  8
+    %%%%%:  144-block  9
+        1:  145:    assert(ok == false);
+    $$$$$:  145-block  0
+        -:  146:
+        1:  147:    ok = repo.update_tutorial("The Cherno", "Classes", 2, "Isay Nahor");
+        1:  147-block  0
+        1:  147-block  1
+        1:  147-block  2
+        1:  147-block  3
+        1:  147-block  4
+    %%%%%:  147-block  5
+    %%%%%:  147-block  6
+    %%%%%:  147-block  7
+    %%%%%:  147-block  8
+    %%%%%:  147-block  9
+    %%%%%:  147-block 10
+        1:  148:    assert(ok == false);
+    $$$$$:  148-block  0
+        1:  149:    ok = repo.update_tutorial("The Cherno", "Classes", 2, "abc");
+        1:  149-block  0
+        1:  149-block  1
+        1:  149-block  2
+        1:  149-block  3
+        1:  149-block  4
+    %%%%%:  149-block  5
+    %%%%%:  149-block  6
+    %%%%%:  149-block  7
+    %%%%%:  149-block  8
+    %%%%%:  149-block  9
+    %%%%%:  149-block 10
+        1:  150:    assert(ok == true);
+    $$$$$:  150-block  0
+        -:  151:
+        1:  152:    ok = repo.update_tutorial("abc", "Classes", 5, "qaz");
+        1:  152-block  0
+        1:  152-block  1
+        1:  152-block  2
+        1:  152-block  3
+        1:  152-block  4
+    %%%%%:  152-block  5
+    %%%%%:  152-block  6
+    %%%%%:  152-block  7
+    %%%%%:  152-block  8
+    %%%%%:  152-block  9
+    %%%%%:  152-block 10
+        1:  153:    assert(ok == true);
+    $$$$$:  153-block  0
+        -:  154:
+        1:  155:    ok = repo.update_tutorial_duration("abc", "", 10, 23);
+        1:  155-block  0
+        1:  155-block  1
+        1:  155-block  2
+        1:  155-block  3
+    %%%%%:  155-block  4
+    %%%%%:  155-block  5
+    %%%%%:  155-block  6
+    %%%%%:  155-block  7
+        1:  156:    assert(ok == false);
+    $$$$$:  156-block  0
+        1:  157:    ok = repo.update_tutorial_duration("abc", "Classes", 10, 23);
+        1:  157-block  0
+        1:  157-block  1
+        1:  157-block  2
+        1:  157-block  3
+    %%%%%:  157-block  4
+    %%%%%:  157-block  5
+    %%%%%:  157-block  6
+    %%%%%:  157-block  7
+        1:  158:    assert(ok == 1);
+    $$$$$:  158-block  0
+        -:  159:
+        1:  160:    ok = repo.update_tutorial_likes("abc", "Classes", 30);
+        1:  160-block  0
+        1:  160-block  1
+        1:  160-block  2
+        1:  160-block  3
+    %%%%%:  160-block  4
+    %%%%%:  160-block  5
+    %%%%%:  160-block  6
+    %%%%%:  160-block  7
+        1:  161:    assert(ok == true);
+    $$$$$:  161-block  0
+        1:  162:    ok = repo.update_tutorial_likes("", "Classes", 30);
+        1:  162-block  0
+        1:  162-block  1
+        1:  162-block  2
+        1:  162-block  3
+    %%%%%:  162-block  4
+    %%%%%:  162-block  5
+    %%%%%:  162-block  6
+    %%%%%:  162-block  7
+        1:  163:    assert(ok == false);
+    $$$$$:  163-block  0
+        -:  164:
+        1:  165:}
+    %%%%%:  165-block  0
+        -:  166:
+        1:  167:void Tests::test_service()
+        1:  167-block  0
+        -:  168:{
+        2:  169:    Repo repo{};
+        1:  169-block  0
+    %%%%%:  169-block  1
+        2:  170:    Tutorial t1 {"Pointers", "The Cherno", Duration{16, 58}, 200, "https://www.youtube.com/watch?v=DTxHyVn0ODg"};
+        1:  170-block  0
+        1:  170-block  1
+        1:  170-block  2
+        1:  170-block  3
+        1:  170-block  4
+    %%%%%:  170-block  5
+    %%%%%:  170-block  6
+    %%%%%:  170-block  7
+    %%%%%:  170-block  8
+    %%%%%:  170-block  9
+    %%%%%:  170-block 10
+    %%%%%:  170-block 11
+    %%%%%:  170-block 12
+    %%%%%:  170-block 13
+        2:  171:    Tutorial t2 {"Classes", "Isay Nahor", Duration{8, 41}, 167, "https://www.youtube.com/watch?v=2BP8NhxjrO0"};
+        1:  171-block  0
+        1:  171-block  1
+        1:  171-block  2
+        1:  171-block  3
+    %%%%%:  171-block  4
+    %%%%%:  171-block  5
+    %%%%%:  171-block  6
+    %%%%%:  171-block  7
+    %%%%%:  171-block  8
+    %%%%%:  171-block  9
+    %%%%%:  171-block 10
+    %%%%%:  171-block 11
+        1:  172:    repo.add_tutorial(t1);
+        1:  173:    repo.add_tutorial(t2);
+        1:  173-block  0
+        2:  174:    Service service{repo};
+        1:  174-block  0
+    %%%%%:  174-block  1
+        -:  175:
+        -:  176:    //test get repo
+        1:  177:    assert(service.get_repo().get_tutorials().getSize() == repo.get_tutorials().getSize());
+        1:  177-block  0
+        1:  177-block  1
+        1:  177-block  2
+        1:  177-block  3
+    $$$$$:  177-block  4
+        1:  177-block  5
+    %%%%%:  177-block  6
+    %%%%%:  177-block  7
+        -:  178:
+        -:  179:    //test add
+        1:  180:    bool ok = service.add_tutorial_service("Classes vs Structs", "Caesar Sindy", 8, 35, 150, "https://www.youtube.com/watch?v=fLgTtaqqJp0&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&start_radio=1&t=4");
+        1:  180-block  0
+        1:  180-block  1
+        1:  180-block  2
+        1:  180-block  3
+    %%%%%:  180-block  4
+    %%%%%:  180-block  5
+    %%%%%:  180-block  6
+    %%%%%:  180-block  7
+    %%%%%:  180-block  8
+    %%%%%:  180-block  9
+        1:  181:    assert(ok == true);
+    $$$$$:  181-block  0
+        1:  182:    assert(service.get_repo().get_tutorials().getSize() == 3);
+        1:  182-block  0
+        1:  182-block  1
+        1:  182-block  2
+    $$$$$:  182-block  3
+        1:  182-block  4
+    %%%%%:  182-block  5
+        -:  183:
+        -:  184:    //test remove
+        1:  185:    ok = service.remove_tutorial_service("b", "c");
+        1:  185-block  0
+        1:  185-block  1
+        1:  185-block  2
+    %%%%%:  185-block  3
+    %%%%%:  185-block  4
+    %%%%%:  185-block  5
+    %%%%%:  185-block  6
+        1:  186:    assert(ok == false);
+    $$$$$:  186-block  0
+        -:  187:
+        -:  188:    //test update tutorial
+        1:  189:    ok = service.update_tutorial_service("The Cherno", "Pointers", 1, "Classes");
+        1:  189-block  0
+        1:  189-block  1
+        1:  189-block  2
+        1:  189-block  3
+        1:  189-block  4
+    %%%%%:  189-block  5
+    %%%%%:  189-block  6
+    %%%%%:  189-block  7
+    %%%%%:  189-block  8
+    %%%%%:  189-block  9
+    %%%%%:  189-block 10
+        1:  190:    assert(ok == 1);
+    $$$$$:  190-block  0
+        1:  191:    ok = service.update_tutorial_duration_service("a", "bc", 34, 12);
+        1:  191-block  0
+        1:  191-block  1
+        1:  191-block  2
+        1:  191-block  3
+    %%%%%:  191-block  4
+    %%%%%:  191-block  5
+    %%%%%:  191-block  6
+    %%%%%:  191-block  7
+        1:  192:    assert(ok == false);
+    $$$$$:  192-block  0
+        1:  193:    ok = service.update_tutorial_likes_service("The Cherno", "Classes", 700);
+        1:  193-block  0
+        1:  193-block  1
+        1:  193-block  2
+        1:  193-block  3
+    %%%%%:  193-block  4
+    %%%%%:  193-block  5
+    %%%%%:  193-block  6
+    %%%%%:  193-block  7
+        1:  194:    assert(ok == true);
+    $$$$$:  194-block  0
+        -:  195:
+        -:  196:    //test create iterator
+        1:  197:    service.create_iterator("");
+        1:  197-block  0
+        1:  197-block  1
+        1:  197-block  2
+    %%%%%:  197-block  3
+    %%%%%:  197-block  4
+        1:  198:    assert(service.get_iterator().get_tutorials_iter().getSize() == 3);
+        1:  198-block  0
+        1:  198-block  1
+    $$$$$:  198-block  2
+        1:  198-block  3
+    %%%%%:  198-block  4
+        -:  199:
+        1:  200:    service.create_iterator("The Cherno");
+        1:  200-block  0
+        1:  200-block  1
+    %%%%%:  200-block  2
+    %%%%%:  200-block  3
+        1:  201:    assert(service.get_iterator().get_tutorials_iter().getSize() == 1);
+        1:  201-block  0
+        1:  201-block  1
+    $$$$$:  201-block  2
+        1:  201-block  3
+    %%%%%:  201-block  4
+        -:  202:
+        -:  203:    //test start iteration
+        1:  204:    service.start_iteration();
+        -:  205:
+        -:  206:    //test get current tutorial
+        2:  207:    Tutorial tut = service.get_current_tutorial();
+        1:  207-block  0
+    %%%%%:  207-block  1
+        1:  208:    assert(tut.get_presenter() == "The Cherno");
+        1:  208-block  0
+        1:  208-block  1
+        1:  208-block  2
+    $$$$$:  208-block  3
+        1:  208-block  4
+    %%%%%:  208-block  5
+        -:  209:
+        -:  210:    //test next
+        1:  211:    service.next();
+        -:  212:
+        -:  213:    //test add tutorial watchlist
+        1:  214:    service.add_tutorial_watchlist(t1);
+        1:  214-block  0
+        1:  215:    assert(service.get_wathlist().get_tutorials().getSize() == 1);
+        1:  215-block  0
+        1:  215-block  1
+        1:  215-block  2
+    $$$$$:  215-block  3
+        1:  215-block  4
+    %%%%%:  215-block  5
+        -:  216:
+        -:  217:    //test delete tutorial watchlist
+        1:  218:    service.delete_tutorial_watchlist(t1.get_presenter(), t1.get_title());
+        1:  218-block  0
+        1:  218-block  1
+        1:  218-block  2
+    %%%%%:  218-block  3
+    %%%%%:  218-block  4
+        1:  219:    assert(service.get_wathlist().get_tutorials().getSize() == 0);
+        1:  219-block  0
+        1:  219-block  1
+    $$$$$:  219-block  2
+        1:  219-block  3
+    %%%%%:  219-block  4
+    %%%%%:  219-block  5
+        -:  220:
+        -:  221:    //test find tutorial in watchlist
+        1:  222:    service.add_tutorial_watchlist(t1);
+        2:  223:    Tutorial t_find = service.find_by_presenter_and_title_watchlist(t1.get_presenter(), t1.get_title());
+        1:  223-block  0
+        1:  223-block  1
+        1:  223-block  2
+        1:  223-block  3
+        1:  223-block  4
+    %%%%%:  223-block  5
+    %%%%%:  223-block  6
+        1:  224:    assert(t1.get_presenter() == "The Cherno");
+        1:  224-block  0
+        1:  224-block  1
+    $$$$$:  224-block  2
+        1:  224-block  3
+    %%%%%:  224-block  4
+        -:  225:
+        -:  226:    //test like tutorial
+        1:  227:    int like = service.like_tutorial(t1.get_presenter(), t1.get_title());
+        1:  227-block  0
+        1:  227-block  1
+        1:  227-block  2
+    %%%%%:  227-block  3
+    %%%%%:  227-block  4
+        1:  228:    assert(like == 201);
+    $$$$$:  228-block  0
+        1:  229:}
+    %%%%%:  229-block  0
+        -:  230:
+        -:  231:
+        1:  232:Tests::~Tests() {
+        1:  232-block  0
+        -:  233:
+        4:  234:}
+        1:  234-block  0
+        1:  234-block  1
+        1:  234-block  2
+        1:  234-block  3
+        1:  234-block  4

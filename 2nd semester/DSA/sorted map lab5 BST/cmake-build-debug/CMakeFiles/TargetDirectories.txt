@@ -1,0 +1,3 @@
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/cmake-build-debug/CMakeFiles/sorted_map_lab5_BST.dir
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/cmake-build-debug/CMakeFiles/rebuild_cache.dir

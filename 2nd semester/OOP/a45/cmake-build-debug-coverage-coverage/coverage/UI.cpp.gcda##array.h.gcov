@@ -1,0 +1,206 @@
+        -:    0:Source:c:/users/diana/desktop/uni work/2nd sem/oop/a45-913-dumitru-diana/dynamic_vector/array.h
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\ui\UI.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\ui\UI.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#pragma once
+        -:    2:#include <iostream>
+        -:    3:#include "../domain/domain.h"
+        -:    4:
+        -:    5:typedef Tutorial TElem;
+        -:    6://class DynamicVector
+        -:    7://{
+        -:    8://private:
+        -:    9://    int size;
+        -:   10://    int capacity;
+        -:   11://    TElem* elements;
+        -:   12://    static const unsigned int DEFAULT_CAPACITY = 10;
+        -:   13://
+        -:   14://    void resize(double factor = 2);
+        -:   15://
+        -:   16://public:
+        -:   17://    // constructors and destructor
+        -:   18://    DynamicVector();
+        -:   19://    DynamicVector(unsigned int initialCapacity = 2);
+        -:   20://    DynamicVector(const DynamicVector& v);
+        -:   21://    ~DynamicVector();
+        -:   22://
+        -:   23://    // Overloading the [] operator
+        -:   24://    TElem &operator[](int pos);
+        -:   25://
+        -:   26://    // Adds an element to the current DynamicVector.
+        -:   27://    void add(TElem e);
+        -:   28://
+        -:   29://    // Deletes an element from a given position
+        -:   30://    void delete_elem(unsigned int pos);
+        -:   31://
+        -:   32://    // Returns all elements
+        -:   33://    TElem* get_all_elems() const;
+        -:   34://
+        -:   35://    // Returns the size of the dynamic vector
+        -:   36://    int getSize() const;
+        -:   37://};
+        -:   38:
+        -:   39:template <class T>
+        -:   40:class DynamicVector
+        -:   41:{
+        -:   42:private:
+        -:   43:    T* elements;
+        -:   44:    int size;
+        -:   45:    int capacity;
+        -:   46:    static const unsigned int DEFAULT_CAPACITY = 10;
+        -:   47:
+        -:   48:    // Resizes the current DynamicVector, multiplying its capacity by a given factor (real number).
+        -:   49:    void resize(double factor = 2);
+        -:   50:
+        -:   51:public:
+        -:   52:    // constructors and destructor
+        -:   53:    DynamicVector();
+        -:   54:    DynamicVector(unsigned int initialCapacity);
+        -:   55:    DynamicVector(const DynamicVector& v);
+        -:   56:    ~DynamicVector();
+        -:   57:
+        -:   58:    // Overloading the [] operator
+        -:   59:    T &operator[](int pos);
+        -:   60:
+        -:   61:    // + operator
+        -:   62:    DynamicVector<T>& operator+(const T& classObj);
+        -:   63:
+        -:   64:    // Adds an element to the current DynamicVector.
+        -:   65:    void add(T e);
+        -:   66:
+        -:   67:    // Deletes an element from a given position
+        -:   68:    void delete_elem(unsigned int pos);
+        -:   69:
+        -:   70:    // Returns all elements
+        -:   71:    T* get_all_elems() const;
+        -:   72:
+        -:   73:    // Returns the size of the dynamic vector
+        -:   74:    int getSize();
+        -:   75:};
+        -:   76:
+        -:   77:template<class T>
+        -:   78:inline DynamicVector<T>::DynamicVector()
+        -:   79:{
+        -:   80:    capacity = DEFAULT_CAPACITY;
+        -:   81:    size = 0;
+        -:   82:    elements = new T[DEFAULT_CAPACITY];
+        -:   83:
+        -:   84:}
+        -:   85:
+        -:   86:template<class T>
+        -:   87:DynamicVector<T>::DynamicVector(unsigned int initial_capacity)
+        -:   88:{
+        -:   89:    elements = new T[initial_capacity];
+        -:   90:    size = 0;
+        -:   91:    capacity = initial_capacity;
+        -:   92:}
+        -:   93:
+        -:   94:template<class T>
+    #####:   95:DynamicVector<T>::DynamicVector(const DynamicVector<T> &v)
+    $$$$$:   95-block  0
+        -:   96:{
+    #####:   97:    this->size = v.size;
+    #####:   98:    this->capacity = v.capacity;
+    #####:   99:    this->elements = new T[this->capacity];
+    $$$$$:   99-block  0
+    $$$$$:   99-block  1
+    $$$$$:   99-block  2
+    $$$$$:   99-block  3
+    $$$$$:   99-block  4
+    $$$$$:   99-block  5
+    $$$$$:   99-block  6
+    %%%%%:   99-block  7
+    %%%%%:   99-block  8
+    %%%%%:   99-block  9
+    %%%%%:   99-block 10
+    %%%%%:   99-block 11
+    %%%%%:   99-block 12
+    %%%%%:   99-block 13
+    %%%%%:   99-block 14
+    #####:  100:    for (int i = 0; i < this->size; ++i) {
+    $$$$$:  100-block  0
+    $$$$$:  100-block  1
+    #####:  101:        this->elements[i] = v.elements[i];
+    $$$$$:  101-block  0
+        -:  102:    }
+    #####:  103:}
+    $$$$$:  103-block  0
+    %%%%%:  103-block  1
+        -:  104:
+        -:  105:template<class T>
+    #####:  106:DynamicVector<T>::~DynamicVector()
+    $$$$$:  106-block  0
+        -:  107:{
+    #####:  108:    delete[] elements;
+    $$$$$:  108-block  0
+    $$$$$:  108-block  1
+    $$$$$:  108-block  2
+    $$$$$:  108-block  3
+    $$$$$:  108-block  4
+    #####:  109:}
+        -:  110:
+        -:  111:
+        -:  112:template<class T>
+        -:  113:T &DynamicVector<T>::operator[](int pos) {
+        -:  114:    return this->elements[pos];  //return array element
+        -:  115:}
+        -:  116:
+        -:  117:template<class T>
+        -:  118:void DynamicVector<T>::add(T e) {
+        -:  119:    if(this->size == this->capacity)
+        -:  120:        this->resize();
+        -:  121:
+        -:  122:    this->elements[this->size] = e;
+        -:  123:    this->size++;
+        -:  124:}
+        -:  125:
+        -:  126:template<class T>
+        -:  127:void DynamicVector<T>::resize(double factor) {
+        -:  128:    this->capacity *= static_cast<int>(factor);
+        -:  129:
+        -:  130:    T * aux = new T[this->capacity];
+        -:  131:    for (int i = 0; i < this->size; ++i) {
+        -:  132:        aux[i] = this->elements[i];
+        -:  133:    }
+        -:  134:    delete[] this->elements;
+        -:  135:    this->elements = aux;
+        -:  136:}
+        -:  137:
+        -:  138:template<class T>
+        -:  139:void DynamicVector<T>::delete_elem(unsigned int pos) {
+        -:  140:    if (pos < 0 || pos >= this->size)
+        -:  141:        return;
+        -:  142:
+        -:  143:    T* aux = new T[this->capacity];
+        -:  144:    for (int i = 0; i < pos; ++i) {
+        -:  145:        aux[i] = this->elements[i];
+        -:  146:    }
+        -:  147:
+        -:  148:    for (int i = pos + 1; i < this->size; ++i) {
+        -:  149:        aux[i - 1] = this->elements[i];
+        -:  150:    }
+        -:  151:    delete[] this->elements;
+        -:  152:    this->elements = aux;
+        -:  153:    this->size--;
+        -:  154:}
+        -:  155:
+        -:  156:template<class T>
+    #####:  157:T *DynamicVector<T>::get_all_elems() const {
+    $$$$$:  157-block  0
+    #####:  158:    return this->elements;
+    $$$$$:  158-block  0
+        -:  159:}
+        -:  160:
+        -:  161:template<class T>
+    #####:  162:int DynamicVector<T>::getSize() {
+    $$$$$:  162-block  0
+    #####:  163:    return this->size;
+    $$$$$:  163-block  0
+        -:  164:}
+        -:  165:
+        -:  166:template <class T>
+        -:  167:DynamicVector<T>& DynamicVector<T>::operator+(const T& classObj) {
+        -:  168:    this->add(classObj);
+        -:  169:    return *this;
+        -:  170:}

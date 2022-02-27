@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\sorted_map_lab5_BST.dir/objects.a
+C:\Qt\Tools\mingw810_32\bin\ar.exe cr CMakeFiles\sorted_map_lab5_BST.dir/objects.a @CMakeFiles\sorted_map_lab5_BST.dir\objects1.rsp
+C:\Qt\Tools\mingw810_32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\sorted_map_lab5_BST.dir/objects.a -Wl,--no-whole-archive  -o sorted_map_lab5_BST.exe -Wl,--out-implib,libsorted_map_lab5_BST.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sorted_map_lab5_BST.dir\linklibs.rsp

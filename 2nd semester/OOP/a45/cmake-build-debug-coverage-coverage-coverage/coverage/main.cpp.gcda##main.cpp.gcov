@@ -1,0 +1,203 @@
+        -:    0:Source:C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/main.cpp
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <iostream>
+        -:    2:#include <string>
+        -:    3:#include "ui/UI.h"
+        -:    4:#define _CRTDBG_MAP_ALLOC
+        -:    5:#include <stdlib.h>
+        -:    6:#include "tests/tests.h"
+        -:    7:
+        1:    8:int main()
+        1:    8-block  0
+        -:    9:{
+        2:   10:    Tests tests;
+        1:   10-block  0
+        1:   10-block  1
+    %%%%%:   10-block  2
+    %%%%%:   10-block  3
+        1:   11:    tests.test_all();
+        -:   12:
+        2:   13:    Repo repo{};
+        1:   13-block  0
+    %%%%%:   13-block  1
+        2:   14:    Tutorial t1 {"Pointers", "Jeff", Duration{16, 58}, 200, "https://www.youtube.com/watch?v=DTxHyVn0ODg"};
+        1:   14-block  0
+        1:   14-block  1
+        1:   14-block  2
+        1:   14-block  3
+        1:   14-block  4
+    %%%%%:   14-block  5
+    %%%%%:   14-block  6
+    %%%%%:   14-block  7
+    %%%%%:   14-block  8
+    %%%%%:   14-block  9
+    %%%%%:   14-block 10
+    %%%%%:   14-block 11
+    %%%%%:   14-block 12
+    %%%%%:   14-block 13
+        2:   15:    Tutorial t2 {"Classes", "Ryan", Duration{8, 41}, 167, "https://www.youtube.com/watch?v=2BP8NhxjrO0"};
+        1:   15-block  0
+        1:   15-block  1
+        1:   15-block  2
+        1:   15-block  3
+    %%%%%:   15-block  4
+    %%%%%:   15-block  5
+    %%%%%:   15-block  6
+    %%%%%:   15-block  7
+    %%%%%:   15-block  8
+    %%%%%:   15-block  9
+    %%%%%:   15-block 10
+    %%%%%:   15-block 11
+    %%%%%:   15-block 12
+        2:   16:    Tutorial t3 {"Classes vs Structs", "Peter", Duration{8, 31}, 150, "https://www.youtube.com/watch?v=fLgTtaqqJp0&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&start_radio=1&t=4"};
+        1:   16-block  0
+        1:   16-block  1
+        1:   16-block  2
+        1:   16-block  3
+    %%%%%:   16-block  4
+    %%%%%:   16-block  5
+    %%%%%:   16-block  6
+    %%%%%:   16-block  7
+    %%%%%:   16-block  8
+    %%%%%:   16-block  9
+    %%%%%:   16-block 10
+    %%%%%:   16-block 11
+    %%%%%:   16-block 12
+        2:   17:    Tutorial t4 {"Templates", "Ryan", Duration{17, 57}, 312, "https://www.youtube.com/watch?v=I-hZkUa9mIs&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&index=4"};
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+        1:   17-block  3
+    %%%%%:   17-block  4
+    %%%%%:   17-block  5
+    %%%%%:   17-block  6
+    %%%%%:   17-block  7
+    %%%%%:   17-block  8
+    %%%%%:   17-block  9
+    %%%%%:   17-block 10
+    %%%%%:   17-block 11
+    %%%%%:   17-block 12
+        2:   18:    Tutorial t5 {"References", "Jane", Duration{10, 12}, 223, "https://www.youtube.com/watch?v=IzoFn3dfsPA&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&index=5"};
+        1:   18-block  0
+        1:   18-block  1
+        1:   18-block  2
+        1:   18-block  3
+    %%%%%:   18-block  4
+    %%%%%:   18-block  5
+    %%%%%:   18-block  6
+    %%%%%:   18-block  7
+    %%%%%:   18-block  8
+    %%%%%:   18-block  9
+    %%%%%:   18-block 10
+    %%%%%:   18-block 11
+    %%%%%:   18-block 12
+        2:   19:    Tutorial t6 {"Headers", "Alex", Duration{15, 9}, 462, "https://www.youtube.com/watch?v=9RJTQmK0YPI&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&index=11"};
+        1:   19-block  0
+        1:   19-block  1
+        1:   19-block  2
+        1:   19-block  3
+    %%%%%:   19-block  4
+    %%%%%:   19-block  5
+    %%%%%:   19-block  6
+    %%%%%:   19-block  7
+    %%%%%:   19-block  8
+    %%%%%:   19-block  9
+    %%%%%:   19-block 10
+    %%%%%:   19-block 11
+    %%%%%:   19-block 12
+        2:   20:    Tutorial t7 {"Dynamic arrays", "Ryan", Duration{14, 13}, 165, "https://www.youtube.com/watch?v=PocJ5jXv8No&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&index=16"};
+        1:   20-block  0
+        1:   20-block  1
+        1:   20-block  2
+        1:   20-block  3
+    %%%%%:   20-block  4
+    %%%%%:   20-block  5
+    %%%%%:   20-block  6
+    %%%%%:   20-block  7
+    %%%%%:   20-block  8
+    %%%%%:   20-block  9
+    %%%%%:   20-block 10
+    %%%%%:   20-block 11
+    %%%%%:   20-block 12
+        2:   21:    Tutorial t8 {"Iterators", "Richard", Duration{17, 8}, 76, "https://www.youtube.com/watch?v=SgcHcbQ0RCQ&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&index=26"};
+        1:   21-block  0
+        1:   21-block  1
+        1:   21-block  2
+        1:   21-block  3
+    %%%%%:   21-block  4
+    %%%%%:   21-block  5
+    %%%%%:   21-block  6
+    %%%%%:   21-block  7
+    %%%%%:   21-block  8
+    %%%%%:   21-block  9
+    %%%%%:   21-block 10
+    %%%%%:   21-block 11
+    %%%%%:   21-block 12
+        2:   22:    Tutorial t9 {"Libraries", "Ryan", Duration{18, 34}, 111, "https://www.youtube.com/watch?v=or1dAmUO8k0&list=RDCMUCQ-W1KE9EYfdxhL6S4twUNw&index=24"};
+        1:   22-block  0
+        1:   22-block  1
+        1:   22-block  2
+        1:   22-block  3
+    %%%%%:   22-block  4
+    %%%%%:   22-block  5
+    %%%%%:   22-block  6
+    %%%%%:   22-block  7
+    %%%%%:   22-block  8
+    %%%%%:   22-block  9
+    %%%%%:   22-block 10
+    %%%%%:   22-block 11
+    %%%%%:   22-block 12
+        2:   23:    Tutorial t10 {"Data Structures and Algorithms", "Ryan", Duration{10, 31}, 87, "https://www.youtube.com/watch?v=vA4QG1PlTRI"};
+        1:   23-block  0
+        1:   23-block  1
+        1:   23-block  2
+        1:   23-block  3
+    %%%%%:   23-block  4
+    %%%%%:   23-block  5
+    %%%%%:   23-block  6
+    %%%%%:   23-block  7
+    %%%%%:   23-block  8
+    %%%%%:   23-block  9
+    %%%%%:   23-block 10
+    %%%%%:   23-block 11
+        -:   24:
+        1:   25:    repo.add_tutorial(t1);
+        1:   26:    repo.add_tutorial(t2);
+        1:   26-block  0
+        1:   27:    repo.add_tutorial(t3);
+        1:   27-block  0
+        1:   28:    repo.add_tutorial(t4);
+        1:   28-block  0
+        1:   29:    repo.add_tutorial(t5);
+        1:   29-block  0
+        1:   30:    repo.add_tutorial(t6);
+        1:   30-block  0
+        1:   31:    repo.add_tutorial(t7);
+        1:   31-block  0
+        1:   32:    repo.add_tutorial(t8);
+        1:   32-block  0
+        1:   33:    repo.add_tutorial(t9);
+        1:   33-block  0
+        1:   34:    repo.add_tutorial(t10);
+        1:   34-block  0
+        -:   35:
+        2:   36:    Service service {repo};
+        1:   36-block  0
+    %%%%%:   36-block  1
+        2:   37:    UI ui{service};
+        1:   37-block  0
+        1:   37-block  1
+    %%%%%:   37-block  2
+        1:   38:    ui.run();
+        1:   38-block  0
+        -:   39:
+        1:   40:    return 0;
+        4:   41:}
+        1:   41-block  0
+        1:   41-block  1
+        1:   41-block  2
+        1:   41-block  3
+        1:   41-block  4

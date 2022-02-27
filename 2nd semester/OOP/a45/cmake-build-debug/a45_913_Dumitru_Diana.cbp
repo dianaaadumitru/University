@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a45_913_Dumitru_Diana"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a45_913_Dumitru_Diana">
+				<Option output="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/a45_913_Dumitru_Diana.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 a45_913_Dumitru_Diana"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a45_913_Dumitru_Diana/fast">
+				<Option output="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/a45_913_Dumitru_Diana.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 a45_913_Dumitru_Diana/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/UI.cpp">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/UI.h">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/array.cpp">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/array.h">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain.cpp">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/domain.h">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/main.cpp">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo.cpp">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/repo.h">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service.cpp">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/service.h">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests.cpp">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/tests.h">
+			<Option target="a45_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

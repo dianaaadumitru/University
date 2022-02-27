@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a67_913_Dumitru_Diana"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a67_913_Dumitru_Diana">
+				<Option output="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/a67_913_Dumitru_Diana.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/domain"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/dynamic_vector"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/iterator"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/service"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/tests"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/ui"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 a67_913_Dumitru_Diana"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a67_913_Dumitru_Diana/fast">
+				<Option output="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/a67_913_Dumitru_Diana.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/domain"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/dynamic_vector"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/iterator"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/service"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/tests"/>
+					<Add directory="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/ui"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Qt/Tools/mingw810_32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 a67_913_Dumitru_Diana/fast"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_32/bin/mingw32-make.exe -f &quot;C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/domain/domain.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/domain/domain.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/dynamic_vector/array.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/dynamic_vector/array.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/iterator/iterator.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/iterator/iterator.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/main.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/CSVRepo.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/CSVRepo.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/FileRepo.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/FileRepo.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/HTMLRepo.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/HTMLRepo.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/IFileRepo.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/repo.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/repo/repo.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/service/service.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/service/service.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/tests/tests.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/tests/tests.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/ui/UI.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/ui/UI.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/utils/utils.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/utils/utils.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/validator/validator.cpp">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/validator/validator.h">
+			<Option target="a67_913_Dumitru_Diana"/>
+		</Unit>
+		<Unit filename="C:/Users/diana/Desktop/uni work/2nd sem/OOP/a67-913-Dumitru-Diana/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

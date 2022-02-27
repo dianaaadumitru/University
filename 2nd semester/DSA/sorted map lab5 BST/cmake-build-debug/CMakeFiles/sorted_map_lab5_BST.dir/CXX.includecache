@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/App.cpp
+ExtendedTest.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ExtendedTest.h
+ShortTest.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ShortTest.h
+SortedMap.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SortedMap.h
+iostream
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ExtendedTest.cpp
+exception
+-
+assert.h
+-
+algorithm
+-
+vector
+-
+iostream
+-
+SortedMap.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SortedMap.h
+SMIterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SMIterator.h
+ExtendedTest.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ExtendedTest.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ExtendedTest.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SMIterator.h
+SortedMap.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SortedMap.h
+stack
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ShortTest.cpp
+assert.h
+-
+SortedMap.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SortedMap.h
+SMIterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SMIterator.h
+ShortTest.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ShortTest.h
+exception
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/ShortTest.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted map lab5 BST/SortedMap.h
+utility
+-
+

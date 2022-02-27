@@ -1,0 +1,4 @@
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/practiceTest/cmake-build-debug/CMakeFiles/practiceTest.dir
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/practiceTest/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/practiceTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/practiceTest/cmake-build-debug/CMakeFiles/practiceTest_autogen.dir

@@ -1,0 +1,12 @@
+# ninja log v5
+4	271	6388260538967550	CMakeFiles/a45_913_Dumitru_Diana.dir/dynamic_vector/array.cpp.obj	86ceb5874e747a9a
+21	1059	6388260546772524	CMakeFiles/a45_913_Dumitru_Diana.dir/iterator/iterator.cpp.obj	64ec11ec078eca92
+11	1061	6388260546912151	CMakeFiles/a45_913_Dumitru_Diana.dir/repo/repo.cpp.obj	1af776e9394abaed
+14	1074	6388260547021861	CMakeFiles/a45_913_Dumitru_Diana.dir/service/service.cpp.obj	2a4d560d5fc7f13
+18	1119	6388260547530500	CMakeFiles/a45_913_Dumitru_Diana.dir/tests/tests.cpp.obj	a171b39b40bc2081
+8	1143	6388260547680097	CMakeFiles/a45_913_Dumitru_Diana.dir/main.cpp.obj	8f9f0916d7434618
+27	1188	6388260548258540	CMakeFiles/a45_913_Dumitru_Diana.dir/ui/UI.cpp.obj	7dc54935d78374ec
+1	1728	6388260553672573	CMakeFiles/a45_913_Dumitru_Diana.dir/domain/domain.cpp.obj	eaf0464c05b32e8c
+1728	2078	6388260557058625	a45_913_Dumitru_Diana.exe	3f0e5ac736ebded1
+2	1095	6388266608863700	CMakeFiles/a45_913_Dumitru_Diana.dir/main.cpp.obj	8f9f0916d7434618
+1096	1348	6388266611014773	a45_913_Dumitru_Diana.exe	3f0e5ac736ebded1

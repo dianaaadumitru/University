@@ -1,0 +1,72 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/BMI.cpp
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/BMI.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/BP.cpp
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/BP.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Measurement.cpp
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Measurement.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Person.cpp
+Person.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Person.h
+iostream
+-
+algorithm
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Person.h
+domain.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/domain.h
+Measurement.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Measurement.h
+BMI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/BMI.h
+BP.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/BP.h
+vector
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/UI.cpp
+UI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/UI.h
+iostream
+-
+string
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/UI.h
+Person.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Person.h
+Measurement.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/Measurement.h
+domain.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/domain.h
+validator.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/validator.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/domain.h
+string
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/main.cpp
+UI.h
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/UI.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t2-913-Dumitru-Diana-1/validator.h
+exception
+-
+string
+-
+

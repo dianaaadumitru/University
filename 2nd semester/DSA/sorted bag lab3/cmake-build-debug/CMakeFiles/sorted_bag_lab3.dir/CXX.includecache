@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/ExtendedTest.cpp
+ShortTest.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/ShortTest.h
+SortedBag.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/SortedBag.h
+SortedBagIterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/SortedBagIterator.h
+assert.h
+-
+iostream
+-
+exception
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/ShortTest.cpp
+ShortTest.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/ShortTest.h
+SortedBag.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/SortedBag.h
+SortedBagIterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/SortedBagIterator.h
+assert.h
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/ShortTest.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/SortedBag.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/SortedBagIterator.h
+SortedBag.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted bag lab3/SortedBag.h
+

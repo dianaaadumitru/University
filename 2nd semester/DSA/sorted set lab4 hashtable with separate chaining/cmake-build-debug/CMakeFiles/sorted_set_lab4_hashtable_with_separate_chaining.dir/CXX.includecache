@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/ExtendedTest.cpp
+SortedSet.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/SortedSet.h
+assert.h
+-
+SortedSetIterator.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/SortedSetIterator.h
+exception
+-
+ExtendedTest.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/ExtendedTest.h
+iostream
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/ExtendedTest.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/SortedSet.h
+cmath
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/SortedSetIterator.h
+SortedSet.h
+C:/Users/diana/Desktop/uni work/2nd sem/DSA/sorted set lab4 hashtable with separate chaining/SortedSet.h
+

@@ -1,0 +1,44 @@
+        -:    0:Source:c:/users/diana/desktop/uni work/2nd sem/oop/a45-913-dumitru-diana/iterator/iterator.h
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#pragma once
+        -:    2:#include "../dynamic_vector/array.h"
+        -:    3:#include "../domain/domain.h"
+        -:    4:
+    #####:    5:class Iterator
+    $$$$$:    5-block  0
+    $$$$$:    5-block  1
+    $$$$$:    5-block  2
+    $$$$$:    5-block  3
+        -:    6:{
+        -:    7:private:
+        -:    8:    DynamicVector<Tutorial> tutorials;
+        -:    9:    int current;
+        -:   10:
+        -:   11:public:
+        -:   12:    Iterator();
+        -:   13:
+        -:   14:    Tutorial get_current_tutorial();
+        -:   15:
+        -:   16:    void open();
+        -:   17:
+        -:   18:    void next();
+        -:   19:
+        -:   20:    void add(const Tutorial t);
+        -:   21:
+        -:   22:    void iterator_empty();
+        -:   23:
+        -:   24:    void update_likes(int pos);
+        -:   25:
+       10:   26:    DynamicVector<Tutorial> get_tutorials_iter() {return tutorials; }
+        5:   26-block  0
+        5:   26-block  1
+        -:   27:
+        2:   28:    int get_current() {return current; }
+        1:   28-block  0
+        1:   28-block  1
+        -:   29:
+        -:   30:
+        -:   31:};

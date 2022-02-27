@@ -1,0 +1,3 @@
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/cmake-build-debug/CMakeFiles/t1_913_Dumitru_Diana_1.dir
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/diana/Desktop/uni work/2nd sem/OOP/t1-913-Dumitru-Diana-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

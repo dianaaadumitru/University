@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Idea.h
+Utils.h
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Utils.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Repository.cpp
+Repository.h
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Repository.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Repository.h
+Idea.h
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Idea.h
+Writer.h
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Writer.h
+
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Utils.h
+vector
+-
+sstream
+-
+string
+-
+fstream
+-
+algorithm
+-
+stdexcept
+-
+
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Writer.h
+Utils.h
+C:/Users/diana/Desktop/uni work/2nd sem/drill/Utils.h
+

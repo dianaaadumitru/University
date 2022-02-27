@@ -1,0 +1,106 @@
+
+#include "service.h"
+
+bool Service::add_tutorial_service(const std::string& title, const std::string& presenter, double min, double sec, int likes, const std::string& link)
+///add a new tutorial to the list
+///returns true if the tutorial was added, false otherwise
+{
+    Tutorial t{ title, presenter, Duration{min, sec}, likes, link};
+    return this->repo.add_tutorial(t);
+}
+
+bool Service::remove_tutorial_service(const std::string& presenter, const std:: string& title)
+///search in the list of tutorials for a tutorial by its title and presenter
+///returns the tutorial if it exists or an empty tutorial otherwise
+{
+    return this->repo.remove_tutorial(presenter, title);
+}
+
+bool Service::update_tutorial_service(const std::string& presenter, const std:: string& title, int op, const std::string& new_elem)
+///updates the title the presenter or the link of a tutorial, depending on the user option
+///returns true if the tutorial was updated, false otherwise
+{
+    return this->repo.update_tutorial(presenter, title, op, new_elem);
+}
+
+bool Service::update_tutorial_duration_service(const std::string& presenter, const std:: string& title, double min, double sec)
+///updates the title the duration of a tutorial
+///returns true if the tutorial was updated, false otherwise
+{
+    return this->repo.update_tutorial_duration(presenter, title, min, sec);
+}
+
+bool Service::update_tutorial_likes_service(const std::string& presenter, const std:: string& title, int likes)
+///updates the title the likes of a tutorial
+///returns true if the tutorial was updated, false otherwise
+{
+    return this->repo.update_tutorial_likes(presenter, title, likes);
+}
+
+void Service::create_iterator(const std::string & presenter)
+///creates an iterator
+///returns a dynamic array that contains the whole list or the tutorials from a given presenter
+{
+    this->iter.iterator_empty();
+    DynamicVector<Tutorial> t = this->repo.get_tutorials();
+    if (presenter.size() == 0)
+    {
+        for (int i = 0; i < t.getSize(); ++i) {
+            this->iter.add(t[i]);
+        }
+    } else
+        for (int i = 0; i < t.getSize(); ++i) {
+            if (t[i].get_presenter() == presenter)
+                this->iter.add(t[i]);
+        }
+}
+
+void Service::start_iteration()
+///play the first tutorial from iteration
+{
+    this->iter.open();
+}
+
+Tutorial Service::get_current_tutorial()
+///returns the current tutorial from the iterator
+{
+    return this->iter.get_current_tutorial();
+}
+
+void Service::next()
+///plays the next tutorial from the iterator
+{
+    this->iter.next();
+}
+
+bool Service::add_tutorial_watchlist(const Tutorial & t)
+///add a new tutorial to the watchlist
+///returns true if the tutorial was added, false otherwise
+{
+    return this->watchlist.add_tutorial(t);
+}
+
+bool Service::delete_tutorial_watchlist(const std::string &presenter, const std::string &title)
+///deletes a tutorial from the watchlist
+{
+    return this->watchlist.remove_tutorial(presenter, title);
+}
+
+Tutorial Service::find_by_presenter_and_title_watchlist(const std::string& presenter, const std:: string& title)
+///search in the list of tutorials for a tutorial by its title and presenter
+///returns the tutorial if it exists or an empty tutorial otherwise
+
+{
+    return this->watchlist.find_by_presenter_and_title(presenter, title);
+}
+
+int Service::like_tutorial(const std::string &presenter, const std::string &title)
+///likes a tutorial from the watchlist
+{
+    Tutorial t = this->find_by_presenter_and_title_watchlist(presenter, title);
+    t.like();
+    int pos = this->repo.find_pos_tutorial(t);
+    this->iter.update_likes(pos);
+//    this->update_tutorial_likes_service(presenter, title, t.get_no_of_likes());
+    return t.get_no_of_likes();
+}

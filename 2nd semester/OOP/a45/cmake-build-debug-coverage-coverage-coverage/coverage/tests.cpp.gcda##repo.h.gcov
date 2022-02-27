@@ -1,0 +1,56 @@
+        -:    0:Source:c:/users/diana/desktop/uni work/2nd sem/oop/a45-913-dumitru-diana/repo/repo.h
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\tests\tests.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#pragma once
+        -:    2:#include "../dynamic_vector/array.h"
+        -:    3:#include "../domain/domain.h"
+        -:    4:
+    #####:    5:class Repo
+    $$$$$:    5-block  0
+    $$$$$:    5-block  1
+    $$$$$:    5-block  2
+    $$$$$:    5-block  3
+        -:    6:{
+        -:    7:private:
+        -:    8:    DynamicVector<Tutorial> tutorials;
+        -:    9://    DynamicVector tutorials;
+        -:   10:public:
+        -:   11:    /*
+        -:   12:     Constructor, initializes an object of type repo
+        -:   13:     */
+    #####:   14:    Repo() {};
+    $$$$$:   14-block  0
+    $$$$$:   14-block  1
+        -:   15://    ~Repo();
+        -:   16:
+        -:   17:
+        -:   18:    /*
+        -:   19:     Adds a tutorial to the repo
+        -:   20:     returns true if the tutorial was added, false otherwise
+        -:   21:     */
+        -:   22:    bool add_tutorial(const Tutorial & t);
+        -:   23:
+        -:   24:    /*
+        -:   25:     Look after a tutorial by its presenter and title
+        -:   26:     Returns the tutorial that was found, or an empty tutorial otherwise
+        -:   27:     */
+        -:   28:    Tutorial find_by_presenter_and_title(const std::string& presenter, const std:: string& title);
+        -:   29:
+    #####:   30:    DynamicVector<Tutorial> get_tutorials() {return tutorials; }
+    $$$$$:   30-block  0
+    $$$$$:   30-block  1
+        -:   31://    DynamicVector get_tutorials() {return tutorials;}
+        -:   32:
+        -:   33:    bool remove_tutorial(const std::string& presenter, const std:: string& title);
+        -:   34:
+        -:   35:    int find_pos_tutorial(const Tutorial& t);
+        -:   36:
+        -:   37:    bool update_tutorial(const std::string& presenter, const std::string& title, int op, const std::string& new_elem);
+        -:   38:
+        -:   39:    bool update_tutorial_duration(const std::string& presenter, const std:: string& title, double min, double sec);
+        -:   40:
+        -:   41:    bool update_tutorial_likes(const std::string& presenter, const std:: string& title, int likes);
+        -:   42:
+        -:   43:};

@@ -1,0 +1,29 @@
+        -:    0:Source:C:/Users/diana/Desktop/uni work/2nd sem/OOP/a45-913-Dumitru-Diana/ui/UI.h
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#pragma once
+        -:    2:#include "../service/service.h"
+        -:    3:
+        2:    4:class UI {
+        1:    4-block  0
+        1:    4-block  1
+        -:    5:public:
+        -:    6:    Service service;
+        -:    7:    void run();
+        -:    8:
+        -:    9:private:
+        -:   10:    static void print_menu();
+        -:   11:    static void print_menu_administrator();
+        -:   12:    void display_tutorials_ui();
+        -:   13:    static void print_tutorial_ui(const Tutorial& t);
+        -:   14:    void add_tutorial_ui();
+        -:   15:    void remove_tutorial_ui();
+        -:   16:    void update_tutorial_ui();
+        -:   17:    static void print_menu_user();
+        -:   18:    void view_watchlist_ui();
+        -:   19:    void delete_tutorial_ui();
+        -:   20:    void add_tutorial_watchlist_ui();
+        -:   21:    void next_ui();
+        -:   22:};

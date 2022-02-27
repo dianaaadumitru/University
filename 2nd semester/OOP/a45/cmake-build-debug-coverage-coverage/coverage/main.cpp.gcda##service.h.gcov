@@ -1,0 +1,67 @@
+        -:    0:Source:c:/users/diana/desktop/uni work/2nd sem/oop/a45-913-dumitru-diana/service/service.h
+        -:    0:Graph:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\diana\Desktop\uni work\2nd sem\OOP\a45-913-Dumitru-Diana\cmake-build-debug-coverage-coverage\CMakeFiles\a45_913_Dumitru_Diana.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#pragma once
+        -:    2:#include "../repo/repo.h"
+        -:    3:#include "../iterator/iterator.h"
+        -:    4:
+        7:    5:class Service
+        1:    5-block  0
+        1:    5-block  1
+        1:    5-block  2
+        1:    5-block  3
+    %%%%%:    5-block  4
+    %%%%%:    5-block  5
+        3:    5-block  6
+        3:    5-block  7
+        -:    6:{
+        -:    7:private:
+        -:    8:    Repo repo;
+        -:    9:    Repo watchlist;
+        -:   10:    Iterator iter;
+        -:   11:
+        -:   12:public:
+        2:   13:    Service(const Repo &r): repo{r} {}
+        2:   13-block  0
+        2:   13-block  1
+        2:   13-block  2
+        2:   13-block  3
+    %%%%%:   13-block  4
+    %%%%%:   13-block  5
+        -:   14:
+        -:   15:    //administrator mode functionalities
+        -:   16:    Repo get_repo() const { return repo; }
+        -:   17:
+        -:   18:    bool add_tutorial_service(const std::string& title, const std::string& presenter, double min, double sec, int likes, const std::string& link);
+        -:   19:
+        -:   20:    bool remove_tutorial_service(const std::string& presenter, const std:: string& title);
+        -:   21:
+        -:   22:    bool update_tutorial_service(const std::string& presenter, const std:: string& title, int op, const std::string& new_elem);
+        -:   23:
+        -:   24:    bool update_tutorial_duration_service(const std::string& presenter, const std:: string& title, double min, double sec);
+        -:   25:
+        -:   26:    bool update_tutorial_likes_service(const std::string& presenter, const std:: string& title, int likes);
+        -:   27:
+        -:   28:    //user mode functionalities
+        -:   29:    Repo get_wathlist() const {return watchlist; }
+        -:   30:
+        -:   31:    void create_iterator(const std::string &presenter);
+        -:   32:
+        -:   33:    void start_iteration();
+        -:   34:
+        -:   35:    Tutorial get_current_tutorial();
+        -:   36:
+        -:   37:    void next();
+        -:   38:
+        -:   39:    bool add_tutorial_watchlist(const Tutorial & t);
+        -:   40:
+        -:   41:    bool delete_tutorial_watchlist(const std::string& presenter, const std:: string& title);
+        -:   42:
+        -:   43:    Tutorial find_by_presenter_and_title_watchlist(const std::string& presenter, const std:: string& title);
+        -:   44:
+        -:   45:    int like_tutorial(const std::string& presenter, const std:: string& title);
+        -:   46:
+        -:   47:    Iterator get_iterator() {return iter; }
+        -:   48:};
