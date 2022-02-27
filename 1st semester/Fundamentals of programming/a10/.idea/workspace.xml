@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a4b8070-06b7-4d98-b216-898e3881d7bd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="399aab75-5e90-4977-85a5-dcb18b93f7a0" />
+  <component name="ProjectId" id="1lf4ST82mDcWpWtIHuUuEfe2Sz7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\diana\Documents\GitHub\a10-913-Dumitru-Diana\src\struct" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\diana\Documents\GitHub\a10-913-Dumitru-Diana" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in tests_struct.py">
+    <configuration name="console" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="a10-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ui/console.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests_struct.testSortFilter.testFilter" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="a10-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/struct" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests_struct.testSortFilter.testFilter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests_struct.testStructure.testIt" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="a10-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/struct" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests_struct.testStructure.testIt&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.testStructure" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="a10-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/struct" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.testStructure&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in tests_struct.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="a10-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/struct" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/struct/tests_struct.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in tests_struct.py" />
+        <item itemvalue="Python.console" />
+        <item itemvalue="Python tests.Unittests for tests_struct.testSortFilter.testFilter" />
+        <item itemvalue="Python tests.Unittests for tests.testStructure" />
+        <item itemvalue="Python tests.Unittests for tests_struct.testStructure.testIt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a4b8070-06b7-4d98-b216-898e3881d7bd" name="Default Changelist" comment="" />
+      <created>1607974810809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607974810809</updated>
+      <workItem from="1607974811976" duration="2474000" />
+      <workItem from="1608032321659" duration="17226000" />
+      <workItem from="1608113860577" duration="6946000" />
+      <workItem from="1608127504654" duration="935000" />
+      <workItem from="1608128459130" duration="1010000" />
+      <workItem from="1608142720565" duration="814000" />
+      <workItem from="1608184817029" duration="5287000" />
+      <workItem from="1608225574174" duration="226000" />
+      <workItem from="1609746454300" duration="644000" />
+      <workItem from="1609747846028" duration="4360000" />
+      <workItem from="1611922561616" duration="27000" />
+      <workItem from="1611924332574" duration="729000" />
+      <workItem from="1612079700307" duration="3077000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1609756613221">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609756613221" />
+    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1609747658805" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608225756414" />
+    <state width="943" height="553" key="GridCell.Tab.0.bottom" timestamp="1608190614616">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="943" height="553" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608189355981" />
+    <state width="699" height="912" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608119913537" />
+    <state width="943" height="553" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608190614616" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478041" />
+    <state width="943" height="553" key="GridCell.Tab.0.center" timestamp="1608190614616">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="943" height="553" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608189355980" />
+    <state width="699" height="912" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608119913537" />
+    <state width="943" height="553" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608190614616" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478041" />
+    <state width="943" height="553" key="GridCell.Tab.0.left" timestamp="1608190614616">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="943" height="553" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608189355980" />
+    <state width="699" height="912" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608119913537" />
+    <state width="943" height="553" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608190614616" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478040" />
+    <state width="943" height="553" key="GridCell.Tab.0.right" timestamp="1608190614616">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="943" height="553" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1608189355980" />
+    <state width="699" height="912" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608119913537" />
+    <state width="943" height="553" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608190614616" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478041" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608129478042">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478042" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1608129478041">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478041" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1608129478041">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478041" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1608129478041">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608129478041" />
+    <state x="0" y="0" width="1190" height="733" maximized="true" key="dock-window-1" timestamp="1608127167548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1190" height="733" maximized="true" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1608127167548" />
+    <state x="0" y="0" width="1294" height="688" key="dock-window-2" timestamp="1608127167548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1294" height="688" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1608127167548" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_for_tests_struct_testStructure_testIt.coverage" NAME="Unittests for tests_struct.testStructure.testIt Coverage Results" MODIFIED="1608129244880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/struct" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$console.coverage" NAME="console Coverage Results" MODIFIED="1608189937535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ui" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_in_tests_py.coverage" NAME="Unittests in tests.py Coverage Results" MODIFIED="1608128625101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_in_tests_domain_py.coverage" NAME="Unittests in tests_domain.py Coverage Results" MODIFIED="1608128000304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/domain" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_for_tests_testStructure.coverage" NAME="Unittests for tests.testStructure Coverage Results" MODIFIED="1608129271396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/struct" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_for_tests_testSortFilter.coverage" NAME="Unittests for tests.testSortFilter Coverage Results" MODIFIED="1608128613716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/struct" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$iterable_structure__1_.coverage" NAME="iterable_structure (1) Coverage Results" MODIFIED="1608047348032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$tests.coverage" NAME="tests Coverage Results" MODIFIED="1608127958391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/struct" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_in_tests_struct_py.coverage" NAME="Unittests in tests_struct.py Coverage Results" MODIFIED="1608189988376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/struct" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_for_tests_struct_testSortFilter_testFilter.coverage" NAME="Unittests for tests_struct.testSortFilter.testFilter Coverage Results" MODIFIED="1608187553025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/struct" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$sort_filter.coverage" NAME="iterable_structure Coverage Results" MODIFIED="1608047671419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/a10_913_Dumitru_Diana$Unittests_for_tests_testSortFilter_testFilter.coverage" NAME="Unittests for tests.testSortFilter.testFilter Coverage Results" MODIFIED="1608116020216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+</project>

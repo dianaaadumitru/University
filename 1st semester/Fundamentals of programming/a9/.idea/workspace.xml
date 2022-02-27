@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b617450d-4c12-47db-87e6-fdd2e30621d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/book.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/book.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/book.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/book.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/client.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/client.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/client.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/client_pickle_repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/client_pickle_repo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/console.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/settings.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="399aab75-5e90-4977-85a5-dcb18b93f7a0" />
+  <component name="ProjectId" id="1lHKd6HjtfEYGyyc5h87GIhjJN2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\diana\Documents\GitHub\a9-913-Dumitru-Diana\src\files" />
+      <recent name="C:\Users\diana\Documents\GitHub\a9-913-Dumitru-Diana\src\ui" />
+      <recent name="C:\Users\diana\Documents\GitHub\a9-913-Dumitru-Diana\src\repository" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\diana\Documents\GitHub\a9-913-Dumitru-Diana\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.console">
+    <configuration name="book_text_repo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="a9-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/repository" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/repository/book_text_repo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="client_text_repo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="a9-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/repository" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/repository/client_text_repo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="console" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="a9-913-Dumitru-Diana" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ui/console.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.console" />
+        <item itemvalue="Python.book_text_repo" />
+        <item itemvalue="Python.client_text_repo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b617450d-4c12-47db-87e6-fdd2e30621d7" name="Default Changelist" comment="" />
+      <created>1607248660649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607248660649</updated>
+      <workItem from="1607248661886" duration="1266000" />
+      <workItem from="1607357626708" duration="33405000" />
+      <workItem from="1607581093688" duration="257000" />
+      <workItem from="1607581647665" duration="1457000" />
+      <workItem from="1607583129040" duration="1289000" />
+      <workItem from="1607584441719" duration="2163000" />
+      <workItem from="1607974747867" duration="862000" />
+      <workItem from="1612077235919" duration="1251000" />
+      <workItem from="1615973604905" duration="1344000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Plugins" timestamp="1607581313348">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Plugins/0.0.1280.680@0.0.1280.680" timestamp="1607581313348" />
+    <state x="696" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607537434402">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="696" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607537434402" />
+    <state x="493" y="180" key="FileChooserDialogImpl" timestamp="1607974806109">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1607974806109" />
+    <state x="493" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607447646314" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607361358850" />
+    <state width="837" height="553" key="GridCell.Tab.0.bottom" timestamp="1607587294317">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="837" height="553" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607587294317" />
+    <state width="697" height="912" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607550915118" />
+    <state width="837" height="553" key="GridCell.Tab.0.center" timestamp="1607587294317">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="837" height="553" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607587294317" />
+    <state width="697" height="912" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607550915118" />
+    <state width="837" height="553" key="GridCell.Tab.0.left" timestamp="1607587294317">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="837" height="553" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607587294317" />
+    <state width="697" height="912" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607550915118" />
+    <state width="837" height="553" key="GridCell.Tab.0.right" timestamp="1607587294317">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="837" height="553" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607587294317" />
+    <state width="697" height="912" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607550915118" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/a9_913_Dumitru_Diana$client_text_repo.coverage" NAME="client_text_repo Coverage Results" MODIFIED="1607530767288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/repository" />
+    <SUITE FILE_PATH="coverage/a9_913_Dumitru_Diana$console.coverage" NAME="console Coverage Results" MODIFIED="1607586302670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ui" />
+    <SUITE FILE_PATH="coverage/a9_913_Dumitru_Diana$book_text_repo.coverage" NAME="book_text_repo Coverage Results" MODIFIED="1607548232779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/repository" />
+  </component>
+</project>
