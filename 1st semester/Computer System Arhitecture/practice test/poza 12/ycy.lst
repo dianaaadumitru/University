@@ -1,0 +1,80 @@
+     1                                  ;Se da un sir de dublucuvinte. Se cere formarea si afisarea unui sir de biti cu urmatoarele reguli:
+     2                                  ;Se ia cel mai semnificativ octet din cel mai putin semnificativ cuvant, iar daca este strict negativ se pune in sir.
+     3                                  ;Eemplu: sir dd 12345678h,1234 abcdh,FF00 FE33h.
+     4                                  ;Pe ecan se afiseaza: 1010 1011 1111 1110 (numerele gasite fiind AB,FE)
+     5                                  
+     6                                  
+     7                                  
+     8                                  
+     9                                  
+    10                                  bits 32 ; assembling for the 32 bits architecture
+    11                                  
+    12                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+    13                                  global start        
+    14                                  
+    15                                  ; declare external functions needed by our program
+    16                                  extern exit, printf               ; tell nasm that exit exists even if we won't be defining it
+    17                                  import exit msvcrt.dll 
+    18                                  import printf msvcrt.dll   
+    19                                  
+    20                                  ; our data is declared here (the variables needed by our program)
+    21                                  segment data use32 class=data
+    22                                      ; ...
+    23 00000000 78563412D2040000CD-         sir dd 12345678h,1234, 0abcdh,0FF00h, 0FE33h
+    23 00000009 AB000000FF000033FE-
+    23 00000012 0000               
+    24                                      len equ $-sir
+    25 00000014 00<rept>                    text times 100 db 0
+    26 00000078 257300                      format db "%s", 0
+    27                                  
+    28                                  ; our code starts here
+    29                                  segment code use32 class=code
+    30                                      start:
+    31                                          ; ...
+    32 00000000 BE[00000000]                    mov esi, sir
+    33 00000005 BF07000000                      mov edi, 7
+    34 0000000A B914000000                      mov ecx, len
+    35 0000000F B2FF                            mov dl, -1
+    36                                          
+    37 00000011 E34B                            jecxz the_end
+    38                                              start_loop:
+    39 00000013 AD                                      lodsd
+    40 00000014 FEC2                                    inc dl
+    41 00000016 C1E808                                  shr eax, 8
+    42                                                  conv2:
+    43 00000019 B400                                    mov ah, 0
+    44 0000001B B302                                    mov bl, 2
+    45 0000001D F6F3                                    div bl
+    46 0000001F 80C430                                  add ah, byte "0"
+    47 00000022 88A7[14000000]                          mov [text+edi], ah
+    48 00000028 4F                                      dec edi
+    49 00000029 3C00                                    cmp al, 0
+    50 0000002B 7404                                    je end_transf
+    51 0000002D B400                                    mov ah, 0
+    52                                                  
+    53                                                  
+    54 0000002F EBE8                                    jmp conv2
+    55                                                  end_transf:
+    56 00000031 83FFFF                                  cmp edi, -1
+    57 00000034 7521                                    jne not_good
+    58 00000036 60                                          pushad
+    59 00000037 BF08000000                                  mov edi, 8
+    60 0000003C 8087[14000000]20                            add [text+edi], byte " "
+    61 00000043 68[14000000]                                push text
+    62 00000048 68[78000000]                                push format
+    63 0000004D FF15[00000000]                              call [printf]
+    64 00000053 83C408                                      add esp, 8
+    65                                                      
+    66 00000056 61                                          popad
+    67                                                  
+    68                                                  not_good:
+    69 00000057 BF07000000                              mov edi, 7
+    70                                              
+    71                                              
+    72 0000005C E2B5                                loop start_loop
+    73                                          the_end:
+    74                                          
+    75                                      
+    76                                          ; exit(0)
+    77 0000005E 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    78 00000060 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

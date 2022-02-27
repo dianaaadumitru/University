@@ -1,0 +1,118 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  global start        
+     4                                  
+     5                                  ; declare external functions needed by our program
+     6                                  extern exit, fopen, printf, fread               
+     7                                  import exit msvcrt.dll    
+     8                                  import fopen msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  import fread msvcrt.dll
+    11                                  
+    12                                  ; our data is declared here (the variables needed by our program)
+    13                                  segment data use32 class=data
+    14                                      ; ...
+    15 00000000 6162632E74787400            file_name db "abc.txt", 0
+    16 00000008 7200                        access_mode db "r", 0
+    17 0000000A FF                          file_descriptor db -1
+    18                                      len equ 100
+    19 0000000B 00<rept>                    text times len db 0
+    20 0000006F FFFFFFFF                    real_len dd -1
+    21 00000073 0A0A00                      new_line db 10,10,0
+    22 00000076 00                          space db 0
+    23 00000077 00<rept>                    text2 times len db 0
+    24 000000DB 00<rept>                    cuv times 20 db 0
+    25 000000EF 70726F706F7A697469-         format_4 db "propozitia: %s, nr cuvinte: %d, primul cuvant %sare %d litere", 0 
+    25 000000F8 613A2025732C206E72-
+    25 00000101 20637576696E74653A-
+    25 0000010A 2025642C207072696D-
+    25 00000113 756C20637576616E74-
+    25 0000011C 202573617265202564-
+    25 00000125 206C697465726500   
+    26                                      
+    27                                  
+    28                                  ; our code starts here
+    29                                  segment code use32 class=code
+    30                                      start:
+    31                                          ; ...
+    32 00000000 68[08000000]                    push dword access_mode
+    33 00000005 68[00000000]                    push dword file_name
+    34 0000000A FF15[00000000]                  call [fopen]
+    35 00000010 83C408                          add esp, 4*2
+    36                                          
+    37 00000013 A3[0A000000]                    mov [file_descriptor], eax
+    38 00000018 BE[0B000000]                    mov esi, text
+    39 0000001D 83F800                          cmp eax, 0
+    40 00000020 0F84AD000000                    je error_fopen
+    41 00000026 FF35[0A000000]                      push dword [file_descriptor]
+    42 0000002C 6A64                                push dword len
+    43 0000002E 6A01                                push dword 1
+    44 00000030 68[0B000000]                        push dword text
+    45 00000035 FF15[00000000]                      call [fread]
+    46 0000003B 83C410                              add esp, 4*4
+    47                                              
+    48 0000003E A3[6F000000]                        mov [real_len], eax
+    49 00000043 89C1                                mov ecx, eax
+    50 00000045 BE[0B000000]                        mov esi, text
+    51 0000004A BA00000000                          mov edx, 0
+    52 0000004F BF00000000                          mov edi, 0
+    53                                  
+    54 00000054 FC                                  cld
+    55 00000055 E37C                                jecxz the_end
+    56                                                  start_loop:
+    57 00000057 AC                                          lodsb
+    58 00000058 3C2E                                        cmp al, "."
+    59 0000005A 742D                                        je same_sen
+    60 0000005C 8882[77000000]                                  mov [text2+edx], al
+    61 00000062 42                                              inc edx
+    62 00000063 8A1D[76000000]                                  mov bl, [space]
+    63 00000069 80FB00                                          cmp bl, 0
+    64 0000006C 7507                                            jne not_first
+    65 0000006E 8887[DB000000]                                      mov [cuv+edi], al
+    66 00000074 47                                                  inc edi
+    67                                                      
+    68                                                          not_first:
+    69 00000075 3C20                                            cmp al, " "
+    70 00000077 750E                                            jne not_another_word
+    71 00000079 8A1D[76000000]                                      mov bl, [space]
+    72 0000007F FEC3                                                inc bl
+    73 00000081 881D[76000000]                                      mov [space], bl
+    74                                                          not_another_word:
+    75 00000087 EB48                                            jmp here
+    76                                                      same_sen:
+    77                                                      
+    78 00000089 60                                          pushad
+    79                                  
+    80 0000008A B800000000                                  mov eax, 0
+    81 0000008F A0[76000000]                                mov al, [space]
+    82 00000094 FEC0                                        inc al
+    83                                                      
+    84 00000096 4F                                          dec edi
+    85                                  
+    86 00000097 57                                          push edi
+    87 00000098 68[DB000000]                                push cuv
+    88 0000009D 50                                          push eax
+    89 0000009E 68[77000000]                                push text2
+    90 000000A3 68[EF000000]                                push format_4
+    91 000000A8 FF15[00000000]                              call [printf]
+    92 000000AE 83C414                                      add esp, 4*5
+    93                                                      
+    94 000000B1 68[73000000]                                push new_line
+    95 000000B6 FF15[00000000]                              call [printf]
+    96 000000BC 83C404                                      add esp, 4
+    97 000000BF 61                                          popad
+    98                                                      
+    99 000000C0 B0FF                                        mov al, -1
+   100 000000C2 A2[76000000]                                mov [space], al
+   101 000000C7 BF00000000                                  mov edi, 0
+   102 000000CC BA00000000                                  mov edx, 0
+   103                                                      here:
+   104 000000D1 E284                                    loop start_loop
+   105                                              the_end:
+   106                                          
+   107                                          error_fopen:
+   108                                      
+   109                                          ; exit(0)
+   110 000000D3 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   111 000000D5 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
+   112                                  

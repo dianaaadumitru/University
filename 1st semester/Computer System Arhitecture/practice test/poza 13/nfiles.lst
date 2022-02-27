@@ -1,0 +1,233 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, fopen, fclose, fread              
+     8                                  import exit msvcrt.dll
+     9                                  import fopen msvcrt.dll
+    10                                  import fclose msvcrt.dll
+    11                                  import fread msvcrt.dll    
+    12                                  
+    13                                  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16                                      ; ...
+    17                                      len equ 2
+    18 00000000 00<rept>                    n times len db 0 
+    19 00000002 6E722E74787400              file_name db "nr.txt", 0
+    20 00000009 7200                        access_mode db "r", 0
+    21 0000000B FFFFFFFF                    file_descriptor dd -1
+    22 0000000F 00<rept>                    text times 13 db 0
+    23 0000001C 00<rept>                    new_file times 13 db 0
+    24 00000029 00                          nr db 0
+    25 0000002A 7700                        access_mode_2 db "w", 0
+    26 0000002C FFFFFFFF                    file_descriptor_2 dd -1
+    27                                      
+    28                                  
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ; ...
+    33 00000000 68[09000000]                    push access_mode
+    34 00000005 68[02000000]                    push file_name
+    35 0000000A FF15[00000000]                  call [fopen]
+    36 00000010 83C408                          add esp, 8
+    37                                          
+    38 00000013 A3[0B000000]                    mov [file_descriptor], eax
+    39 00000018 83F800                          cmp eax, 0
+    40 0000001B 7427                            je error_fopen
+    41                                          
+    42 0000001D FF35[0B000000]                      push dword [file_descriptor]
+    43 00000023 6A02                                push dword len
+    44 00000025 6A01                                push dword 1
+    45 00000027 68[00000000]                        push n
+    46 0000002C FF15[00000000]                      call [fread]
+    47 00000032 83C410                              add esp, 16
+    48                                              
+    49 00000035 FF35[0B000000]                      push dword [file_descriptor]
+    50 0000003B FF15[00000000]                      call [fclose]
+    51 00000041 83C42D                              add esp, 45
+    52                                          error_fopen:
+    53 00000044 BE[00000000]                    mov esi, n
+    54 00000049 BF00000000                      mov edi, 0
+    55 0000004E AC                              lodsb
+    56 0000004F 88C3                            mov bl, al
+    57 00000051 AC                              lodsb
+    58 00000052 3C00                            cmp al, 0
+    59 00000054 750B                            jne one_digit
+    60 00000056 80EB30                              sub bl, byte "0"
+    61 00000059 881D[29000000]                      mov [nr], bl
+    62 0000005F EB2D                                jmp here
+    63                                          one_digit:
+    64 00000061 80EB30                          sub bl, byte "0"
+    65 00000064 C0E304                          shl bl, 4
+    66 00000067 2C30                            sub al, byte "0"
+    67 00000069 00C3                            add bl, al
+    68 0000006B 881D[29000000]                  mov [nr], bl
+    69                                          
+    70 00000071 8A0D[29000000]                  mov cl, [nr]
+    71 00000077 B500                            mov ch, 0
+    72 00000079 6689C8                          mov ax, cx
+    73 0000007C B110                            mov cl,  byte 16
+    74 0000007E F6F1                            div cl
+    75 00000080 88E2                            mov dl, ah
+    76 00000082 B10A                            mov cl, byte 10
+    77 00000084 F6E1                            mul cl
+    78 00000086 00D0                            add al, dl
+    79 00000088 88C1                            mov cl, al
+    80                                          
+    81 0000008A B330                            mov bl, byte "0"
+    82 0000008C B031                            mov al, byte "1"
+    83                                          here:
+    84 0000008E B200                            mov dl, 0
+    85                                          nexxt:
+    86 00000090 BF00000000                      mov edi, 0
+    87 00000095 80FA09                          cmp dl, 9
+    88 00000098 775E                            ja two_digits
+    89 0000009A 80C230                              add dl, "0"
+    90 0000009D 8897[1C000000]                      mov [new_file+edi], dl
+    91 000000A3 47                                  inc edi
+    92 000000A4 C687[1C000000]6F                    mov [new_file+edi], byte "o"
+    93 000000AB 47                                  inc edi
+    94 000000AC C687[1C000000]75                    mov [new_file+edi], byte "u"
+    95 000000B3 47                                  inc edi
+    96 000000B4 C687[1C000000]74                    mov [new_file+edi], byte "t"
+    97 000000BB 47                                  inc edi
+    98 000000BC C687[1C000000]70                    mov [new_file+edi], byte "p"
+    99 000000C3 47                                  inc edi
+   100 000000C4 C687[1C000000]75                    mov [new_file+edi], byte "u"
+   101 000000CB 47                                  inc edi
+   102 000000CC C687[1C000000]74                    mov [new_file+edi], byte "t"
+   103 000000D3 47                                  inc edi
+   104 000000D4 C687[1C000000]2E                    mov [new_file+edi], byte "."
+   105 000000DB 47                                  inc edi
+   106 000000DC C687[1C000000]74                    mov [new_file+edi], byte "t"
+   107 000000E3 47                                  inc edi
+   108 000000E4 C687[1C000000]78                    mov [new_file+edi], byte "x"
+   109 000000EB 47                                  inc edi
+   110 000000EC C687[1C000000]74                    mov [new_file+edi], byte "t"
+   111 000000F3 80EA30                              sub dl, byte "0"
+   112 000000F6 EB5F                                jmp to_end
+   113                                          two_digits:
+   114                                              
+   115 000000F8 8887[1C000000]                      mov [new_file+edi], al
+   116 000000FE 47                                  inc edi
+   117                                              
+   118 000000FF 889F[1C000000]                      mov [new_file+edi], bl
+   119 00000105 FEC3                                inc bl
+   120 00000107 47                                  inc edi
+   121 00000108 C687[1C000000]6F                    mov [new_file+edi], byte "o"
+   122 0000010F 47                                  inc edi
+   123 00000110 C687[1C000000]75                    mov [new_file+edi], byte "u"
+   124 00000117 47                                  inc edi
+   125 00000118 C687[1C000000]74                    mov [new_file+edi], byte "t"
+   126 0000011F 47                                  inc edi
+   127 00000120 C687[1C000000]70                    mov [new_file+edi], byte "p"
+   128 00000127 47                                  inc edi
+   129 00000128 C687[1C000000]75                    mov [new_file+edi], byte "u"
+   130 0000012F 47                                  inc edi
+   131 00000130 C687[1C000000]74                    mov [new_file+edi], byte "t"
+   132 00000137 47                                  inc edi
+   133 00000138 C687[1C000000]2E                    mov [new_file+edi], byte "."
+   134 0000013F 47                                  inc edi
+   135 00000140 C687[1C000000]74                    mov [new_file+edi], byte "t"
+   136 00000147 47                                  inc edi
+   137 00000148 C687[1C000000]78                    mov [new_file+edi], byte "x"
+   138 0000014F 47                                  inc edi
+   139 00000150 C687[1C000000]74                    mov [new_file+edi], byte "t"
+   140                                          
+   141                                          to_end:
+   142 00000157 80FA13                          cmp dl, 19
+   143 0000015A 7506                            jne jmp_here_1
+   144 0000015C B032                                mov al, byte "2"
+   145 0000015E B330                                mov bl, byte "0"
+   146 00000160 EB4D                                jmp jmp_here
+   147                                          jmp_here_1:
+   148                                          
+   149                                              
+   150 00000162 80FA1D                          cmp dl, 29
+   151 00000165 7506                            jne jmp_here_2
+   152 00000167 B033                                mov al, byte "3"
+   153 00000169 B330                                mov bl, byte "0"
+   154 0000016B EB42                                jmp jmp_here
+   155                                          jmp_here_2:
+   156                                              
+   157 0000016D 80FA27                          cmp dl, 39
+   158 00000170 7506                            jne jmp_here_3
+   159 00000172 B034                                mov al, byte "4"
+   160 00000174 B330                                mov bl, byte "0"
+   161 00000176 EB37                                jmp jmp_here
+   162                                          jmp_here_3:
+   163                                              
+   164 00000178 80FA31                          cmp dl, 49
+   165 0000017B 7506                            jne jmp_here_4
+   166 0000017D B035                                mov al, byte "5"
+   167 0000017F B330                                mov bl, byte "0"
+   168 00000181 EB2C                                jmp jmp_here
+   169                                          jmp_here_4:
+   170                                              
+   171                                              
+   172 00000183 80FA3B                          cmp dl, 59
+   173 00000186 7506                            jne jmp_here_5
+   174 00000188 B036                                mov al, byte "6"
+   175 0000018A B330                                mov bl, byte "0"
+   176 0000018C EB21                                jmp jmp_here
+   177                                          jmp_here_5:
+   178                                              
+   179                                              
+   180 0000018E 80FA45                          cmp dl, 69
+   181 00000191 7506                            jne jmp_here6
+   182 00000193 B037                                mov al, byte "7"
+   183 00000195 B330                                mov bl, byte "0"
+   184 00000197 EB16                                jmp jmp_here
+   185                                          jmp_here6:
+   186                                              
+   187 00000199 80FA4F                          cmp dl, 79
+   188 0000019C 7506                            jne jmp_here7
+   189 0000019E B038                                mov al, byte "8"
+   190 000001A0 B330                                mov bl, byte "0"
+   191 000001A2 EB0B                                jmp jmp_here
+   192                                          jmp_here7:
+   193                                              
+   194 000001A4 80FA59                          cmp dl, 89
+   195 000001A7 7506                            jne jmp_here8
+   196 000001A9 B039                                mov al, byte "9"
+   197 000001AB B330                                mov bl, byte "0"
+   198 000001AD EB00                                jmp jmp_here
+   199                                          
+   200                                          jmp_here8:
+   201                                          
+   202                                          
+   203                                          jmp_here:
+   204                                          
+   205 000001AF FEC2                            inc dl
+   206 000001B1 60                              pushad
+   207                                          
+   208 000001B2 68[2A000000]                    push access_mode_2
+   209 000001B7 68[1C000000]                    push new_file
+   210 000001BC FF15[00000000]                  call [fopen]
+   211 000001C2 83C408                          add esp, 8
+   212                                          
+   213 000001C5 A3[2C000000]                    mov [file_descriptor_2], eax
+   214                                          
+   215 000001CA FF35[2C000000]                  push dword [file_descriptor_2]
+   216 000001D0 FF15[00000000]                  call [fclose]
+   217 000001D6 83C404                          add esp, 4
+   218                                          
+   219                                          
+   220 000001D9 61                              popad
+   221                                          
+   222 000001DA 38CA                            cmp dl, cl
+   223 000001DC 7405                            je end_files
+   224 000001DE E9ADFEFFFF                      jmp nexxt
+   225                                          
+   226                                          end_files:
+   227                                          
+   228                                          
+   229                                              
+   230                                  
+   231                                          ; exit(0)
+   232 000001E3 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   233 000001E5 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

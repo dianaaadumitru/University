@@ -1,0 +1,64 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf               
+     8                                  import exit msvcrt.dll  
+     9                                  import printf msvcrt.dll  
+    10                                  import scanf msvcrt.dll    
+    11                                                            
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data
+    15                                      ; ...
+    16                                  
+    17                                  ; our code starts 
+    18 00000000 78563412                    a dd 12345678h
+    19 00000004 256400                      format  db "%d", 0  ; %d <=> a decimal number (base 10)
+    20 00000007 612B612F623D00              me db "a+a/b=", 0
+    21 0000000E 00000000                    b dd 0      ; this is the variable where we store the number read from keyboard
+    22 00000012 623D00                      message db "b=", 0
+    23                                  
+    24                                  
+    25                                  segment code use32 class=code
+    26                                      ;A natural number a (a: dword, defined in the data segment) is given. Read a natural number b from the keyboard and calculate: a + a/b. Display the result of this operation. The values will be displayed in decim
+    27                                  
+    28                                      start:
+    29                                      
+    30                                          ; will call printf(message) => will print "b="
+    31                                          ; place parameters on stack
+    32 00000000 68[12000000]                    push dword message ; ! on the stack is placed the address of the string, not its value
+    33 00000005 FF15[00000000]                  call [printf]      ; call function printf for printing
+    34 0000000B 83C404                          add esp, 4*1       ; free parameters on the stack; 4 = size of dword; 1 = number of parameters
+    35                                          
+    36                                          ; calling scanf(format, b) => we read the number and store it in the variable b
+    37                                          ; push parameters on the stack from right to left
+    38 0000000E 68[0E000000]                    push  dword b       ; ! address of b, not the value
+    39 00000013 68[04000000]                    push  format
+    40 00000018 FF15[00000000]                  call  [scanf]       ; call scanf for reading
+    41 0000001E 83C408                          add  esp, 4 * 2     ; taking parameters out of the stack; 4 = dimension of a dword; 2 = nr of parameters
+    42                                          
+    43 00000021 A1[00000000]                    mov eax, [a]
+    44 00000026 99                              cdq
+    45 00000027 F735[0E000000]                  div dword [b]       ;edx:eax = a/b
+    46                                          
+    47                                  
+    48 0000002D 0305[00000000]                  add eax, dword [a]  ;eax = a + a/b
+    49                                          
+    50 00000033 60                              pushad
+    51 00000034 68[07000000]                    push dword me      ; ! on the stack is placed the address of the string, not its value
+    52 00000039 FF15[00000000]                  call [printf]      ; call function printf for printing
+    53 0000003F 83C404                          add esp, 4*1       ; free parameters on the stack; 4 = size of dword; 1 = number of parameters
+    54 00000042 61                              popad
+    55                                          
+    56                                          ; will call printf(format, a + a/b)
+    57                                          ; place parameters on the stack from right to left
+    58 00000043 50                              push eax
+    59 00000044 68[04000000]                    push format 
+    60 00000049 FF15[00000000]                  call [printf]      ; call function printf for printing 
+    61 0000004F 83C408                          add esp, 4 * 2     ; free parameters on the stack; 4 = size of dword; 2 = number of parameters
+    62                                          
+    63 00000052 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    64 00000054 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

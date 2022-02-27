@@ -1,0 +1,72 @@
+     1                                  ;Se da un sir de dublucuvinte (in segmentul de date). 
+     2                                  ;Sa se afiseze pe ecran, in baza 16, cuvintele cel mai putin semnificative care sunt siP negative si multipli de 16.
+     3                                  
+     4                                  
+     5                                  bits 32 ; assembling for the 32 bits architecture
+     6                                  
+     7                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     8                                  global start        
+     9                                  
+    10                                  ; declare external functions needed by our program
+    11                                  extern exit, printf               
+    12                                  import exit msvcrt.dll    
+    13                                  import printf msvcrt.dll
+    14                                  
+    15                                  
+    16                                  ; our data is declared here (the variables needed by our program)
+    17                                  segment data use32 class=data
+    18                                      ; ...
+    19 00000000 89A63412805634127D-         sir dd 1234A689h, 12345680h,  1AC3B47Dh, 0FEDC9896h
+    19 00000009 B4C31A9698DCFE     
+    20                                      len equ $-sir
+    21 00000010 25782000                    format db "%x ", 0
+    22 00000014 00                          nr db 0
+    23                                  
+    24                                  ; our code starts here
+    25                                  segment code use32 class=code
+    26                                      start:
+    27                                          ; ...
+    28 00000000 BE[00000000]                    mov esi, sir
+    29 00000005 B910000000                      mov ecx, len
+    30 0000000A E344                            jecxz the_end
+    31                                              start_loop:
+    32 0000000C AD                                      lodsd
+    33 0000000D A2[14000000]                            mov [nr], al
+    34 00000012 B400                                    mov ah, 0
+    35 00000014 B210                                    mov dl, byte 16
+    36 00000016 F6F2                                    div dl
+    37 00000018 80FC00                                  cmp ah, 0
+    38 0000001B 7531                                    jne not_good
+    39 0000001D A0[14000000]                                mov al, [nr]
+    40                                                      conv2:
+    41                                                          
+    42 00000022 B400                                            mov ah, 0
+    43 00000024 B202                                            mov dl, byte 2
+    44 00000026 F6F2                                            div dl
+    45 00000028 3C00                                            cmp al, 0
+    46 0000002A 7402                                            je end_transf
+    47 0000002C EBF4                                        jmp conv2
+    48                                                      end_transf:
+    49 0000002E 80FC01                                      cmp ah, 1
+    50 00000031 751B                                        jne not_good
+    51 00000033 60                                              pushad
+    52                                                      
+    53 00000034 B800000000                                      mov eax, 0
+    54 00000039 A0[14000000]                                    mov al, [nr]
+    55 0000003E 50                                              push eax
+    56 0000003F 68[10000000]                                    push format
+    57 00000044 FF15[00000000]                                  call [printf]
+    58 0000004A 83C408                                          add esp, 8
+    59                                                          
+    60 0000004D 61                                              popad
+    61                                                  
+    62                                                  not_good:
+    63                                              
+    64 0000004E E2BC                                loop start_loop
+    65                                          
+    66                                          
+    67                                          the_end:
+    68                                      
+    69                                          ; exit(0)
+    70 00000050 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    71 00000052 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,272 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, fopen, fclose, fprintf, scanf               
+     8                                  import exit msvcrt.dll    
+     9                                  import fclose msvcrt.dll
+    10                                  import fprintf msvcrt.dll
+    11                                  import fopen msvcrt.dll
+    12                                  import scanf msvcrt.dll
+    13                                  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16                                      ; ...
+    17 00000000 616263642E74787400              file_name db "abcd.txt", 0
+    18 00000009 FFFFFFFF                        file_descriptor dd -1
+    19 0000000D 7700                            access_mode db "w", 0
+    20                                          len equ 50
+    21 0000000F 00<rept>                        text times len db 0
+    22 00000041 00000000                        n dd 0
+    23 00000045 256400                          format db "%d", 0
+    24 00000048 10                              sixteen db 16
+    25 00000049 02                              two db 2
+    26 0000004A 0A                              ten db 10
+    27                                      
+    28                                  
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ; ...
+    33                                          
+    34 00000000 68[0D000000]                   push access_mode
+    35 00000005 68[00000000]                   push file_name
+    36 0000000A FF15[00000000]                 call [fopen]
+    37 00000010 83C408                         add esp, 8
+    38                                         
+    39 00000013 A3[09000000]                   mov [file_descriptor], eax
+    40                                         
+    41 00000018 83F800                         cmp eax, 0
+    42 0000001B 0F84D8010000                   je errorr
+    43 00000021 BF00000000                          mov edi, 0
+    44                                              here:
+    45 00000026 68[41000000]                        push n
+    46 0000002B 68[45000000]                        push format
+    47 00000030 FF15[00000000]                      call [scanf]
+    48 00000036 83C408                              add esp, 8
+    49                                              
+    50 00000039 A1[41000000]                        mov eax, [n]
+    51 0000003E 83F800                              cmp eax, 0
+    52 00000041 0F848F010000                        je end_read
+    53 00000047 3C09                                    cmp al, 9
+    54 00000049 7713                                    ja more_digits
+    55 0000004B 0430                                        add al, byte "0"
+    56 0000004D 8887[0F000000]                              mov [edi+text], al
+    57 00000053 47                                          inc edi
+    58 00000054 C687[0F000000]20                            mov [edi+text], byte " "
+    59 0000005B 47                                          inc edi
+    60 0000005C EB2F                                        jmp here_2
+    61                                                  more_digits:
+    62 0000005E 66A1[41000000]                          mov ax, [n]
+    63 00000064 668B15[43000000]                        mov dx, [n+2]
+    64                                                  
+    65 0000006B 66F735[4A000000]                        div word [ten]
+    66 00000072 0430                                    add al, byte "0"
+    67 00000074 80C230                                  add dl, byte "0"
+    68 00000077 8887[0F000000]                          mov [edi+text], al
+    69 0000007D 47                                      inc edi
+    70 0000007E 8897[0F000000]                          mov [edi+text], dl
+    71 00000084 47                                      inc edi
+    72 00000085 C687[0F000000]20                        mov [edi+text], byte " "
+    73 0000008C 47                                          inc edi
+    74                                                  
+    75                                                  here_2:
+    76                                                  
+    77                                                  
+    78 0000008D 2C30                                    sub al, byte "0"
+    79 0000008F A1[41000000]                            mov eax, [n]
+    80 00000094 3C0F                                    cmp al, 15
+    81 00000096 774C                                    ja more_digits_2
+    82 00000098 3C09                                        cmp al, 9
+    83 0000009A 7704                                        ja same
+    84 0000009C 0430                                            add al, "0"
+    85 0000009E EB30                                            jmp here_3
+    86                                                      same:
+    87 000000A0 3C0A                                        cmp al, 10
+    88 000000A2 7504                                        jne no_1
+    89 000000A4 B041                                            mov al, "A"
+    90 000000A6 EB28                                            jmp here_3
+    91                                                      no_1:
+    92 000000A8 3C0B                                        cmp al, 11
+    93 000000AA 7504                                        jne no_2
+    94 000000AC B042                                            mov al, "B"
+    95 000000AE EB20                                            jmp here_3
+    96                                                      no_2:
+    97                                                      
+    98 000000B0 3C0C                                        cmp al, 12
+    99 000000B2 7504                                        jne no_3
+   100 000000B4 B043                                            mov al, "C"
+   101 000000B6 EB18                                            jmp here_3
+   102                                                      no_3:
+   103                                                      
+   104 000000B8 3C0D                                        cmp al, 13
+   105 000000BA 7504                                        jne no_4
+   106 000000BC B044                                            mov al, "D"
+   107 000000BE EB10                                            jmp here_3
+   108                                                      no_4:
+   109                                                      
+   110 000000C0 3C0E                                        cmp al, 14
+   111 000000C2 7504                                        jne no_5
+   112 000000C4 B045                                            mov al, "E"
+   113 000000C6 EB08                                            jmp here_3
+   114                                                      no_5:
+   115                                                      
+   116 000000C8 3C0F                                        cmp al, 15
+   117 000000CA 7504                                        jne no_6
+   118 000000CC B046                                            mov al, "F"
+   119 000000CE EB00                                            jmp here_3
+   120                                                      no_6:
+   121                                                      
+   122                                                      here_3:
+   123 000000D0 8887[0F000000]                              mov [edi+text], al
+   124 000000D6 47                                          inc edi
+   125 000000D7 C687[0F000000]20                            mov[edi+text], byte " "
+   126 000000DE 47                                          inc edi
+   127 000000DF E9A1000000                                  jmp here_4
+   128                                                  more_digits_2:
+   129 000000E4 66A1[41000000]                          mov ax, [n]
+   130 000000EA 668B15[43000000]                        mov dx, [n+2]
+   131 000000F1 66BB1000                                mov bx, 16
+   132 000000F5 66F7F3                                  div bx
+   133 000000F8 3C09                                    cmp al, 9
+   134 000000FA 7704                                        ja same1
+   135 000000FC 0430                                            add al, "0"
+   136 000000FE EB30                                            jmp here_31
+   137                                                      same1:
+   138 00000100 3C0A                                        cmp al, 10
+   139 00000102 7504                                        jne no_11
+   140 00000104 B041                                            mov al, "A"
+   141 00000106 EB28                                            jmp here_31
+   142                                                      no_11:
+   143 00000108 3C0B                                        cmp al, 11
+   144 0000010A 7504                                        jne no_21
+   145 0000010C B042                                            mov al, "B"
+   146 0000010E EB20                                            jmp here_31
+   147                                                      no_21:
+   148                                                      
+   149 00000110 3C0C                                        cmp al, 12
+   150 00000112 7504                                        jne no_31
+   151 00000114 B043                                            mov al, "C"
+   152 00000116 EB18                                            jmp here_31
+   153                                                      no_31:
+   154                                                      
+   155 00000118 3C0D                                        cmp al, 13
+   156 0000011A 7504                                        jne no_41
+   157 0000011C B044                                            mov al, "D"
+   158 0000011E EB10                                            jmp here_31
+   159                                                      no_41:
+   160                                                      
+   161 00000120 3C0E                                        cmp al, 14
+   162 00000122 7504                                        jne no_51
+   163 00000124 B045                                            mov al, "E"
+   164 00000126 EB08                                            jmp here_31
+   165                                                      no_51:
+   166                                                      
+   167 00000128 3C0F                                        cmp al, 15
+   168 0000012A 7504                                        jne no_61
+   169 0000012C B046                                            mov al, "F"
+   170 0000012E EB00                                            jmp here_31
+   171                                                      no_61:
+   172                                  
+   173                                                      here_31:
+   174                                                      
+   175 00000130 80FA09                                      cmp dl, 9
+   176 00000133 7704                                        ja same2
+   177 00000135 0430                                            add al, "0"
+   178 00000137 EB36                                            jmp here_32
+   179                                                      same2:
+   180 00000139 80FA0A                                      cmp dl, 10
+   181 0000013C 7504                                        jne no_12
+   182 0000013E B241                                            mov dl, "A"
+   183 00000140 EB2D                                            jmp here_32
+   184                                                      no_12:
+   185 00000142 80FA0B                                      cmp dl, 11
+   186 00000145 7504                                        jne no_22
+   187 00000147 B242                                            mov dl, "B"
+   188 00000149 EB24                                            jmp here_32
+   189                                                      no_22:
+   190                                                      
+   191 0000014B 80FA0C                                      cmp dl, 12
+   192 0000014E 7504                                        jne no_32
+   193 00000150 B243                                            mov dl, "C"
+   194 00000152 EB1B                                            jmp here_32
+   195                                                      no_32:
+   196                                                      
+   197 00000154 80FA0D                                      cmp dl, 13
+   198 00000157 7504                                        jne no_42
+   199 00000159 B244                                            mov dl, "D"
+   200 0000015B EB12                                            jmp here_32
+   201                                                      no_42:
+   202                                                      
+   203 0000015D 80FA0E                                      cmp dl, 14
+   204 00000160 7504                                        jne no_52
+   205 00000162 B245                                            mov dl, "E"
+   206 00000164 EB09                                            jmp here_32
+   207                                                      no_52:
+   208                                                      
+   209 00000166 80FA0F                                      cmp dl, 15
+   210 00000169 7504                                        jne no_62
+   211 0000016B B246                                            mov dl, "F"
+   212 0000016D EB00                                            jmp here_32
+   213                                                      no_62:
+   214                                                      here_32:
+   215 0000016F 8887[0F000000]                              mov [text+edi], al
+   216 00000175 47                                          inc edi
+   217 00000176 8897[0F000000]                              mov [text+edi], dl
+   218 0000017C 47                                          inc edi
+   219 0000017D C687[0F000000]20                            mov [text+edi], byte " "
+   220 00000184 47                                          inc edi
+   221                                                  here_4:
+   222                                                  
+   223 00000185 B100                                    mov cl, 0
+   224 00000187 66A1[41000000]                          mov ax, [n]
+   225 0000018D 668B15[43000000]                        mov dx, [n+2]
+   226                                                  
+   227                                                  conv2:
+   228 00000194 66BB0200                                    mov bx, 2
+   229 00000198 66F7F3                                      div bx
+   230 0000019B 6683FA01                                    cmp dx, 1
+   231 0000019F 7502                                        jne not_1
+   232 000001A1 FEC1                                            inc cl
+   233                                                      
+   234                                                      not_1:
+   235 000001A3 6683F800                                    cmp ax, 0
+   236 000001A7 7406                                        je end_nr
+   237 000001A9 66BA0000                                    mov dx, 0
+   238                                                      
+   239 000001AD EBE5                                    jmp conv2
+   240                                                  end_nr:
+   241 000001AF 80C130                                  add cl, byte "0"
+   242 000001B2 888F[0F000000]                          mov [edi+text], cl
+   243 000001B8 47                                      inc edi
+   244 000001B9 C687[0F000000]20                        mov [edi+text], byte " "
+   245 000001C0 47                                      inc edi 
+   246                                                  
+   247 000001C1 C687[0F000000]20                        mov [edi+text], byte " "
+   248 000001C8 47                                      inc edi 
+   249                                                  
+   250 000001C9 C687[0F000000]20                        mov [edi+text], byte " "
+   251 000001D0 47                                      inc edi 
+   252                                                  
+   253                                                  
+   254                                                  
+   255 000001D1 E950FEFFFF                          jmp here
+   256                                              end_read:
+   257                                              
+   258 000001D6 68[0F000000]                        push text
+   259 000001DB FF35[09000000]                      push dword [file_descriptor]
+   260 000001E1 FF15[00000000]                      call [fprintf]
+   261 000001E7 83C408                              add esp, 8
+   262                                         
+   263 000001EA FF35[09000000]                      push dword [file_descriptor]
+   264 000001F0 FF15[00000000]                      call [fclose]
+   265 000001F6 83C404                              add esp, 4
+   266                                         errorr:
+   267                                          
+   268                                      
+   269                                          ; exit(0)
+   270                                          
+   271 000001F9 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   272 000001FB FF15[00000000]                  call    [exit]       ; call exit to terminate the program

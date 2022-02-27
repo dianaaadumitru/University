@@ -1,0 +1,143 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start   
+     5                                       
+     6                                  ;Se da in data segment numele unui fisier. Acesta contine cifre separate prin spatiu (cifrele sunt din multimea cifrelor bazei 16 separate).
+     7                                  ;Sa se afiseze fiecare cifra citita din fisier si numarul de biti 1 din reprezentarea binara a acesteia.
+     8                                  
+     9                                  extern exit, fopen, fclose, fread, printf               
+    10                                  import exit msvcrt.dll 
+    11                                  import fclose msvcrt.dll
+    12                                  import fopen msvcrt.dll
+    13                                  import fread msvcrt.dll
+    14                                  import printf msvcrt.dll   
+    15                                  
+    16                                  
+    17                                  ; our data is declared here (the variables needed by our program)
+    18                                  segment data use32 class=data
+    19                                      ; ...
+    20 00000000 696E7075742E747874-         file_name db "input.txt", 0
+    20 00000009 00                 
+    21 0000000A 7200                        access_mode db "r", 0
+    22 0000000C FFFFFFFF                    file_descriptor dd -1
+    23                                      len equ 100
+    24 00000010 00<rept>                    text times len db 0
+    25 00000074 257300                      format db "%s", 0
+    26 00000077 00<rept>                    text2 times len db 0
+    27 000000DB 00                          nr1 db 0
+    28 000000DC 00                          nr db 0
+    29 000000DD 00                          nr3 db 0
+    30                                  
+    31                                      
+    32                                  ; our code starts here
+    33                                  segment code use32 class=code
+    34                                      start:
+    35                                          ; ...
+    36                                          
+    37 00000000 68[0A000000]                    push access_mode
+    38 00000005 68[00000000]                    push file_name
+    39 0000000A FF15[00000000]                  call [fopen]
+    40 00000010 83C408                          add esp, 4*2
+    41                                          
+    42 00000013 A3[0C000000]                    mov [file_descriptor], eax
+    43                                          
+    44 00000018 83F800                          cmp eax, 0
+    45 0000001B 7429                            je error_fopen
+    46                                          
+    47 0000001D FF35[0C000000]                  push dword [file_descriptor]
+    48 00000023 6A64                            push dword len
+    49 00000025 6A01                            push dword 1
+    50 00000027 68[10000000]                    push text
+    51 0000002C FF15[00000000]                  call [fread]
+    52 00000032 83C410                          add esp, 4*4
+    53                                          
+    54 00000035 60                              pushad
+    55                                          
+    56 00000036 FF35[0C000000]                  push dword [file_descriptor]
+    57 0000003C FF15[00000000]                  call [fclose]
+    58 00000042 83C404                          add esp, 4
+    59                                          
+    60 00000045 61                              popad
+    61                                          
+    62                                          error_fopen:
+    63                                          
+    64 00000046 89C1                            mov ecx, eax
+    65 00000048 BE[10000000]                    mov esi, text
+    66 0000004D BF00000000                      mov edi, 0
+    67 00000052 AC                              lodsb
+    68 00000053 E390                            jecxz the_end
+    68          ******************       warning: byte data exceeds bounds [-w+number-overflow]
+    69                                              start_loop:
+    70 00000055 88C3                                mov bl, al
+    71 00000057 AC                                      lodsb
+    72 00000058 80FB20                                  cmp bl, " "
+    73 0000005B 0F8482000000                            je space
+    74 00000061 3C20                                    cmp al, " "
+    75 00000063 7405                                    je two_digits
+    76 00000065 C0EB04                                      shr bl, 4
+    77 00000068 00C3                                        add bl, al
+    78                                                  two_digits:
+    79 0000006A B200                                        mov dl, 0
+    80 0000006C 8815[DB000000]                              mov [nr1], dl
+    81 00000072 881D[DC000000]                              mov [nr], bl
+    82 00000078 A2[DD000000]                                mov [nr3], al
+    83                                                      
+    84 0000007D 88D8                                        mov al, bl
+    85 0000007F 2C30                                        sub al, byte "0"
+    86 00000081 B400                                        mov ah, 0
+    87                                  
+    88                                                      conv2:
+    89 00000083 B302                                        mov bl, 2
+    90 00000085 F6F3                                        div bl
+    91 00000087 80FC01                                      cmp ah, 1
+    92 0000008A 7510                                        jne not_1
+    93 0000008C 88D3                                        mov bl, dl
+    94 0000008E 8A15[DB000000]                                  mov dl, [nr1]
+    95 00000094 FEC2                                            inc dl
+    96 00000096 8815[DB000000]                                  mov [nr1], dl
+    97                                                          
+    98                                                      not_1:
+    99 0000009C B400                                        mov ah, 0
+   100 0000009E 3C00                                        cmp al, 0
+   101 000000A0 7402                                        je end_transf
+   102 000000A2 EBDF                                        jmp conv2
+   103                                                      end_transf:
+   104 000000A4 A0[DD000000]                                mov al, [nr3]
+   105                                                      
+   106                                                      
+   107 000000A9 EB03                                        jmp here
+   108                                                  
+   109 000000AB C0E304                                  shl bl, 4
+   110                                              
+   111                                                  here:
+   112 000000AE 8A15[DC000000]                          mov dl, byte [nr]
+   113 000000B4 8897[77000000]                          mov [text2+edi], dl
+   114 000000BA 47                                      inc edi
+   115 000000BB C687[77000000]20                        mov [text2+edi], byte " "
+   116 000000C2 47                                      inc edi
+   117 000000C3 8A15[DB000000]                          mov dl, [nr1]
+   118 000000C9 80C230                                  add dl, byte "0"
+   119 000000CC 8897[77000000]                          mov [text2+edi], dl
+   120 000000D2 47                                      inc edi
+   121 000000D3 C687[77000000]20                        mov [text2+edi], byte " "
+   122 000000DA 47                                      inc edi
+   123 000000DB C687[77000000]20                        mov [text2+edi], byte " "
+   124 000000E2 47                                      inc edi
+   125                                                  
+   126                                              space: 
+   127 000000E3 E270                                loop start_loop
+   127          ******************       warning: byte data exceeds bounds [-w+number-overflow]
+   128                                          
+   129                                          
+   130                                                      
+   131                                          the_end:
+   132                                                  
+   133 000000E5 68[77000000]                push text2
+   134 000000EA 68[74000000]                push format
+   135 000000EF FF15[00000000]              call [printf]
+   136 000000F5 83C408                      add esp, 8
+   137                                      
+   138                                          ; exit(0)
+   139 000000F8 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   140 000000FA FF15[00000000]                  call    [exit]       ; call exit to terminate the program

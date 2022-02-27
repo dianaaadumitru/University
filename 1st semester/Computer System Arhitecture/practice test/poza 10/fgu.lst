@@ -1,0 +1,77 @@
+     1                                  ;Problema 1:
+     2                                  ;Se da un sir de dublucuvinte (in segmentul de date). 
+     3                                  ;Se cere formarea si scrierea in fisier pozitiile octetilor de valoare maxima din fiecare dublucuvant. (evident considerandule fare semn).
+     4                                  ;Sa se afiseze si suma acestor octeti (consideranduse cu semn).
+     5                                  ;Exemplu: dd 12 34 A6 78h , 12 34 56 78h , 1A C3 B4 7Dh, FE DC 98 76h .
+     6                                  ;Sirul format din pozitiile octetilor este: "3421".
+     7                                  
+     8                                  
+     9                                  bits 32 ; assembling for the 32 bits architecture
+    10                                  
+    11                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+    12                                  global start        
+    13                                  
+    14                                  
+    15                                  extern exit, printf               
+    16                                  import exit msvcrt.dll   
+    17                                  import printf msvcrt.dll 
+    18                                  
+    19                                  ; our data is declared here (the variables needed by our program)
+    20                                  segment data use32 class=data
+    21                                      ; ...
+    22 00000000 78A63412785634127D-         sir dd 1234A678h, 12345678h, 1AC3B47Dh, 0FEDC9876h 
+    22 00000009 B4C31A7698DCFE     
+    23                                      len equ $-sir
+    24 00000010 00<rept>                    text times 10 db 0
+    25 0000001A 00                          pos db 0
+    26 0000001B 256400                      format db "%d", 0
+    27                                      
+    28                                  
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ; ...
+    33 00000000 BE[00000000]                    mov esi, sir
+    34 00000005 BF00000000                      mov edi, 0
+    35 0000000A B910000000                      mov ecx, len
+    36 0000000F B300                            mov bl, 0
+    37 00000011 B204                            mov dl, 4
+    38 00000013 E33C                            jecxz the_end
+    39                                              start_loop:
+    40 00000015 AC                                      lodsb
+    41 00000016 38D8                                    cmp al, bl
+    42 00000018 7208                                    jb not_greather
+    43 0000001A 88C3                                        mov bl, al
+    44 0000001C 8815[1A000000]                              mov [pos], dl
+    45                                                  
+    46                                                  not_greather:
+    47 00000022 FECA                                    dec dl
+    48 00000024 80FA00                                  cmp dl, 0
+    49 00000027 7526                                    jne end_word
+    50 00000029 60                                          pushad
+    51                                                      
+    52 0000002A 8A1D[1A000000]                              mov bl, [pos]
+    53 00000030 B700                                        mov bh, 0
+    54 00000032 66BA0000                                    mov dx, 0
+    55 00000036 6652                                        push dx
+    56 00000038 6653                                        push bx
+    57 0000003A 58                                          pop eax
+    58                                                      
+    59 0000003B 50                                          push eax
+    60 0000003C 68[1B000000]                                push format
+    61 00000041 FF15[00000000]                              call [printf]
+    62 00000047 83C408                                      add esp, 8
+    63                                                      
+    64 0000004A 61                                          popad
+    65 0000004B B300                                        mov bl, 0
+    66 0000004D B204                                        mov dl, 4
+    67                                                  end_word:
+    68                                              
+    69 0000004F E2C4                                loop start_loop
+    70                                          
+    71                                          the_end:
+    72                                         
+    73                                      
+    74                                          ; exit(0)
+    75 00000051 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    76 00000053 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

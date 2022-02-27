@@ -1,0 +1,62 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 785634124D3C2C1A76-         s dd 12345678h, 1A2C3C4Dh, 98FCDC76h
+    13 00000009 DCFC98             
+    14                                      len equ ($-s)/4   ;the length of the string (in doublewords)
+    15 0000000C 00<rept>                    d times len db 0
+    16 0000000F 0A                          ten db 10   ;variabile used for determining the digits in base 10 of a number by successive divisions to 10
+    17                                      
+    18                                  segment code use32 class=code
+    19                                      start:
+    20                                          ;A list of doublewords is given. Obtain the list made out of the low bytes of the high words of each doubleword from the given list with the property that these bytes are palindromes in base 10.
+    21                                          ;Example:
+    22                                          ;Given the string of doublewords:
+    23                                          ;s DD 12345678h, 1A2C3C4Dh, 98FCDC76h
+    24                                          ;obtain the string of bytes:
+    25                                          ;d DB 2Ch, FCh.
+    26                                          
+    27 00000000 B903000000                      mov ecx, len    ; we put the length l in ECX in order to make the loop
+    28 00000005 BE[00000000]                    mov esi, s      ;in eds:esi we will store the FAR address of the string "s"
+    29 0000000A FC                              cld             ;parse the string from left to right(DF=0)
+    30 0000000B BF00000000                      mov edi, 0
+    31 00000010 E32E                            jecxz the_end
+    32                                              start_loop:
+    33 00000012 AD                                      lodsd       ;in eax we will have the curremt doubleword from the string
+    34 00000013 C1E810                                  shr eax, 16
+    35 00000016 B400                                    mov ah, 0   ;we are interested in the low byte (least significant) of this word (AL)
+    36 00000018 88C2                                    mov dl, al  ;we store in dl the number in base 16
+    37 0000001A B701                                    mov bh, 1   ;we use bh to save in bl     the last digit of the number
+    38                                                  ;we know that a byte has maximum 3 digits so we compare the first with the second digit or the first with the third digit too see if the number is a palindrom
+    39                                                  transf:
+    40 0000001C F635[0F000000]                              div byte[ten]   ;divide the number by 10 in order to obtain the last digit; this digit will be in ah
+    41 00000022 80FF01                                      cmp bh, 1
+    42 00000025 7504                                        jne not_equal
+    43 00000027 88E3                                        mov bl, ah      ;we save the last digit of the number in bl
+    44 00000029 FECF                                        dec bh
+    45                                                      not_equal:
+    46 0000002B 3C00                                        cmp al, 0
+    47 0000002D 7404                                        jz end_tranfs   ;if the quotient (from al) is 0 it means we obtained all the digits and we can leave the loop "transf"
+    48                                                                      ;else prepare the quotient for a new iteration 
+    49 0000002F B400                                        mov ah, 0
+    50 00000031 EBE9                                    jmp transf          ;resume the loop in order to obtain a new digit.
+    51                                                  end_tranfs:
+    52 00000033 38DC                                    cmp ah, bl          ;we compare the first digit with the last digit of the number to see if it is o palindrom
+    53 00000035 7507                                    jne not_palindrom
+    54 00000037 8897[0C000000]                          mov [d+edi], dl     ;if it's a palindrom we add the representation in base 16 to the new string
+    55 0000003D 47                                      inc edi
+    56                                                  not_palindrom:  ;   we jump here if it is not a palindrom
+    57 0000003E E2D2                                loop start_loop
+    58                                          the_end:
+    59                                          
+    60 00000040 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    61 00000042 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

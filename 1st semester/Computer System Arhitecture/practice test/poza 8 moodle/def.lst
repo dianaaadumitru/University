@@ -1,0 +1,117 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, scanf, fopen, fclose, fread, fprintf               
+     8                                  import exit msvcrt.dll    
+     9                                  import scanf msvcrt.dll  
+    10                                  import fopen msvcrt.dll  
+    11                                  import fclose msvcrt.dll  
+    12                                  import fread msvcrt.dll  
+    13                                  import fprintf msvcrt.dll  
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17                                      ; ...
+    18 00000000 696E7075742E747874-         file_name_1 db "input.txt", 0
+    18 00000009 00                 
+    19 0000000A 6F75747075742E7478-         file_name_2 db "output.txt", 0
+    19 00000013 7400               
+    20 00000015 7200                        access_mode_1 db "r", 0
+    21 00000017 6100                        access_mode_2 db "a", 0
+    22 00000019 FFFFFFFF                    file_descriptor_1 dd -1
+    23 0000001D FFFFFFFF                    file_descriptor_2 dd -1
+    24                                      len equ 100
+    25 00000021 00<rept>                    text times len db 0
+    26 00000085 257300                      format db "%s", 0
+    27 00000088 00<rept>                    text2 times len db 0
+    28 000000EC 00                          real_len db 0
+    29                                      
+    30                                  
+    31                                  ; our code starts here
+    32                                  segment code use32 class=code
+    33                                      start:
+    34                                          ; ...
+    35                                  
+    36 00000000 68[15000000]                    push access_mode_1
+    37 00000005 68[00000000]                    push file_name_1
+    38 0000000A FF15[00000000]                  call [fopen]
+    39 00000010 83C408                          add esp, 8
+    40                                          
+    41 00000013 A3[19000000]                    mov [file_descriptor_1], eax
+    42                                          
+    43 00000018 83F800                          cmp eax, 0
+    44 0000001B 742C                            je error_fopen
+    45                                          
+    46 0000001D FF35[19000000]                  push dword [file_descriptor_1]
+    47 00000023 6A64                            push dword len
+    48 00000025 6A01                            push dword 1 
+    49 00000027 68[21000000]                    push text
+    50 0000002C FF15[00000000]                  call [fread]
+    51 00000032 83C410                          add esp, 16
+    52                                          
+    53 00000035 A2[EC000000]                    mov [real_len], al
+    54                                          
+    55 0000003A FF35[19000000]                  push dword [file_descriptor_1]
+    56 00000040 FF15[00000000]                  call [fclose]
+    57 00000046 83C404                          add esp, 4
+    58                                          error_fopen:
+    59                                          
+    60 00000049 68[17000000]                    push access_mode_2
+    61 0000004E 68[0A000000]                    push file_name_2
+    62 00000053 FF15[00000000]                  call [fopen]
+    63                                          
+    64 00000059 A3[1D000000]                    mov [file_descriptor_2], eax
+    65                                          
+    66 0000005E 83F800                          cmp eax, 0
+    67 00000061 7466                            je error_fopen2
+    68                                          
+    69 00000063 BE[21000000]                    mov esi, text
+    70 00000068 BF00000000                      mov edi, 0
+    71 0000006D B900000000                      mov ecx, 0
+    72 00000072 8A0D[EC000000]                  mov cl, [real_len]
+    73 00000078 B200                            mov dl, 0
+    74                                          
+    75 0000007A E341                            jecxz the_end
+    76                                              start_loop:
+    77 0000007C AC                                      lodsb
+    78 0000007D 3C21                                    cmp al, "!"
+    79 0000007F 7409                                    je end_sen
+    80 00000081 8887[88000000]                              mov [text2+edi], al
+    81 00000087 47                                          inc edi
+    82 00000088 EB31                                        jmp here
+    83                                                  end_sen:
+    84 0000008A 8887[88000000]                          mov [text2+edi], al
+    85 00000090 FEC2                                    inc dl
+    86 00000092 B600                                    mov dh, 0
+    87 00000094 6689D0                                  mov ax, dx
+    88 00000097 B302                                    mov bl, 2
+    89 00000099 F6F3                                    div bl
+    90 0000009B 80FC01                                  cmp ah, 1
+    91 0000009E 7516                                    jne not_odd
+    92 000000A0 60                                          pushad
+    93 000000A1 68[88000000]                                push text2
+    94 000000A6 FF35[1D000000]                              push dword [file_descriptor_2]
+    95 000000AC FF15[00000000]                              call [fprintf]
+    96 000000B2 83C408                                      add esp, 8
+    97 000000B5 61                                          popad
+    98                                                  
+    99                                                  not_odd:
+   100 000000B6 BF00000000                              mov edi, 0 
+   101                                                 here:
+   102 000000BB E2BF                                loop start_loop
+   103                                          
+   104                                          
+   105                                          the_end:
+   106                                          
+   107                                          
+   108 000000BD FF35[1D000000]                  push dword [file_descriptor_2]
+   109 000000C3 FF15[00000000]                  call [fclose]
+   110                                          error_fopen2:
+   111                                          
+   112                                      
+   113                                          ; exit(0)
+   114 000000C9 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   115 000000CB FF15[00000000]                  call    [exit]       ; call exit to terminate the program
