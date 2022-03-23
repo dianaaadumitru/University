@@ -1,0 +1,31 @@
+/*Write a web page which contains a horizontal line in the middle of the page.
+The top side of the page should be colored with a red based gradient which should
+be fully transparent in the middle of the screen. The bottom side of the page should
+be colored with a blue based gradient which should be fully transparent in the middle
+of the screen.*/
+
+hr {
+    position: absolute;
+    height:1px;
+    width:100%;
+    top: 50%;
+    border-width:0;
+    color:black;
+    background-color:black;
+}
+
+.split {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+.red-gradient {
+    top: 0;
+    background: linear-gradient(red, yellow);
+}
+
+.blue-gradient {
+    bottom: 0;
+    background: linear-gradient(yellow, blue);
+}

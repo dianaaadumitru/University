@@ -1,0 +1,329 @@
+@import url("fonts.css");
+
+.Nav-bar {
+    width: 80px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background: white;
+    left: 0;
+}
+
+.logo {
+    height: 34px;
+    width: 31px;
+    padding: 16px 0 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    display: block;
+    border-bottom: 1px solid #e7e7ef;
+}
+
+.home_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    padding: 24px 0;
+    height: 26px;
+    width: 25px;
+}
+
+.writing {
+    font-family: Montserrat;
+    color: #969b9e;
+    margin-top: -16px;
+    text-align: center;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.brands_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 24px;
+    width: 24px;
+}
+
+.writing2 {
+    font-family: Montserrat;
+    color: #969b9e;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.more_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 8.6px;
+    width: 26px;
+}
+
+.writing3 {
+    font-family: Montserrat;
+    color: #969b9e;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.Home-sidebar {
+    width: 200vh;
+    height: 145vh;
+    top: 0;
+    position: absolute;
+    z-index: 50;
+    background: #101f29;
+    left: 60px;
+}
+
+.line {
+    margin-top: 26px;
+    margin-left: 55px;
+    display:inline-flex;
+    flex-direction: row;
+}
+
+.line1 {
+    order: 1;
+    background: rgba(255,255,255,.4);
+    border-radius: 50px;
+    overflow: hidden;
+    width: 75px;
+    height: 3px
+
+}
+
+.line2 {
+    order: 2;
+    margin-left: 0.2cm;
+    background: rgba(255,255,255,.4);
+    border-radius: 50px;
+    overflow: hidden;
+    width: 75px;
+    height: 3px
+}
+
+.line3 {
+    order: 3;
+    margin-left: 0.2cm;
+    background: rgba(255,255,255,.4);
+    border-radius: 50px;
+    overflow: hidden;
+    width: 75px;
+    height: 3px
+}
+
+.line4 {
+    order: 4;
+    margin-left: 0.2cm;
+    background: rgba(255,255,255,.4);
+    border-radius: 50px;
+    overflow: hidden;
+    width: 75px;
+    height: 3px
+}
+
+.videoTab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 650px;
+    width: 779px;
+    pointer-events: none;
+}
+
+.home_text {
+    margin-top: 77px;
+    margin-left: 55px;
+    margin-bottom: auto;
+    font-family: Montserrat;
+    color: white;
+}
+
+.line_space {
+    line-height: 1.3em;
+}
+
+.explore_text {
+    margin-top: 50px;
+    margin-left: 55px;
+    margin-bottom: auto;
+    font-family: Montserrat;
+    color: white;
+}
+
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background:rgba(0,0,0,0);
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: -62px auto 24px 300px;
+    position: absolute;
+}
+
+.rectangle {
+    margin-left: 56px;
+    margin-top: 34px;
+    width:320px;
+    height: 86px;
+    border-radius: 15px;
+    display: block;
+    background-size: 138px 37px;
+    background-position: 13px center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.crafty{
+    background-color: #fd4f69;
+    background-image: url('images/crafty.webp');
+
+}
+
+.rectangle2 {
+    margin-left: 56px;
+    margin-top: 17px;
+    width:320px;
+    height: 86px;
+    border-radius: 15px;
+    display: block;
+    background-size: 130px 43px;
+    background-position: 22px center;
+    background-repeat: no-repeat;
+}
+
+.aunty {
+    background-color: #654ea3;
+    background-image: url("images/aunty_acid.png");
+}
+
+.rectangle3 {
+    margin-left: 56px;
+    margin-top: 17px;
+    width:320px;
+    height: 86px;
+    border-radius: 15px;
+    display: block;
+    background-size: 200px 43px;
+    background-position: 22px center;
+    background-repeat: no-repeat;
+}
+
+.vodka {
+    background-color: #d11547;
+    background-image:  url("images/vodka.png");
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    margin: -47.3px auto 24px 314px;
+    position: absolute;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.more_text {
+
+    margin-left: 20px;
+    font-family: Montserrat;
+    color: white;
+}
+
+.Footer {
+    padding: 35px 88px 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_policy {
+    /*margin-bottom: 24px;*/
+}
+
+.Footer ul {
+    list-style-type: none;
+    display: flex;
+    font-family: Montserrat;
+    color: white;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+.Footer ul li {
+    margin-right: 24px;
+    margin-bottom: 4px;
+}
+
+.Footer ul li a {
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+}
+
+.Footer_connect {
+    margin-bottom: 24px;
+}
+
+.connect_text {
+    font-family: Montserrat;
+    color: white;
+}
+
+.social-apps{
+    display:inline-flex;
+    flex-direction: row;
+}
+
+.facebook {
+    order: 1;
+}
+
+.twitter {
+    order: 2;
+    margin-left: 0.6cm;
+}
+
+.pinterest {
+    order: 3;
+    margin-left: 0.6cm;
+}
+
+.youtube {
+    order: 4;
+    margin-left: 0.6cm;
+}
+
+.mute_icon {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+
+
+}
+
+
+/*style="background:linear-gradient(90deg, #d11547, #fd6691)"*/
+
+/*style="background:linear-gradient(90deg, #654ea3, #c882d8)"*/
+
+/*style="background:linear-gradient(90deg, #fd4f69, #ff7e95)"*/

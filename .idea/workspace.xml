@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea402558-dc5c-473d-aed7-20bdaa3a385d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/Controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/Domain/Constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/Domain/DMap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/Domain/Drone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/Domain/Environment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/GUI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/Readme.txt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/drona.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/logo32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/test2.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Artificial Intelligence/hw1/vsimple.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/a1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/pt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/pt2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/pt3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/r1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/r2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/r3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/v1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/v2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4th semester/Web Programming/hw1/v3.mp4" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="399aab75-5e90-4977-85a5-dcb18b93f7a0" />
+  <component name="ProjectId" id="25hvkfUAMKoDprjyGXJBt8Dq9RR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/4th semester" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\diana\Desktop\uni work\UBB\1st semester\Fundamentals of programming" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\diana\Desktop\uni work\UBB\4th semester" />
+      <recent name="C:\Users\diana\Desktop\uni work\UBB\3rd semester\Advanced programming methods" />
+      <recent name="C:\Users\diana\Desktop\uni work\UBB\3rd semester" />
+      <recent name="C:\Users\diana\Desktop\uni work\UBB\2nd semester" />
+      <recent name="C:\Users\diana\Desktop\uni work\UBB\1st semester\Computer System Arhitecture" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea402558-dc5c-473d-aed7-20bdaa3a385d" name="Default Changelist" comment="" />
+      <created>1645992277014</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645992277014</updated>
+      <workItem from="1645992278178" duration="2214000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645992353940">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.672@0.0.1280.672" timestamp="1645992353940" />
+    <state x="409" y="139" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1645992294931">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="409" y="139" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.672@0.0.1280.672" timestamp="1645992294931" />
+  </component>
+</project>
