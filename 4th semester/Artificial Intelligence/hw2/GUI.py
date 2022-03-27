@@ -84,19 +84,19 @@ class GUI:
             screen.blit(self.__controller.displayWithPath(self.__controller.getDMap().image(PURPLE), pathG, LIGHTPURPLE),
                         (0, 0))
 
-            # startA = time.time()
-            # pathA = self.__controller.searchAStar(self.__initialX, self.__initialY, self.__finalX, self.__finalY)
-            # endA = time.time()
-            # if not printedA:
-            #     print('A* Path: ')
-            #     print(pathA)
-            #     printedA = True
-            # screen.blit(self.__controller.displayWithPath(self.__controller.getDMap().image(GREEN2), pathA, PALEGREEN),
-            #             (400, 0))
+            startA = time.time()
+            pathA = self.__controller.searchAStar(self.__initialX, self.__initialY, self.__finalX, self.__finalY)
+            endA = time.time()
+            if not printedA:
+                print('A* Path: ')
+                print(pathA)
+                printedA = True
+            screen.blit(self.__controller.displayWithPath(self.__controller.getDMap().image(GREEN2), pathA, PALEGREEN),
+                        (400, 0))
 
             if not printedTime:
                 print('\nExecution time for Greedy: ' + str(endG - startG))
-                # print('Execution time for A*: ' + str(endA - startA))
+                print('Execution time for A*: ' + str(endA - startA))
                 printedTime = True
 
             pygame.display.flip()

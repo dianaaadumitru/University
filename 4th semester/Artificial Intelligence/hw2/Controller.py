@@ -80,36 +80,36 @@ class Controller:
         visitQueue = [(initialX, initialY)]
         prev = dict()
         prev[(initialX, initialY)] = (None, None)
-        nrSteps = dict()
-        nrSteps[(initialX, initialY)] = 0
+        gValues = dict()  # store the g values
+        gValues[(initialX, initialY)] = 0
 
         while visitQueue and not found:
-            node = visitQueue.pop(0)
-            visited.append(node)
+            node = visitQueue.pop(0)  # pop the first element from the queue
+            visited.append(node)  # mark the next step as visited
 
             if node == (finalX, finalY):
                 found = True
             else:
                 aux = []
-                for d in v:
+                for d in v:  # search for neighbours and if they are nit visited also save them in aux
                     newX = node[0] + d[0]
                     newY = node[1] + d[1]
 
                     if self.validNode(newX, newY) and (newX, newY) not in visited:
                         if (newX, newY) not in visitQueue:
-                            aux.append((newX, newY))
-                            prev[(newX, newY)] = node
-                            nrSteps[(newX, newY)] = nrSteps[node] + 1
+                            aux.append((newX, newY))  # add node to aux
+                            prev[(newX, newY)] = node  # build the path
+                            gValues[(newX, newY)] = gValues[node] + 1  # add to each new node the g value
                         else:
-                            if nrSteps[(newX, newY)] > nrSteps[node] + 1:
+                            if gValues[(newX, newY)] > gValues[node] + 1:  # check if it's quicker to first visit the node, then the neighbour
                                 visitQueue.remove((newX, newY))
-                                aux.append((newX, newY))
-                                prev[(newX, newY)] = node
-                                nrSteps[(newX, newY)] = nrSteps[node] + 1
+                                aux.append((newX, newY))  # add node to aux
+                                prev[(newX, newY)] = node  # build the path
+                                gValues[(newX, newY)] = gValues[node] + 1  # add to each node the g value
 
                 visitQueue.extend(aux)
                 visitQueue.sort(
-                    key=lambda coord: self.manhattanDist(coord[0], coord[1], finalX, finalY) + nrSteps[coord])
+                    key=lambda coord: self.manhattanDist(coord[0], coord[1], finalX, finalY) + gValues[coord])
 
         if found:
             return self.buildPath(prev, finalX, finalY)
