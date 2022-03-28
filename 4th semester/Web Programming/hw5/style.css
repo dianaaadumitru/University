@@ -1,0 +1,23 @@
+p{
+    font-size: 32px;
+    text-align: center;
+}
+
+body{
+    align-items: center;
+}
+td {
+    padding:2px;
+    width: 130px;
+    height: 130px;
+}
+
+table{
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width:100%;
+    height:auto;
+}
