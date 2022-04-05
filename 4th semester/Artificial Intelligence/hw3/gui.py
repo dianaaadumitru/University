@@ -61,7 +61,8 @@ def movingDrone(currentMap, path, speed = 1,  markSeen = True):
         pygame.display.flip()
         time.sleep(0.5 * speed)            
     closePyGame()
-        
+
+
 def image(currentMap, colour = BLUE, background = WHITE):
     # creates the image of a map
     
@@ -72,7 +73,6 @@ def image(currentMap, colour = BLUE, background = WHITE):
     for i in range(currentMap.n):
         for j in range(currentMap.m):
             if (currentMap.surface[i][j] == 1):
-                imagine.blit(brick, ( j * 20, i * 20))
+                imagine.blit(brick, (j * 20, i * 20))
                 
     return imagine        
-    

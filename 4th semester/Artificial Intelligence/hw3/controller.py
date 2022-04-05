@@ -4,7 +4,13 @@ from repository import *
 class controller():
     def __init__(self):
         # args - list of parameters needed in order to create the controller
-        self.__repo = repository()
+        self.__repository = repository()
+
+    def getMap(self):
+        return self.__repository.getMap()
+
+    def getDrone(self):
+        return self.__repository.getDrone()
 
     def iteration(self, args):
         # args - list of parameters needed to run one iteration

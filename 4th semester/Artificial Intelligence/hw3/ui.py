@@ -25,6 +25,10 @@ from domain import *
 class UI:
     def __init__(self):
         self.__controller = controller()
+        self.__popSize = 50
+        self.__indSize = 30
+        self.__genCount = 20
+        self.__nrIterations = 100
 
     @staticmethod
     def printMenu():
@@ -80,7 +84,10 @@ class UI:
             self.printEAOptions()
             option = int(input("Your option: "))
             if option == 1:
-                pass
+                self.__popSize = int(input("Population size: "))
+                self.__indSize = int(input("Number of individuals: "))
+                self.__genCount = int(input("Number of generations: "))
+                self.__nrIterations = int(input("Number of iterations: "))
             elif option == 2:
                 pass
             elif option == 3:
