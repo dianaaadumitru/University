@@ -1,0 +1,19 @@
+body {
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    top: 40%;
+    left: -200px;
+}
+li {
+    position: absolute;
+}
+
+.img_slider {
+    height: 135px;
+    width: 200px;
+}
+
