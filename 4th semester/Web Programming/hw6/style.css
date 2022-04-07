@@ -3,17 +3,36 @@ body {
 }
 
 ul {
-    list-style-type: none;
     position: absolute;
     top: 40%;
     left: -200px;
 }
+
 li {
     position: absolute;
+    list-style: none;
 }
 
 .img_slider {
     height: 135px;
     width: 200px;
+}
+
+.popup-class {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.popup-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
 }
 
