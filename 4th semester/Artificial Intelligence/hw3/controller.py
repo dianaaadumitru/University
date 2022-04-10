@@ -30,8 +30,7 @@ class controller():
         
         # return the results and the info for statistics
         pass
-    
-    
+
     def solver(self, args):
         # args - list of parameters needed in order to run the solver
         
@@ -41,4 +40,4 @@ class controller():
         pass
 
     def setMap(self, newMap):
-        self.__repo.setMap(newMap)
+        self.__repository.setMap(newMap)

@@ -64,9 +64,12 @@ class UI:
                 newMap.randomMap()
                 print("Map successfully generated\n")
             elif option == 2:
-                newMap.loadMap()
+                fileName = input("Give a file name: ")
+                newMap.loadMap(fileName)
                 print("Map successfully loaded\n")
             elif option == 3:
+                fileName = input("Give a file name: ")
+                newMap.saveMap(fileName)
                 print("Map successfully saved\n")
             elif option == 4:
                 print(newMap)

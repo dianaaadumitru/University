@@ -2,7 +2,7 @@
 
 import pickle
 
-import rand as rand
+import random as rand
 
 from domain import *
 

@@ -146,11 +146,29 @@ class Map:
             string = string + "\n"
         return string
 
-    def loadMap(self, mapName):
-        pass
+    def loadMap(self, fileName):
+        file = open(fileName, "r")
+        line = file.readline()
+        l = line.split(" ")
+        n, m = l[0], l[1]
+        self.n = int(n)
+        self.m = int(m)
+        for i in range(int(n)):
+            line = file.readline().split(" ")
+            for j in range(int(m)):
+                self.surface[i][j] = int(line[j])
+        file.close()
 
-    def saveMap(self, mapName):
-        pass
+    def saveMap(self, fileName):
+        file = open(fileName, "w")
+        file.write("{0} {1}\n".format(self.n, self.m))
+        string = ""
+        for i in range(self.n):
+            for j in range(self.m):
+                string = string + str(int(self.surface[i][j]))
+            string = string + "\n"
+        file.write(string)
+        file.close()
 
 
 class Drone:
