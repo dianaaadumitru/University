@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import matplotlib.pyplot as plt
 from pygame.locals import *
 import pygame, time
 from utils import *
@@ -12,7 +13,7 @@ def initPyGame(dimension):
     logo = pygame.image.load("logo32x32.png")
     pygame.display.set_icon(logo)
     pygame.display.set_caption("drone exploration with AE")
-    
+
     # create a surface on screen that has the size of 800 x 480
     screen = pygame.display.set_mode(dimension)
     screen.fill(WHITE)
@@ -31,48 +32,52 @@ def closePyGame():
                 # change the value to False, to exit the main loop
                 running = False
     pygame.quit()
-    
 
-def movingDrone(currentMap, path, speed = 1,  markSeen = True):
+
+def movingDrone(screen, controller, bestIndividuals, speed=1, markSeen=True):
     # animation of a drone on a path
-    
-    screen = initPyGame((currentMap.n * 20, currentMap.m * 20))
 
-    drona = pygame.image.load("drona.png")
-        
-    for i in range(len(path)):
-        screen.blit(image(currentMap), (0,0))
-        
-        if markSeen:
-            brick = pygame.Surface((20,20))
-            brick.fill(GREEN)
-            for j in range(i+1):
-                for var in v:
-                    x = path[j][0]
-                    y = path[j][1]
-                    while ((0 <= x + var[0] < currentMap.n and  
-                            0 <= y + var[1] < currentMap.m) and 
-                           currentMap.surface[x + var[0]][y + var[1]] != 1):
-                        x = x + var[0]
-                        y = y + var[1]
-                        screen.blit(brick, ( y * 20, x * 20))
-        
-        screen.blit(drona, (path[i][1] * 20, path[i][0] * 20))
-        pygame.display.flip()
-        time.sleep(0.5 * speed)            
-    closePyGame()
+    for individual in bestIndividuals:
+        imagee = pygame.Surface((400, 400))
+        brick = pygame.Surface((20, 20))
+        pathTile = pygame.Surface((20, 20))
+        brick.fill(BLUE)
+        imagee.fill(WHITE)
+        pathTile.fill(GREEN)
+
+        mapSurface = controller.getMap().surface
+        for i in range(20):
+            for j in range(20):
+                if mapSurface[i][j] == 1:
+                    imagee.blit(brick, (j * 20, i * 20))
+
+        drona = pygame.image.load("drona.png")
+        imagee.blit(drona, (controller.getDrone().getY() * 20, controller.getDrone().getX() * 20))
+
+        crtPosition = (controller.getDrone().getX(), controller.getDrone().getY())
+
+        path = individual.getChromosome()
+        for directionCode in path:
+            imagee.blit(pathTile, (crtPosition[1] * 20, crtPosition[0] * 20))
+            pathImageCopy = imagee.copy()
+            pathImageCopy.blit(drona, (crtPosition[1] * 20, crtPosition[0] * 20))
+            screen.blit(pathImageCopy, (0, 0))
+            pygame.display.update()
+            pygame.time.wait(5)
+            direction = v[directionCode]
+            crtPosition = (crtPosition[0] + direction[0], crtPosition[1] + direction[1])
 
 
-def image(currentMap, colour = BLUE, background = WHITE):
+def image(currentMap, colour=BLUE, background=WHITE):
     # creates the image of a map
-    
+
     imagine = pygame.Surface((currentMap.n * 20, currentMap.m * 20))
-    brick = pygame.Surface((20,20))
+    brick = pygame.Surface((20, 20))
     brick.fill(colour)
     imagine.fill(background)
     for i in range(currentMap.n):
         for j in range(currentMap.m):
-            if (currentMap.surface[i][j] == 1):
+            if currentMap.surface[i][j] == 1:
                 imagine.blit(brick, (j * 20, i * 20))
-                
-    return imagine        
+
+    return imagine

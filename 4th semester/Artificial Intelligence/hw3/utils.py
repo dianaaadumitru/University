@@ -14,9 +14,9 @@ DOWN = 2
 LEFT = 1
 RIGHT = 3
 
-#define indexes variations 
+#define indexes variations
 v = [[-1, 0], [1, 0], [0, 1], [0, -1]]
 
-#define mapsize 
+#define mapsize
 
-mapLengh = 20
+mapLength = 20
