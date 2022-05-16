@@ -8,6 +8,7 @@ if (isset($_POST['submit'])) {
     $conn = OpenConnection();
     $sql = "SELECT * FROM phplab.loggers WHERE username='$username' LIMIT 1";
     $query = $conn->query($sql);
+
     if (mysqli_num_rows($query) == 0) {
         echo "<b><i>Invalid credentials</i><b>";
     } else {
@@ -46,9 +47,9 @@ if (isset($_POST['submit'])) {
     <h1>Login</h1>
     <form method="post" action="login.php">
         <input type="text" name = "username" placeholder="Enter username">
-        <br>
-        <input type="password" name="password" placeholder="Enter password here">
-        <br>
+        <br><br>
+        <input type="password" name="password" placeholder="Enter password">
+        <br><br>
         <input type="submit" name="submit" value="Login">
     </form>
 </div>

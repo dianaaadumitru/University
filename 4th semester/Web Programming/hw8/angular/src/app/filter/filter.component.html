@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+    <section class="main-section">
+        <h2>Filter </h2>
+        <select style="margin-left: 30px;" name="fatchval" id="fetchval" (change)="filterType($any($event.target).value)">
+            <option selected>choose type</option>
+            <option>event log</option>
+            <option>system log</option>
+            <option>sever log</option>          
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th><span id="id" class="w3-button table-column">ID <i class="caret"></i></span></th>
+                    <th><span id="userID" class="w3-button table-column">UserID <i class="caret"></i></span></th>
+                    <th><span id="message" class="w3-button table-column">Message <i class="caret"></i></span></th>
+                    <th><span id="type" class="w3-button table-column">Type <i class="caret"></i></span></th>
+                    <th><span id="severity" class="w3-button table-column">Severity <i class="caret"></i></span></th>
+                    <th><span id="posted_on" class="w3-button table-column">posted_on <i class="caret"></i></span></th>
+                </tr>
+            </thead>
+            <tbody id="mytable">
+                <tr *ngFor="let item of logs">
+                    <td>{{item.id}}</td>
+                    <td>{{item.userID}}</td>
+                    <td>{{item.message}}</td>
+                    <td>{{item.type}}</td>
+                    <td>{{item.severity}}</td>
+                    <td>{{item.posted_on}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

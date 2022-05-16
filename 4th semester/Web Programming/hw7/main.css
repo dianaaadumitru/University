@@ -3,8 +3,7 @@ body {
 }
 
 div {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 ul {
@@ -16,4 +15,9 @@ ul {
 li {
     margin-right: 24px;
     margin-bottom: 4px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }

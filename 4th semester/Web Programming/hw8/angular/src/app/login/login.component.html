@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+<body>
+<div class="login">
+  <h1>Access your account</h1>
+  <form autocomplete="off" (submit)="loginUser($event)">
+    <div>
+      <input type="username" class="form-control" id="username" 
+             placeholder="Username" />
+      <input type="password" class="form-control" id="password" 
+             placeholder="Password" />
+      <button style="width:300px; height:40px" type="login" class="btn btn-primary">Login</button>
+    </div>
+  </form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+h2 {
+    margin-left: 30px;
+    font-size: 50px;
+    background: #dddddd;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+h3 {
+    margin-left: 30px;
+    background: #dddddd;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+body {
+    background-color: #092756;
+    height: 100vh;
+    overflow: auto;
+}
+
+
+
+.profile-button {
+    font-size: 22px;
+    top: 30px;
+    margin-left: 30px;
+    position: absolute;
+    background: #092756;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #4e2890;
+}
+
+.profile-button:focus {
+    background: #4e2890;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #4e2890;
+    box-shadow: none
+}
+
+back:hover {
+    color: #4e2890;
+    cursor: pointer
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 100px;
+    background-color: #dddddd;
+
+}
+
+td,
+th {
+    border: 1px solid #092756;
+    text-align: left;
+    padding: 8px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+input[type="text"],
+input[type="number"] {
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+}
+
+.center {
+    position: absolute;
+    left: 40%;
+    color: #dddddd;
+}
+
+
+.profile-button {
+    font-size: 22px;
+    top: 80px;
+    margin-left: 30px;
+    position: absolute;
+    background: #092756;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #4e2890;
+}
+
+.profile-button:focus {
+    background: #4e2890;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #4e2890;
+    box-shadow: none
+}
+
+back:hover {
+    color: #4e2890;
+    cursor: pointer
+}
+
+label {
+    color: #dddddd;
+}
+
+form {
+    margin-left: 30px;
+}

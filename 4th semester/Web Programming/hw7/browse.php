@@ -12,7 +12,7 @@
 <p style='text-align: center'>Reports using pagination (4 on each page)</p>
 
 <?php include('getPagination.php'); ?>
-<div>
+<div class="container">
     <ul>
         <li><a href="?pageno=1"><button type="button">First</button></a></li>
 

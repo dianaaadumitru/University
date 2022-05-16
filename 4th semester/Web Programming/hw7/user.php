@@ -17,7 +17,6 @@ else {
 <html>
 <head>
     <title>Welcome user</title>
-    <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -37,6 +36,7 @@ if (isset($_POST['view'])) {
     $conn = OpenConnection();
     $query = "SELECT * FROM phplab.logreport WHERE userID='$userId'";
     $result = mysqli_query($conn, $query);
+
     if (mysqli_num_rows($result)) {
         echo "<p style='text-align: center'>Your reports</p>";
         echo "<table style='margin-left: auto;margin-right: auto;'>";
@@ -60,14 +60,74 @@ if (isset($_POST['view'])) {
         echo "</table>";
         echo "</br>";
     }
+    else {
+        echo "You don't have any log reports!";
+    }
+
     CloseConnection($conn);
 }
 ?>
 
 <div>
+    <form action="user.php" method="post">
+<!--        <input type="text" name="idAdd" placeholder="id">-->
+        <input type="text" name="messageAdd" placeholder="message">
+        <input type="text" name="typeAdd" placeholder="type">
+        <input type="text" name="severityAdd" placeholder="severity">
+        <input type="text" name="posted_onAdd" placeholder="posted_on">
+        <input id="add" type="submit" name="add" value="Add log report">
+    </form>
+    <br>
+</div>
+
+<?php
+if (isset($_POST['add'])) {
+    $conn = OpenConnection();
+//    $id = $_POST['idAdd'];
+    $message = $_POST['messageAdd'];
+    $type = $_POST['typeAdd'];
+    $severity = $_POST['severityAdd'];
+    $posted_on = $_POST['posted_onAdd'];
+
+
+    $idExists = "SELECT id FROM phplab.logreport";
+
+    $res = mysqli_query($conn, $idExists);
+    $idValues = Array();
+
+    while ( $row = mysqli_fetch_assoc($res) ) {
+
+        $idValues[] = $row['id'];
+
+    }
+
+    if ( $message == '' || $type == '' || $severity == '' || $posted_on == '')
+        echo "Invalid Data";
+    else {
+
+//        $query = "INSERT INTO phplab.logreport(`id`, `userID`, `message`, `type`, `severity`, `posted_on`) VALUES ($id,$userId,'$message','$type','$severity','$posted_on')";
+        $query = "INSERT INTO phplab.logreport( `userID`, `message`, `type`, `severity`, `posted_on`) VALUES ( ?, ?, ?, ?, ?)";
+
+        if($stmt = mysqli_prepare($conn, $query)){
+            mysqli_stmt_bind_param($stmt, "issss",  $userId, $message, $type, $severity, $posted_on);
+            mysqli_stmt_execute($stmt);
+            echo "Log Report added";
+        } else {
+            echo "error";
+        }
+
+    }
+
+
+    CloseConnection($conn);
+}
+?>
+
+
+<div>
 <form action="user.php" method="post">
     <input type="text" name="id" placeholder="id">
-    <input id="delete" type="submit" name="delete" value="Delete log report">
+    <input id="delete" type="submit" name="delete" value="Delete log report" onclick="return confirm('Are you sure?')">
 </form>
 <br>
 </div>
@@ -77,11 +137,32 @@ if (isset($_POST['delete'])) {
     $conn = OpenConnection();
     $id = $_POST['id'];
 
-    $query = "DELETE FROM phplab.logreport WHERE id='$id' AND userID='$userId'";
+    $idExists = "SELECT id FROM phplab.logreport WHERE userID='$userId'";
 
-    $conn->query($query);
+    $res = mysqli_query($conn, $idExists);
+    $idValues = Array();
 
-    header('location:user.php');
+    while ( $row = mysqli_fetch_assoc($res) ) {
+
+        $idValues[] = $row['id'];
+
+    }
+
+    if ($id == '' || in_array($id, $idValues) != 1)
+        echo "Invalid ID";
+    else {
+        $query = "DELETE FROM phplab.logreport WHERE id=? AND userID=?";
+
+        if($stmt = mysqli_prepare($conn, $query)){
+            mysqli_stmt_bind_param($stmt, "ii", $id, $userId);
+            mysqli_stmt_execute($stmt);
+            echo "Log Report deleted";
+        } else {
+            echo "error";
+        }
+    }
+
+
     CloseConnection($conn);
 }
 ?>

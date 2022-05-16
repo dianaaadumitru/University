@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title></title>
+</head>
+
+<body>
+
+  <section class="main-section">
+    <h2>Add a report</h2>
+
+    <form autocomplete="off" (submit)="addItem($event)" name="theForm">
+      <div>
+        <label for="message">Message</label>
+        <br>
+        <input type="text" required #message="ngModel" [class.is-invalid]="message.invalid && message.touched"
+          class="form-control" name="message" id="message" ngModel>
+        <br>
+        <small calss="text-danger" style="color: red;" [class.d-none]="message.valid || message.untouched">Message is
+          required</small>
+      </div>
+
+      <div>
+        <label for="type">Type</label>
+        <br>
+        <select required #type="ngModel" [class.is-invalid]="type.invalid && type.touched" class="form-control"
+          name="type" id="type" ngModel>
+          <option value="system log">system log</option>
+          <option value="event log">event log</option>
+          <option value="server log">server log</option>
+        </select>
+        <br>
+        <small calss="text-danger" style="color: red;" [class.d-none]="type.valid || type.untouched">Type is
+          required</small>
+
+      </div>
+      <div>
+        <label for="severity">Severity</label>
+        <br>
+        <select required #severity="ngModel" [class.is-invalid]="severity.invalid && severity.touched"
+          class="form-control" name="severity" id="severity" ngModel>
+          <option value="fatal">fatal</option>
+          <option value="info">info</option>
+          <option value="warning">warning</option>
+        </select>
+        <br>
+        <small calss="text-danger" style="color: red;" [class.d-none]="severity.valid || severity.untouched">Severity is
+          required</small>
+
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <br>
+        <input type="text" required #date="ngModel" pattern="^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$"
+          [class.is-invalid]="date.invalid && date.touched" class="form-control" name="date" id="date" ngModel>
+        <br>
+        <small calss="text-danger" style="color: red;" [class.d-none]="date.valid || date.untouched">Date is required or
+          it is not valid</small>
+
+      </div>
+      <br>
+      <input type="submit" value="Add">
+    </form>
+  </section>
+</body>
+
+</html>
