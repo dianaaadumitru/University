@@ -1,0 +1,24 @@
+<div class="center">
+    <label>Movie title:
+        <input #title required />
+        <br />
+    </label>
+    <br><br>
+    <button (click)="searchByTitle(title.value)">
+        Search
+    </button>
+
+    <div *ngIf="selectedMovie">
+        <h2>
+          {{selectedMovie.title | uppercase}} was selected
+        </h2>
+        <button (click)="gotoDetail()">View Details</button>
+      </div>
+
+    <br><br><br>
+    <li *ngFor="let movie of movies"
+    [class.selected]="movie === selectedMovie"
+        (click)="onSelect(movie)">
+        {{movie.title}}
+    </li>
+</div>

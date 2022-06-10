@@ -1,0 +1,6 @@
+ro/ubb/lab11/client/config/ClientConfig.java
+ ro.ubb.lab11.client.config.ClientConfig
+ro/ubb/lab11/client/ClientApp.java
+ ro.ubb.lab11.client.ClientApp
+ro/ubb/lab11/client/UI/UI.java
+ ro.ubb.lab11.client.UI.UI

@@ -1,0 +1,47 @@
+ro/ubb/lab11/web/dto/CastedSpellsDTO.java
+ ro.ubb.lab11.web.dto.CastedSpellsDTO
+ro/ubb/lab11/web/converter/Converter.java
+ ro.ubb.lab11.web.converter.Converter
+ro/ubb/lab11/web/dto/PetDTO.java
+ ro.ubb.lab11.web.dto.PetDTO
+ro/ubb/lab11/web/controller/PetController.java
+ ro.ubb.lab11.web.controller.PetController
+ro/ubb/lab11/web/converter/WizardConverter.java
+ ro.ubb.lab11.web.converter.WizardConverter
+ro/ubb/lab11/web/dto/WizardDTO.java
+ ro.ubb.lab11.web.dto.WizardDTO
+ro/ubb/lab11/web/converter/SpellConverter.java
+ ro.ubb.lab11.web.converter.SpellConverter
+ro/ubb/lab11/web/dto/BaseDTO.java
+ ro.ubb.lab11.web.dto.BaseDTO
+ro/ubb/lab11/web/controller/SpellController.java
+ ro.ubb.lab11.web.controller.SpellController
+ro/ubb/lab11/web/dto/WizardsDTO.java
+ ro.ubb.lab11.web.dto.WizardsDTO
+ro/ubb/lab11/web/config/AppLocalConfig.java
+ ro.ubb.lab11.web.config.AppLocalConfig
+ro/ubb/lab11/web/converter/CastedSpellConverter.java
+ ro.ubb.lab11.web.converter.CastedSpellConverter
+ro/ubb/lab11/web/dto/SpellsDTO.java
+ ro.ubb.lab11.web.dto.SpellsDTO
+ro/ubb/lab11/web/config/WebConfig.java
+ ro.ubb.lab11.web.config.WebConfig
+ ro.ubb.lab11.web.config.WebConfig$1
+ro/ubb/lab11/web/converter/PetConverter.java
+ ro.ubb.lab11.web.converter.PetConverter
+ro/ubb/lab11/web/dto/SpellDTO.java
+ ro.ubb.lab11.web.dto.SpellDTO
+ro/ubb/lab11/web/converter/BaseConverter.java
+ ro.ubb.lab11.web.converter.BaseConverter
+ro/ubb/lab11/web/config/Initializer.java
+ ro.ubb.lab11.web.config.Initializer
+ro/ubb/lab11/web/controller/WizardController.java
+ ro.ubb.lab11.web.controller.WizardController
+ro/ubb/lab11/web/dto/CastedSpellDTO.java
+ ro.ubb.lab11.web.dto.CastedSpellDTO
+ro/ubb/lab11/web/dto/PetsDTO.java
+ ro.ubb.lab11.web.dto.PetsDTO
+ro/ubb/lab11/web/dto/WizardsPetsDTO.java
+ ro.ubb.lab11.web.dto.WizardsPetsDTO
+ro/ubb/lab11/web/controller/CastedSpellController.java
+ ro.ubb.lab11.web.controller.CastedSpellController

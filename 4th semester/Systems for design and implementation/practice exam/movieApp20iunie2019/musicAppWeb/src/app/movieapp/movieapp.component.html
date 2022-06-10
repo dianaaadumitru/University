@@ -1,0 +1,40 @@
+<div class="center">
+    <label>Year:
+        <input #year required />
+        <br />
+    </label>
+    <br>
+    <input type="radio" id="before" name="fav_language" value="true" (change)="changeValue($event)">
+    <label for="before">Before</label>
+    <input type="radio" id="after" name="fav_language" value="false" (change)="changeValue($event)">
+    <label for="After">After</label>
+    <br><br>
+    <button (click)="searchByYear(year.value)">
+        Search
+    </button>
+    <br><br><br>
+    <li *ngFor="let movie of movies">
+        {{movie.title}}
+        {{movie.year}}
+    </li>
+    <br><br>
+    <div *ngIf="movies.length != 0">
+        <button (click)="showCast()">Show cast</button>
+    </div>
+    <br>
+    <div *ngIf="movies.length == moviesWithActors.length">
+        <li *ngFor="let movie of moviesWithActors">
+            {{movie.title}}
+            {{movie.year}}
+            <!-- {{movie.actors}} -->
+            <ol *ngFor="let actor of movie.actors">
+                {{actor.name}} -- {{actor.rating}}
+                <button
+                [class.delete]="true"
+                (click)="deleteActor(actor);$event.stopPropagation()">delete
+              </button>
+            </ol>
+            
+        </li>
+    </div>
+</div>

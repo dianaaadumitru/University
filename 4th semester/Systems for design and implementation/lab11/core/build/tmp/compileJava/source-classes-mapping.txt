@@ -1,0 +1,57 @@
+ro/ubb/lab11/core/model/BaseEntity.java
+ ro.ubb.lab11.core.model.BaseEntity
+ro/ubb/lab11/core/model/validators/PetValidator.java
+ ro.ubb.lab11.core.model.validators.PetValidator
+ro/ubb/lab11/core/exceptions/ValidatorException.java
+ ro.ubb.lab11.core.exceptions.ValidatorException
+ro/ubb/lab11/core/model/validators/WizardValidator.java
+ ro.ubb.lab11.core.model.validators.WizardValidator
+ro/ubb/lab11/core/repository/IWizardRepository.java
+ ro.ubb.lab11.core.repository.IWizardRepository
+ro/ubb/lab11/core/repository/ISpellRepository.java
+ ro.ubb.lab11.core.repository.ISpellRepository
+ro/ubb/lab11/core/service/CastedSpellServiceImpl.java
+ ro.ubb.lab11.core.service.CastedSpellServiceImpl
+ro/ubb/lab11/core/service/SpellServiceImpl.java
+ ro.ubb.lab11.core.service.SpellServiceImpl
+ro/ubb/lab11/core/config/JPAConfig.java
+ ro.ubb.lab11.core.config.JPAConfig
+ro/ubb/lab11/core/model/Wizard.java
+ ro.ubb.lab11.core.model.Wizard
+ro/ubb/lab11/core/config/CacheConfig.java
+ ro.ubb.lab11.core.config.CacheConfig
+ ro.ubb.lab11.core.config.CacheConfig$CustomRemovalListener
+ro/ubb/lab11/core/model/CastedSpell.java
+ ro.ubb.lab11.core.model.CastedSpell
+ro/ubb/lab11/core/service/ICastedSpellService.java
+ ro.ubb.lab11.core.service.ICastedSpellService
+ro/ubb/lab11/core/service/ISpellService.java
+ ro.ubb.lab11.core.service.ISpellService
+ro/ubb/lab11/core/model/validators/SpellValidator.java
+ ro.ubb.lab11.core.model.validators.SpellValidator
+ro/ubb/lab11/core/model/Pair.java
+ ro.ubb.lab11.core.model.Pair
+ro/ubb/lab11/core/model/Spell.java
+ ro.ubb.lab11.core.model.Spell
+ro/ubb/lab11/core/model/validators/CastedSpellValidator.java
+ ro.ubb.lab11.core.model.validators.CastedSpellValidator
+ro/ubb/lab11/core/repository/IRepository.java
+ ro.ubb.lab11.core.repository.IRepository
+ro/ubb/lab11/core/repository/ICastedSpellRepository.java
+ ro.ubb.lab11.core.repository.ICastedSpellRepository
+ro/ubb/lab11/core/exceptions/MagicException.java
+ ro.ubb.lab11.core.exceptions.MagicException
+ro/ubb/lab11/core/model/Pet.java
+ ro.ubb.lab11.core.model.Pet
+ro/ubb/lab11/core/model/validators/Validator.java
+ ro.ubb.lab11.core.model.validators.Validator
+ro/ubb/lab11/core/service/IWizardService.java
+ ro.ubb.lab11.core.service.IWizardService
+ro/ubb/lab11/core/service/IPetService.java
+ ro.ubb.lab11.core.service.IPetService
+ro/ubb/lab11/core/service/PetServiceImpl.java
+ ro.ubb.lab11.core.service.PetServiceImpl
+ro/ubb/lab11/core/service/WizardServiceImpl.java
+ ro.ubb.lab11.core.service.WizardServiceImpl
+ro/ubb/lab11/core/repository/IPetRepository.java
+ ro.ubb.lab11.core.repository.IPetRepository
