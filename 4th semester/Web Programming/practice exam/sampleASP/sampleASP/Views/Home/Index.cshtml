@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Login</h1>
+    <input type="text" name = "username" id="username" placeholder="Enter username">
+    <br><br>
+    <input type="submit" name="login" id="login" value="Login">
+</div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer>
+    $("#login").click(function() {
+        if ($("#username").val() == "") {
+            alert("field must be completed")
+            return;
+        }
+        $.get("/Home/login", {username : $("#username").val()},
+                    function() {
+                        window.location.replace("/Main");
+                    
+                });
+    })
+</script>

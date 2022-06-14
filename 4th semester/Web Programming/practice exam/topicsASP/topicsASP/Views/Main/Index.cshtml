@@ -1,0 +1,70 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <div id="allPosts"></div><br/>
+    <button type="submit" id="getPosts">View all posts</button><br/>
+    <input type="text" id="postId" placeholder="id" /><br/>
+    <input type="text" id="topicIdUpdate" placeholder="topicId" /><br/>
+    <input type="text" id="textUpdate" placeholder="text" /><br/>
+    <button type="submit" id="update">Update</button>
+    <div id="message"></div><br/>
+
+    <label>Add a new post to a topic</label>
+    <input type="text" id="topicAdd" placeholder="topic" /><br/>
+    <input type="text" id="textAdd" placeholder="text" /><br/>
+    <button type="submit" id="add">Add</button>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer>
+    function buildTable(data) {
+            let code_string="<table>";
+            for (let row in data) {
+                console.log("row: ", data[row]);
+                code_string += "<tr>";
+                code_string += "<td>" + data[row] + "</td>"
+                code_string += "</tr>"
+            }
+            code_string+="</table>";
+            $("#allPosts").html(code_string);
+        }
+
+     $("#getPosts").click(function() {
+                  $.get(
+                      "/Main/getPosts", 
+                      
+                      function(data) {
+                          console.log("courses: ", data);
+                          if(data!=null)
+                            buildTable(data);
+                          else
+                            $('#allPosts').html("There are no posts");
+                       }
+                    );
+                    
+            });
+
+    $("#update").click(function () {
+        $.get("Main/updatePost", {id: $("#postId").val(), topicId: $("#topicIdUpdate").val(), text: $("#textUpdate").val()}, function(data) {
+            if (data) {
+                 $('#message').html("yaay");
+            } else {
+                $('#message').html("no:((");
+            }
+        })
+    })
+
+    $("#add").click(function () {
+        $.get("Main/addPost", {topic: $("#topicAdd").val(), text: $("#textAdd").val()}, function(data) {
+            if (data) {
+                 $('#message').html("yaay");
+            } else {
+                $('#message').html("no:((");
+            }
+        })
+    })
+</script>

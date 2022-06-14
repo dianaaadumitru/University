@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2nd semester/Object Oriented Programming/a10" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4th semester/Systems for design and implementation/practice exam/movieApp13iunie2019/movieapp/movieapp-web/src/main/webapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4th semester/Systems for design and implementation/practice exam/movieApp20iunie2019/movieapp2/movieapp-web/src/main/webapp" vcs="Git" />
   </component>
 </project>

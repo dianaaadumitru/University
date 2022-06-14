@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="addToProject.js"></script>
+</head>
+<body>
+<div>
+    <h2>Add developer to projects</h2>
+    <label>developer name:</label><br/>
+    <input type="text" name="name" id="name" /><br/><br/>
+    <label>project:</label><br/>
+    <input type="text" name="project" id="project" /><br/><br/>
+    <button id="submit" type="button" class="btn-submit" onclick="push()">Push</button>
+    <button id="addAll" type="button" class="btn-submit" onclick="add()">Add</button><br/>
+
+    <br/><br/><br/>
+    <button onclick="window.location.href = 'user.php';" id="myButton" >back</button>
+</div>
+</body>
+</html>

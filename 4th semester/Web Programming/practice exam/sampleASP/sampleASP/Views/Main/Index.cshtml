@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="text-center">
+    <button type="submit" id="getProjects">View all projects</button>
+    <input id="userProjects" type="submit" name="userProjects" value="Your projects">
+    <div id="allProjects"></div><br/>
+
+    <br/>
+    <button type="submit" id="getDevelopers">View all developers</button><br/><br/>
+    <label>Filter developers by a skill</label><br/><br/>
+    <input id="skill" placeholder="skill" type="text"/><br/><br/>
+    <button type="submit" id="filter">View all developers</button><br/><br/>
+    <div id="allDevelopers"></div>
+
+     
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer>
+    function buildTable(data) {
+            let code_string="<table style='margin-left: auto;margin-right: auto;'>";
+            for (let row in data) {
+                console.log("row: ", data[row]);
+                code_string += "<tr>";
+                code_string += "<td>" + data[row] + "</td>"
+                code_string += "</tr>"
+            }
+            code_string+="</table>";
+            $("#allProjects").html(code_string);
+        }
+
+     $("#getProjects").click(function() {
+                  $.get(
+                      "/Main/getProjects", 
+                      
+                      function(data) {
+                          if(data!=null)
+                            buildTable(data);
+                          else
+                            $('#allProjects').html("There are no projects");
+                       }
+                    );
+                    
+            });
+
+    $("#userProjects").click(function() {
+                  $.get(
+                      "/Main/getUserProjects", 
+                      
+                      function(data) {
+                          if(data!=null)
+                            buildTable(data);
+                          else
+                            $('#allProjects').html("There are no projects");
+                       }
+                    );
+                    
+            });
+
+    function buildTable2(data) {
+            let code_string="<table style='margin-left: auto;margin-right: auto;'>";
+            for (let row in data) {
+                console.log("row: ", data[row]);
+                code_string += "<tr>";
+                code_string += "<td>" + data[row] + "</td>"
+                code_string += "</tr>"
+            }
+            code_string+="</table>";
+            $("#allDevelopers").html(code_string);
+        }
+
+    $("#getDevelopers").click(function() {
+                  $.get(
+                      "/Main/getDevelopers", 
+                      
+                      function(data) {
+                          if(data!=null)
+                            buildTable2(data);
+                          else
+                            $('#allDevelopers').html("There are no projects");
+                       }
+                    );
+                    
+            });
+
+    $("#filter").click(function() {
+        givenSkill = $("#skill").val()
+        $.get("/Main/getDevelopers",       
+            function(data) {
+                let developersWithSkill = []
+                if (data != null) {
+                    for (let i = 0; i < data.length; i++) {
+                        let developers = data[i].split("-")
+                        console.log(developers[1])
+                        if (developers[1].includes(givenSkill)) {
+                            developersWithSkill.push(developers[0])
+                        }
+                    }
+                    buildTable2(developersWithSkill);
+                } else {
+                    $('#allDevelopers').html("There are no developers in the db");
+                }
+            }
+        );
+    })
+
+</script>
