@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(133, 14, 146);
+}
+
+div {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+li {
+    margin-right: 24px;
+    margin-bottom: 4px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

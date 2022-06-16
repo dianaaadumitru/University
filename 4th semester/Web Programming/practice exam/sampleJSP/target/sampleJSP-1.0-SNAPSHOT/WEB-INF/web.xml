@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>ro.ubb.sampleJSP.Controller.LoginController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>PartialAddController</servlet-name>
+        <servlet-class>ro.ubb.sampleJSP.Controller.PartialAddController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PartialAddController</servlet-name>
+        <url-pattern>/PartialAddController</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ConfirmAddController</servlet-name>
+        <servlet-class>ro.ubb.sampleJSP.Controller.ConfirmAddController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ConfirmAddController</servlet-name>
+        <url-pattern>/ConfirmAddController</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h class="display-4">Add keyword</h><br/><br/>
+    <input placeholder="Enter key" id="keyAdd"/><br/><br/>
+    <input placeholder="Enter value" id="valueAdd"/><br/><br/>
+    <button id='addKeyword' type="submit">Add keyword</button><br/>
+    <div id="messageAdd"></div><br/>
+
+    <h class="display-4">Search document by title</h><br/><br/>
+    <input placeholder="Enter title" id="titleSearch"/><br/><br/>
+    <button id='searchDocument' type="submit">Search document</button><br/>
+    <div id="displayDocuments"></div><br/>
+    <br/><br/>
+</div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer>
+$(document).ready(function() {
+    $("#addKeyword").click(function() {
+        console.log("got here")
+        if ($("#keyAdd").val() == "" || $("#valueAdd").val() == "") {
+                    alert("fields must be completed")
+                    return;
+        }
+        
+        $.get("/Home/addKeyword", { key: $("#keyAdd").val(), value: $("#valueAdd").val()},
+        function(data) {
+            if (data) {
+                    $("#messageAdd").html("keyword added")
+                } else {
+                    $("#messageAdd").html("error")
+                }
+        } )
+    })
+   
+    $("#displayDocuments").click(function() {
+
+
+    } )
+
+    function buildTable(data) {
+        let code_string="<table id='tableData' style='margin-left: auto; margin-right: auto'>";
+        for (let row in data) {
+            console.log("row: ", data[row]);
+            if (row % 2 == 0) {
+                code_string += "<tr style='color: skyblue'><td>" + data[row] + "</td></tr>";
+            } else {
+                code_string += "<tr id='tableRow'><td>" + data[row] + "</td></tr>";
+            }
+            
+        }
+        code_string+="</table>";
+        $("#displayDocuments").html(code_string);
+    }
+
+    $("#searchDocument").click(function() {
+        if ($("#titleSearch").val() == "") {
+            alert("field must be completed")
+            return;
+        }
+
+        $.get("/Home/displayDocuments", {title: $("#titleSearch").val()},
+            function(data) {
+                if (data) {
+                    buildTable(data)
+                } else {
+                     $("#displayDocuments").html("no documents available");
+                }
+            } )
+    } )
+
+    
+
+})
+
+
+
+
+</script>
