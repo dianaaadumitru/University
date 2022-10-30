@@ -1,0 +1,30 @@
+Description:
+"DogShelterApp" is a mobile application which will help the staff to to keep track of the dogs sheltered there. Staff will be able to add new dogs (
+newly rescued dogs) and after their medical checkup to update their personal files. They should also know in which crate the new dog is placed,
+so another field should be available for that. When a dog is adopted it is removed from the list.
+
+Domain details:
+When application starts, a list containing all the dogs in the shelter is displayed. For each dog it will be stored an id (an integer number greater 
+than 0 which is automatically generated and managed by the app, used as a form of identification), its name (it can be its actual name or a new name 
+given by the shelter amployees), breed (breed type), year of birth (approximately), when it got in the shelter, if he is healthy or not (if it has 
+all vaccinations up to date, if it doesn't what else needs to be done, and if it has other medical issues) and the crate number.
+
+CRUD operations:
+If a new dog came into the shelter, the "+" button at the bottom right of the page needs to be pressed, and will be redirected to another screen where the 
+dog details can be filled in: name, breed, year of birth, arrival date, madical details and the crate number (initially year of birth and medical 
+details get the default value null, and after the medical checkup they will be updated). when pressing the "Save" button will save the changes and 
+take him back to the main screen.
+
+When an employee discovers about the dog they will click on the dog entry from the list and another another screen will appear where 
+each of the fields can be changed. After he is done editing, pressing the "Save" button will save the changes and take him back to the main screen.
+
+If a dog is adopted, the user should remove it from the list and all he needs to do is double click on the dog entry from the list, and a dialog 
+asking for removal confirmation (yes/no) will pop up.
+
+Persistance details:
+All the operations that manage the dogs (add, update and remove) are persisted both on the server and on the local db.
+
+What is happening when the device is offline:
+When application starts, a message that the connection is not available will be shown and if there is data in the local database, a list containing 
+the dogs will be shown. The user can add a new dog and it will be saved locally and when the server starts it will also be saved there. Update and 
+delete won't work, a message stating that the application is offline and the operation cannot be done until a connection is available will be shown.
